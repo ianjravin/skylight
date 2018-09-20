@@ -1,0 +1,374 @@
+<!DOCTYPE HTML>
+<html class="no-js">
+<head>
+    <!-- Basic Page Needs
+      ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Zaka</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!-- Mobile Specific Metas
+      ================================================== -->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <!-- CSS
+      ================================================== -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="vendor/magnific/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link href="vendor/owl-carousel/css/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="vendor/owl-carousel/css/owl.theme.css" rel="stylesheet" type="text/css">
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/ie.css" media="screen"/><![endif]-->
+    <link href="css/custom.css" rel="stylesheet" type="text/css"><!-- CUSTOM STYLESHEET FOR STYLING -->
+    <!-- Color Style -->
+    <link class="alt" href="colors/color1.css" rel="stylesheet" type="text/css">
+    <link href="style-switcher/css/style-switcher.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		 body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    [v-cloak]{
+        display: none
+    }
+    .inp {
+        border-radius: 15px;
+    }
+    .comment-box{
+        height: 200px
+    }
+    .prof {
+        position: fixed;
+    }
+    .stats{
+        margin-bottom: 30px;
+    }
+    .postimage{
+        height: 400px;
+        display: block;
+        max-width: 100%;
+    }
+    </style>
+<script src="js/modernizr.js"></script>
+</head>
+<body class="home">
+<div id="app" v-cloak>
+<div class="body" >
+    <!-- Site Header Wrapper -->
+    <div class="site-header-wrapper">
+        <!-- Site Header -->
+        <header class="">
+            <div class="container">
+                <div class="site-logo">
+                    <a href="index.html" class="default-logo"><img src="images/logo.png" alt="Logo"/></a>
+                    <a
+                        href="index.html" class="default-retina-logo"><img src="images/logo@2x.png" alt="Logo"
+                                                                           width="199" height="30"/></a><a
+                        href="index.html" class="sticky-logo"><img src="images/sticky-logo.png" alt="Logo"/>
+                    </a>
+                    <a
+                            href="index.html" class="sticky-retina-logo"><img src="images/sticky-logo@2x.png" alt="Logo"
+                                                                              width="199" height="30"/></a>
+                </div>
+                <a href="#" class="visible-sm visible-xs" id="menu-toggle"><i class="fa fa-bars"></i></a>
+                <ul class="sf-menu dd-menu pull-right" role="menu">
+
+
+                    <li><a href="about.html">About</a>
+                        <ul>
+                            <li><a href="contact.html">About us</a></li>
+                            <li><a href="opp.html">Opportunities</a></li>
+                            <li><a href="faq.html">FAQs</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </li>
+                    <li><a v-bind:href="'investor-dashboard/posts.html' + createUrls "> Lend</a></li>
+                    <li><a v-bind:href="'investor-dashboard/index.html' + createUrls"><i class="fa fa-user "></i>Dashboard</a></li>
+                    <li><a href="logme.html"><i class="fa fa-user "></i> log out</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+   
+    <div class="hero-area">
+        <div class="page-banner parallax" style="background-image:url(images/cont.jpg);">
+            <div class="container">
+                <div class="page-banner-text">
+                    <h1 class="block-title" v-cloak> {{postTitle}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="main-container" v-cloak>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 content-block" v-cloak>
+                       
+                        <div class="post-media">
+                            <img :src="'https://ticketsoko.com/zaka/api/uploads/' + postImage" class="postimage">
+                        </div>
+                        <span class="label label-default">Investment progress</span>
+                        <div class="progress">
+                            <div v-bind:style="{ width: amountPercentage + '%' }" class="progress-bar progress-bar-primary"
+                                 :data-appear-progress-animation="amountPercentage + '%'" data-appear-animation-delay="100"><span
+                                    class="progress-bar-tooltip" v-cloak>{{amountPercentage}} %</span></div>
+                        </div>
+                        <div class="pull-left">Raised <strong>{{postRaised}}</strong></div>
+                        <div class="pull-right">Goal <strong class="accent-color" v-cloak>{{entGoal}}</strong></div>
+                        <div class="spacer-20"></div>
+                        <div class="row">
+                            <div class="col-md-5 col-sm-5">
+                                <p class="lead"> {{postDescription}} </p>
+                            </div>
+                            <div class="col-md-7 col-sm-7 stats">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Total Investors<span class="badge">{{postInvestors}}</span></li>
+                                    <li class="list-group-item">Days left to investment closure<span
+                                            class="badge">{{postDuration}}</span></li>
+                                
+                                </ul>
+                                <a href="#" type="button" class="btn btn-primary btn-block inp" data-toggle="modal"
+                                   data-target="#myModal">Invest Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                    <div class="col-md-4 sidebar-block">
+
+                        <div class="widget sidebar-widget widget_categories prof" >
+                            <h3 class="widgettitle" v-cloak>Entrepreneur Profile</h3>
+                            <ul>
+                                <li v-cloak><a href="#">Name :</a> {{entName}}</li>
+                                <li v-cloak><a href="#">Business name :</a> {{entBusiness}}</li>
+                                <li v-cloak><a href="#">Location :</a> {{entLocation}}</li>
+                                <li v-cloak><a href="#">Seeking :</a> {{entGoal}}</li>
+                                <li v-cloak><a href="#">Purpose :</a> {{entPurpose}}</li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- here -->
+    
+    <a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+</div>
+
+
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" data-backdrop="static">
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <a type="" class=" pull-right" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </a>
+                        <div class="">
+                            <div class="form-group">
+                                <label for="text">Amount</label>
+                                <input type="number" class="form-control inp" id="comment" v-model="amount">
+                              </div>
+                              <div class="form-group">
+                                <label for="number">Interest</label>
+                                <input type="number" class="form-control inp" id="amnt" v-model="interest">
+                              </div>
+                              <div class="form-group">
+                                <label for="number">Comment</label>
+                                <textarea name="" id="" cols="30" rows="10" class="form-control" v-model="comment"></textarea>
+                                
+                              </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer text-align-center">
+                        <button type="button" class="btn btn-large btn-block btn-primary inp" @click="makeOffer()"><i v-if="loading" class="fa fa-spinner fa-spin"></i>Make Offer</button>
+                        <div class="spacer-20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="copyrights-col-left">
+                            <p>&copy; 2018 <b>Zaka</b>. All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6"></div>
+                    <div class="copyrights-col-right">
+                        <ul class="footer-menu">
+                            <li><a href="#">Register with us</a></li>
+                            <li><a href="#">Login now</a></li>
+                            <li><a href="terms.html">Terms &amp; conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+</div>
+    <script src="js/jquery-2.1.3.min.js"></script> 
+    <script src="vendor/magnific/jquery.magnific-popup.min.js"></script> 
+    <script src="js/ui-plugins.js"></script> 
+    <script src="js/helper-plugins.js"></script>
+    <script src="vendor/owl-carousel/js/owl.carousel.min.js"></script> 
+    <script src="js/bootstrap.js"></script>
+    <script src="js/init.js"></script> 
+    <script src="vendor/flexslider/js/jquery.flexslider.js"></script> 
+    <script src="js/circle-progress<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.8.2/bootstrap-progressbar.js'></script>.js"></script> 
+    <script src="style-switcher/js/jquery_cookie.js"></script>
+    <script src="style-switcher/js/script.js"></script>
+    <script src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/alertify.js"></script>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios@0.12.0/dist/axios.min.js"></script>
+<script src="https://unpkg.com/lodash@4.13.1/lodash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+<!-- <script src="https://unpkg.com/vue-router"></script> -->
+<script>
+    var app = new Vue({
+        el:'#app',
+        data:{
+            name: '',
+            account: '',
+            id: '',
+            postId: '',
+            entName: '',
+            entLocation: '',
+            entGoal: '',
+            entBusiness: '',
+            entPurpose: '',
+            postTitle: '',
+            postDuration: '',
+            postRaised: '',
+            postImage: '',
+            postInvestors: '',
+            postDescription:'',
+            amountPercentage: '',
+            interest: '',
+            amount: '',
+            loading: false,
+            comment: '', 
+            postId: ''
+
+
+        },
+        methods:{
+
+            openModal: function (){
+                $("#myModal").modal('show')
+            },
+            getPost: function () {
+                var formatter = new Intl.NumberFormat()
+                axios.post(`https://ticketsoko.com/zaka/api/index.php?function=getSinglePost&keyword=${this.postId}`)
+                .then((result) => {
+                    result.data.data.forEach(element => {
+                        
+                        this.entName = element.ent.name
+                        this.entLocation = element.ent.location
+                        this.entGoal = formatter.format(element.ent.amount)
+                        this.entBusiness = element.ent.businessName
+                        this.entPurpose = element.ent.reason
+                        this.postRaised = formatter.format(element.amountRaised)
+                        this.postInvestors = element.investors
+                        this.postDuration = element.post.daysRemaining
+                        this.postTitle = element.post.title
+                        this.postDescription = element.post.description
+                        this.postImage = element.post.image
+                        this.postId = element.post.id
+                        //this.Ent.push(element.ent)
+                        console.log("ENT", this.Ent)
+                        console.log(element)
+                        
+                    });
+                    this.amountPercentage = (parseInt(this.postRaised)/parseInt(this.entGoal))*100
+                    console.log("%", this.amountPercentage);
+                    console.log("raised", this.postRaised);
+                console.log("goal", this.entGoal);
+                    console.log("POST",result.data.data);
+                    
+                }).catch((err) => {
+                    console.error(new Error(err))
+                    
+                });
+                
+            },
+     
+	  getInvestorDetail: function (){
+      let queryString = decodeURIComponent(window.location.search);
+      queryString = queryString.substring(1).split("&");
+      let details = queryString[0].split("=");
+      this.account =  decodeURI(details[1]);
+     details = queryString[1].split("=");
+     this.name =  decodeURI(details[1]);
+     details = queryString[2].split("="); 
+     this.id = decodeURI(details[1]);
+     details = queryString[3].split("=")
+     this.postId = decodeURI(details[1]);
+     console.log("POSTID",this.postId);
+      },
+
+      makeOffer: function () {
+        this.loading = true
+                 console.log("IDDD",this.id, this.postId);
+                const formData = new FormData
+                formData.append('investor_id', this.id)
+                formData.append('post_id', this.postId)
+                formData.append('amount', this.amount)
+                formData.append('interest', this.interest)
+                formData.append('comments', this.comment)
+                // console.log(this.comment);
+               
+                setTimeout(() => {
+               axios.post('https://ticketsoko.com/zaka/api/index.php?function=createOffer', formData)
+                .then((response) => {
+                    console.log(response)
+                    //alertify.logPosition("top left");
+                    alertify.alert(response.data.message);
+                    //alert(response.data.message)
+                    this.loading = false
+                    $("#myModal").modal('hide')
+                    this.amount = '' 
+                    this.comment = ''
+                    this.interest = ''  
+                }).catch((err) => {
+                    alertify.error(err);   
+                });
+
+ 
+                }, 3000);
+
+      }
+     
+        },
+        computed: {
+            createUrls: function () {
+            return `?objects=${this.account}&names=${this.name}&id=${this.id}`           
+        }
+
+        },
+        beforeMount: function (){
+           this.getInvestorDetail()
+           this.getPost()
+        },
+        mounted:function (){
+        this.createUrls
+        
+        }
+
+    })
+
+</script>
+</html>

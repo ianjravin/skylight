@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSRF Token -->
+    <meta name="csrf-token" content="OaqydaeZcSApGX98npM6M1hoT0ewfhR5KmnIJ3VX">
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut tortor rutrum massa efficitur tincidunt vel nec lacus. Curabitur porta aliquet diam, eu gravida neque lacinia in. Praesent eget orci id sem commodo aliquet.">
+    <meta name="keywords" content="Crowdfunding, crowfund, fundme, campaign" />
+    <link rel="shortcut icon" href="images/favicon.png" />
+
+	<title> Account Settings -  Zaka | Investment Platform</title>
+
+	<!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- FONT Awesome CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+     <!-- IcoMoon CSS -->
+    <link href="css/icomoon.css" rel="stylesheet">
+
+    <!-- Ionicons -->
+    <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css' />
+
+    <!-- Sweet Alert -->
+    <link href="css/sweetalert.css" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<![endif]-->
+
+<script type="text/javascript">
+
+    // URL BASE
+    var URL_BASE = "https://ianjravin.github.io/zaka-dashboard/";
+    // ReadMore
+    var ReadMore = "View more...";
+    var ReadLess = "View less...";
+
+ </script>
+	<!-- Fonts -->
+	<link href='//fonts.googleapis.com/css?family=Raleway:100,600' rel='stylesheet' type='text/css'>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Scripts -->
+    <script>
+        window.Laravel = {"csrfToken":"OaqydaeZcSApGX98npM6M1hoT0ewfhR5KmnIJ3VX"}    </script>
+
+</head>
+<body>
+
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=833373956732438";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div class="popout font-default"></div>
+	<div class="wrap-loader">
+		<i class="fa fa-cog fa-spin fa-3x fa-fw cog-loader"></i>
+		<i class="fa fa-cog fa-spin fa-3x fa-fw cog-loader-small"></i>
+	</div>
+	<div class="navbar navbar-inverse navbar-px padding-top-10 padding-bottom-10">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://ianjravin.github.io/zaka-dashboard/">
+          	<img src="images/logo.png" class="logo" />
+          	</a>
+        </div><!-- navbar-header -->
+
+        <div class="navbar-collapse collapse">
+
+        	<ul class="nav navbar-nav navbar-right">
+
+          		<li>
+          			<a href="index.html"  class="text-uppercase font-default">
+        				 Back to Dashboard</span>
+        				</a>
+
+          			<!--<ul class="dropdown-menu arrow-up list-search">
+	        			<li>
+
+	        				<form action="http://fundme.miguelvasquez.net/search" method="get" class="formSearh">
+							  <div class="col-thumb">
+							    <input type="text" name="q" id="btnItems" class="focus-off" placeholder="Search">
+							  </div>
+							  <button type="submit" class="btn btn-success btn-xs btn_search" id="btnSearch">Search</button>
+							</form>
+
+	        			</li>
+	        		</ul>-->
+          		</li>
+
+
+
+
+
+
+			        		        				</ul><!-- DROPDOWN MENU -->
+
+
+
+
+
+
+
+
+					          </ul>
+
+         </div><!--/.navbar-collapse -->
+     </div>
+ </div>
+
+<div id="search">
+    <button type="button" class="close">×</button>
+    <form autocomplete="off" action="categories.html" method="get">
+        <input type="search" value="" name="q" id="btnItems" placeholder="Enter Search Query..." />
+        <button type="submit" class="btn btn-lg no-shadow btn-trans custom-rounded btn_search"  id="btnSearch">Search</button>
+    </form>
+</div>
+
+<div class="jumbotron md index-header jumbotron_set jumbotron-cover">
+      <div class="container wrap-jumbotron position-relative">
+        <h2 class="title-site">Account Settings</h2>
+      </div>
+    </div>
+
+<div class="container margin-bottom-40">
+
+			<!-- Col MD -->
+		<div class="col-md-8 margin-bottom-20">
+
+
+
+
+
+		<!-- *********** AVATAR ************* -->
+
+		<form action="#" method="POST" id="formAvatar" accept-charset="UTF-8" enctype="multipart/form-data">
+    		<input type="hidden" name="_token" value="OaqydaeZcSApGX98npM6M1hoT0ewfhR5KmnIJ3VX">
+
+    		<div class="text-center">
+    			<img src="images/admin.png" alt="User" width="100" height="100" class="img-rounded avatarUser"  />
+    		</div>
+
+    		<div class="text-center">
+    			<button type="button" class="btn btn-default btn-border btn-sm" id="avatar_file" style="margin-top: 10px;">
+	    		<i class="fa fa-camera"></i> Business Image
+	    		</button>
+	    		<input type="file" name="photo" id="uploadAvatar" accept="image/*" style="visibility: hidden;">
+    		</div>
+
+			</form><!-- *********** AVATAR ************* -->
+
+
+
+		<!-- ***** FORM ***** -->
+       <form action="#" method="post" name="form">
+
+          	<input type="hidden" name="_token" value="OaqydaeZcSApGX98npM6M1hoT0ewfhR5KmnIJ3VX">
+
+            <!-- ***** Form Group ***** -->
+            <div class="form-group has-feedback">
+            	<label class="font-default">Business Name</label>
+              <input type="text" class="form-control login-field custom-rounded" value="Tesfa Enterprises" name="full_name" placeholder="Full name" title="Full name" autocomplete="off">
+             </div><!-- ***** Form Group ***** -->
+
+			<!-- ***** Form Group ***** -->
+            <div class="form-group has-feedback">
+            	<label class="font-default">Business Sector</label>
+              <input type="email" class="form-control login-field custom-rounded" value="Agriculture" name="email" placeholder="Email" title="Email" autocomplete="off">
+         </div><!-- ***** Form Group ***** -->
+
+				 <!-- ***** Form Group ***** -->
+				 <div class="form-group has-feedback">
+					 <label class="font-default">Location</label>
+					 <input type="text" class="form-control login-field custom-rounded" value="Riruta" name="full_name" placeholder="Full name" title="Full name" autocomplete="off">
+					</div><!-- ***** Form Group ***** -->
+
+					<!-- ***** Form Group ***** -->
+					<div class="form-group has-feedback">
+						<label class="font-default">Bussiness Description</label>
+						<input type="text" class="form-control login-field custom-rounded" value="Tesfa enterprises is an agriculture business located in Riruta and dealing in the growing of mushrooms." name="full_name" placeholder="Full name" title="Full name" autocomplete="off">
+					 </div><!-- ***** Form Group ***** -->
+
+
+
+         <!-- ***** Form Group ***** -->
+            <div class="form-group has-feedback">
+            	<label class="font-default">Location</label>
+            	<select name="countries_id" class="form-control" >
+                      		<option value="">Select your country</option>
+
+                            <option  value="3">Mombasa</option>
+
+                            <option  value="4">Kiambu</option>
+
+                            <option  value="5">Kajiado</option>
+
+                            <option  value="6">Laikipia</option>
+
+                            <option  value="7">Kisumu</option>
+
+                            <option  value="8">Meru</option>
+
+                            <option  value="9">Embu</option>
+
+                            <option  value="10">Turkana</option>
+
+                            <option  value="11">Nakuru</option>
+
+                            <option  value="12">Marsabit </option>
+
+                            <option  value="13">Uasin gishu</option>
+
+                            <option  value="14">Aruba</option>
+
+                            <option  value="15">Australia</option>
+
+                            <option  value="16">Austria</option>
+
+                            <option  value="17">Azerbaijan</option>
+
+                            <option  value="18">Bahamas</option>
+
+                            <option  value="19">Bahrain</option>
+
+                            <option  value="20">Bangladesh</option>
+
+                            <option  value="21">Barbados</option>
+
+                            <option  value="22">Belarus</option>
+
+                            <option  value="23">Belgium</option>
+
+                            <option  value="24">Belize</option>
+
+                            <option  value="25">Benin</option>
+
+                            <option  value="26">Bermuda</option>
+
+                            <option  value="27">Bhutan</option>
+
+                            <option  value="28">Bolivia</option>
+
+                            <option  value="29">Bosnia and Herzegovina</option>
+
+                            <option  value="30">Botswana</option>
+
+                            <option  value="31">Bouvet Island</option>
+
+                            <option  value="32">Brazil</option>
+
+                            <option  value="33">British lndian Ocean Territory</option>
+
+                            <option  value="34">Brunei Darussalam</option>
+
+                            <option  value="35">Bulgaria</option>
+
+                            <option  value="36">Burkina Faso</option>
+
+                            <option  value="37">Burundi</option>
+
+                            <option  value="38">Cambodia</option>
+
+                            <option  value="39">Cameroon</option>
+
+                            <option  value="2">Canada</option>
+
+                            <option  value="40">Cape Verde</option>
+
+                            <option  value="41">Cayman Islands</option>
+
+                            <option  value="42">Central African Republic</option>
+
+                            <option  value="43">Chad</option>
+
+                            <option  value="44">Chile</option>
+
+                            <option  value="45">China</option>
+
+                            <option  value="46">Christmas Island</option>
+
+                            <option  value="47">Cocos (Keeling) Islands</option>
+
+                            <option  value="48">Colombia</option>
+
+                            <option  value="49">Comoros</option>
+
+                            <option  value="50">Congo</option>
+
+                            <option  value="51">Cook Islands</option>
+
+                            <option  value="52">Costa Rica</option>
+
+                            <option  value="53">Croatia (Hrvatska)</option>
+
+                            <option  value="54">Cuba</option>
+
+                            <option  value="55">Cyprus</option>
+
+                            <option  value="56">Czech Republic</option>
+
+                            <option  value="57">Denmark</option>
+
+                            <option  value="58">Djibouti</option>
+
+                            <option  value="59">Dominica</option>
+
+                            <option  value="60">Dominican Republic</option>
+
+                            <option  value="61">East Timor</option>
+
+                            <option  value="62">Ecuador</option>
+
+                            <option  value="63">Egypt</option>
+
+                            <option  value="64">El Salvador</option>
+
+                            <option  value="65">Equatorial Guinea</option>
+
+                            <option  value="66">Eritrea</option>
+
+                            <option  value="67">Estonia</option>
+
+                            <option  value="68">Ethiopia</option>
+
+                            <option  value="69">Falkland Islands (Malvinas)</option>
+
+                            <option  value="70">Faroe Islands</option>
+
+                            <option  value="71">Fiji</option>
+
+                            <option  value="72">Finland</option>
+
+                            <option  value="73">France</option>
+
+                            <option  value="74">France, Metropolitan</option>
+
+                            <option  value="75">French Guiana</option>
+
+                            <option  value="76">French Polynesia</option>
+
+                            <option  value="77">French Southern Territories</option>
+
+                            <option  value="78">Gabon</option>
+
+                            <option  value="79">Gambia</option>
+
+                            <option  value="80">Georgia</option>
+
+                            <option  value="81">Germany</option>
+
+                            <option  value="82">Ghana</option>
+
+                            <option  value="83">Gibraltar</option>
+
+                            <option  value="84">Greece</option>
+
+                            <option  value="85">Greenland</option>
+
+                            <option  value="86">Grenada</option>
+
+                            <option  value="87">Guadeloupe</option>
+
+                            <option  value="88">Guam</option>
+
+                            <option  value="89">Guatemala</option>
+
+                            <option  value="90">Guinea</option>
+
+                            <option  value="91">Guinea-Bissau</option>
+
+                            <option  value="92">Guyana</option>
+
+                            <option  value="93">Haiti</option>
+
+                            <option  value="94">Heard and Mc Donald Islands</option>
+
+                            <option  value="95">Honduras</option>
+
+                            <option  value="96">Hong Kong</option>
+
+                            <option  value="97">Hungary</option>
+
+                            <option  value="98">Iceland</option>
+
+                            <option  value="99">India</option>
+
+                            <option  value="100">Indonesia</option>
+
+                            <option  value="101">Iran (Islamic Republic of)</option>
+
+                            <option  value="102">Iraq</option>
+
+                            <option  value="103">Ireland</option>
+
+                            <option  value="104">Israel</option>
+
+                            <option  value="105">Italy</option>
+
+                            <option  value="106">Ivory Coast</option>
+
+                            <option  value="107">Jamaica</option>
+
+                            <option  value="108">Japan</option>
+
+                            <option  value="109">Jordan</option>
+
+                            <option  value="110">Kazakhstan</option>
+
+                            <option  value="111">Kenya</option>
+
+                            <option  value="112">Kiribati</option>
+
+                            <option  value="113">Korea, Democratic People&#039;s Republic of</option>
+
+                            <option  value="114">Korea, Republic of</option>
+
+                            <option  value="115">Kosovo</option>
+
+                            <option  value="116">Kuwait</option>
+
+                            <option  value="117">Kyrgyzstan</option>
+
+                            <option  value="118">Lao People&#039;s Democratic Republic</option>
+
+                            <option  value="119">Latvia</option>
+
+                            <option  value="120">Lebanon</option>
+
+                            <option  value="121">Lesotho</option>
+
+                            <option  value="122">Liberia</option>
+
+                            <option  value="123">Libyan Arab Jamahiriya</option>
+
+                            <option  value="124">Liechtenstein</option>
+
+                            <option  value="125">Lithuania</option>
+
+                            <option  value="126">Luxembourg</option>
+
+                            <option  value="127">Macau</option>
+
+                            <option  value="128">Macedonia</option>
+
+                            <option  value="129">Madagascar</option>
+
+                            <option  value="130">Malawi</option>
+
+                            <option  value="131">Malaysia</option>
+
+                            <option  value="132">Maldives</option>
+
+                            <option  value="133">Mali</option>
+
+                            <option  value="134">Malta</option>
+
+                            <option  value="135">Marshall Islands</option>
+
+                            <option  value="136">Martinique</option>
+
+                            <option  value="137">Mauritania</option>
+
+                            <option  value="138">Mauritius</option>
+
+                            <option  value="139">Mayotte</option>
+
+                            <option  value="140">Mexico</option>
+
+                            <option  value="141">Micronesia, Federated States of</option>
+
+                            <option  value="142">Moldova, Republic of</option>
+
+                            <option  value="143">Monaco</option>
+
+                            <option  value="144">Mongolia</option>
+
+                            <option  value="145">Montenegro</option>
+
+                            <option  value="146">Montserrat</option>
+
+                            <option  value="147">Morocco</option>
+
+                            <option  value="148">Mozambique</option>
+
+                            <option  value="149">Myanmar</option>
+
+                            <option  value="150">Namibia</option>
+
+                            <option  value="151">Nauru</option>
+
+                            <option  value="152">Nepal</option>
+
+                            <option  value="153">Netherlands</option>
+
+                            <option  value="154">Netherlands Antilles</option>
+
+                            <option  value="155">New Caledonia</option>
+
+                            <option  value="156">New Zealand</option>
+
+                            <option  value="157">Nicaragua</option>
+
+                            <option  value="158">Niger</option>
+
+                            <option  value="159">Nigeria</option>
+
+                            <option  value="160">Niue</option>
+
+                            <option  value="161">Norfork Island</option>
+
+                            <option  value="162">Northern Mariana Islands</option>
+
+                            <option  value="163">Norway</option>
+
+                            <option  value="164">Oman</option>
+
+                            <option  value="165">Pakistan</option>
+
+                            <option  value="166">Palau</option>
+
+                            <option  value="167">Panama</option>
+
+                            <option  value="168">Papua New Guinea</option>
+
+                            <option  value="169">Paraguay</option>
+
+                            <option  value="170">Peru</option>
+
+                            <option  value="171">Philippines</option>
+
+                            <option  value="172">Pitcairn</option>
+
+                            <option  value="173">Poland</option>
+
+                            <option  value="174">Portugal</option>
+
+                            <option  value="175">Puerto Rico</option>
+
+                            <option  value="176">Qatar</option>
+
+                            <option  value="177">Reunion</option>
+
+                            <option  value="178">Romania</option>
+
+                            <option  value="179">Russian Federation</option>
+
+                            <option  value="180">Rwanda</option>
+
+                            <option  value="181">Saint Kitts and Nevis</option>
+
+                            <option  value="182">Saint Lucia</option>
+
+                            <option  value="183">Saint Vincent and the Grenadines</option>
+
+                            <option  value="184">Samoa</option>
+
+                            <option  value="185">San Marino</option>
+
+                            <option  value="186">Sao Tome and Principe</option>
+
+                            <option  value="187">Saudi Arabia</option>
+
+                            <option  value="188">Senegal</option>
+
+                            <option  value="189">Serbia</option>
+
+                            <option  value="190">Seychelles</option>
+
+                            <option  value="191">Sierra Leone</option>
+
+                            <option  value="192">Singapore</option>
+
+                            <option  value="193">Slovakia</option>
+
+                            <option  value="194">Slovenia</option>
+
+                            <option  value="195">Solomon Islands</option>
+
+                            <option  value="196">Somalia</option>
+
+                            <option  value="197">South Africa</option>
+
+                            <option  value="198">South Georgia South Sandwich Islands</option>
+
+                            <option  value="199">Spain</option>
+
+                            <option  value="200">Sri Lanka</option>
+
+                            <option  value="201">St. Helena</option>
+
+                            <option  value="202">St. Pierre and Miquelon</option>
+
+                            <option  value="203">Sudan</option>
+
+                            <option  value="204">Suriname</option>
+
+                            <option  value="205">Svalbarn and Jan Mayen Islands</option>
+
+                            <option  value="206">Swaziland</option>
+
+                            <option  value="207">Sweden</option>
+
+                            <option  value="208">Switzerland</option>
+
+                            <option  value="209">Syrian Arab Republic</option>
+
+                            <option  value="210">Taiwan</option>
+
+                            <option  value="211">Tajikistan</option>
+
+                            <option  value="212">Tanzania, United Republic of</option>
+
+                            <option  value="213">Thailand</option>
+
+                            <option  value="214">Togo</option>
+
+                            <option  value="215">Tokelau</option>
+
+                            <option  value="216">Tonga</option>
+
+                            <option  value="217">Trinidad and Tobago</option>
+
+                            <option  value="218">Tunisia</option>
+
+                            <option  value="219">Turkey</option>
+
+                            <option  value="220">Turkmenistan</option>
+
+                            <option  value="221">Turks and Caicos Islands</option>
+
+                            <option  value="222">Tuvalu</option>
+
+                            <option  value="223">Uganda</option>
+
+                            <option  value="224">Ukraine</option>
+
+                            <option  value="225">United Arab Emirates</option>
+
+                            <option  value="226">United Kingdom</option>
+
+                            <option  selected="selected"  value="1">Nairobi</option>
+
+                            <option  value="227">United States minor outlying islands</option>
+
+                            <option  value="228">Uruguay</option>
+
+                            <option  value="229">Uzbekistan</option>
+
+                            <option  value="230">Vanuatu</option>
+
+                            <option  value="231">Vatican City State</option>
+
+                            <option  value="232">Venezuela</option>
+
+                            <option  value="233">Vietnam</option>
+
+                            <option  value="234">Virgin Islands (British)</option>
+
+                            <option  value="235">Virgin Islands (U.S.)</option>
+
+                            <option  value="236">Wallis and Futuna Islands</option>
+
+                            <option  value="237">Western Sahara</option>
+
+                            <option  value="238">Yemen</option>
+
+                            <option  value="239">Yugoslavia</option>
+
+                            <option  value="240">Zaire</option>
+
+                            <option  value="241">Zambia</option>
+
+                            <option  value="242">Zimbabwe</option>
+						                          </select>
+            	    </div><!-- ***** Form Group ***** -->
+
+           <button type="submit" id="buttonSubmit" class="btn btn-block btn-lg btn-main custom-rounded">Save changes</button>
+
+       </form><!-- ***** END FORM ***** -->
+
+		</div><!-- /COL MD -->
+
+		<div class="col-md-4">
+			<ul class="nav nav-pills nav-stacked">
+			<li class="margin-bottom-5">
+				<!-- **** list-group-item **** -->
+		  <a href="account.html" class="list-group-item active ">
+		  	<i class="icon icon-pencil myicon-right"></i> Account Settings
+		  	</a> <!-- **** ./ list-group-item **** -->
+			</li>
+
+
+		  	<li class="margin-bottom-5">
+		  		<!-- **** list-group-item **** -->
+		  <a href="password.html" class="list-group-item ">
+		  	<i class="icon icon-lock myicon-right"></i> Password
+		  	</a> <!-- **** ./ list-group-item **** -->
+		  	</li>
+
+		  	<li class="margin-bottom-5">
+		  		<!-- **** list-group-item **** -->
+		  <a href="bussiness.html" class="list-group-item ">
+		  	<i class="ion ion-speakerphone myicon-right"></i> Business Profile
+		  	</a> <!-- **** ./ list-group-item **** -->
+		  	</li>
+
+
+
+
+
+
+
+
+		</ul>		</div>
+
+
+ </div><!-- container -->
+
+ <!-- container wrap-ui -->
+
+			<!-- ***** Footer ***** -->
+    <footer class="footer-main">
+    	<div class="container">
+
+    		<div class="row">
+    			<div class="col-md-4">
+    				<a href="http://zaka.co.ke">
+    					<img src="images/logo.png" />
+    				</a>
+    			   <p class="margin-tp-xs">Zaka International is an SME investment company that aims to bridge short-term financing gap of small and medium sized enterprises in Kenya so that they attain scale to large businesses
+
+further contributing to wealth generation and employment creation in Kenya and beyond.
+Nairobi.</p>
+
+    			   <ul class="list-inline">
+
+					   <li><a href="http://twitter.com/" class="ico-social"><i class="fa fa-twitter"></i></a></li>
+
+
+					   <li><a href="https://www.facebook.com/" class="ico-social"><i class="fa fa-facebook"></i></a></li>
+
+
+					   <li><a href="https://www.instagram.com/" class="ico-social"><i class="fa fa-instagram"></i></a></li>
+
+
+
+					   <li><a href="https://plus.google.com/" class="ico-social"><i class="fa fa-google-plus"></i></a></li>
+					 					 </ul >
+
+    			</div><!-- ./End col-md-* -->
+					<div class="col-md-3 margin-tp-xs">
+    				<h4 class="margin-top-zero">About</h4>
+    				<ul class="list-unstyled">
+    					        			<li><a class="link-footer" href="http://zaka.co.ke/terms.html">Terms</a></li>
+        	        			<li><a class="link-footer" href="http://zaka.co.ke/terms.html">Privacy</a></li>
+        	        			<li><a class="link-footer" href="http://zaka.co.ke/about.html">About us</a></li>
+
+        	    				</ul>
+    			</div><!-- ./End col-md-* -->
+
+
+    			<div class="col-md-3 margin-tp-xs">
+    				<h4 class="margin-top-zero">Categories</h4>
+    				<ul class="list-unstyled">
+    					        			<li><a class="link-footer" href="business.html">Bussiness</a></li>
+        	        			<li><a class="link-footer" href="short-term.html">Short-term Loans</a></li>
+        	        			<li><a class="link-footer" href="agriculture.html">Agriculture</a></li>
+        	        			<li><a class="link-footer" href="health.html">Health</a></li>
+        	        			<li><a class="link-footer" href="education.html">Education</a></li>
+        	        			<li><a class="link-footer" href="women.html">Women</a></li>
+
+        	        		<li><a class="link-footer" href="cads.html">
+        			<strong>View all <i class="fa fa-long-arrow-right"></i></strong>
+        		</a></li>
+
+    				</ul>
+    			</div><!-- ./End col-md-* -->
+
+    		</div><!-- ./End Row -->
+    	</div><!-- ./End Container -->
+    </footer><!-- ***** Footer ***** -->
+
+<footer class="subfooter">
+	<div class="container">
+	<div class="row">
+    			<div class="col-md-12 text-center padding-top-20">
+    				<p>&copy; Zaka | Investment Platform - 2018</p>
+    			</div><!-- ./End col-md-* -->
+	</div>
+</div>
+</footer>
+
+		<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="http://fundme.miguelvasquez.net/public/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <script src="http://fundme.miguelvasquez.net/public/js/jquery.easing.1.3.js"></script>
+    <script src="http://fundme.miguelvasquez.net/public/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="http://fundme.miguelvasquez.net/public/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="http://fundme.miguelvasquez.net/public/bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://fundme.miguelvasquez.net/public/js/jquery.autosize.min.js"></script>
+    <script src="http://fundme.miguelvasquez.net/public/js/jqueryTimeago.js"></script>
+    <script src="http://fundme.miguelvasquez.net/public/js/bootbox.min.js"></script>
+    <script src="http://fundme.miguelvasquez.net/public/js/count.js"></script>
+    <script src="http://fundme.miguelvasquez.net/public/js/functions.js"></script>
+    <script src="http://fundme.miguelvasquez.net/public/js/jquery.form.js"></script>
+    <script src="http://fundme.miguelvasquez.net/public/plugins/sweetalert/sweetalert.min.js"></script>
+    <script src="http://fundme.miguelvasquez.net/public/js/holder.min.js"></script>
+
+
+
+<script type="text/javascript">
+
+	//<<<<<<<=================== * UPLOAD AVATAR  * ===============>>>>>>>//
+    $(document).on('change', '#uploadAvatar', function(){
+
+    $('.wrap-loader').show();
+
+   (function(){
+	 $("#formAvatar").ajaxForm({
+	 dataType : 'json',
+	 success:  function(e){
+	 if( e ){
+        if( e.success == false ){
+		$('.wrap-loader').hide();
+
+		var error = '';
+                        for($key in e.errors){
+                        	error += '' + e.errors[$key] + '';
+                        }
+		swal({
+    			title: "Oops...",
+    			text: ""+ error +"",
+    			type: "error",
+    			confirmButtonText: "Ok"
+    			});
+
+			$('#uploadAvatar').val('');
+
+		} else {
+
+			$('#uploadAvatar').val('');
+			$('.avatarUser').attr('src',e.avatar);
+			$('.wrap-loader').hide();
+		}
+
+		}//<-- e
+			else {
+				$('.wrap-loader').hide();
+				swal({
+    			title: "Oops...",
+    			text: 'Error occurred',
+    			type: "error",
+    			confirmButtonText: "Ok"
+    			});
+
+				$('#uploadAvatar').val('');
+			}
+		   }//<----- SUCCESS
+		}).submit();
+    })(); //<--- FUNCTION %
+});//<<<<<<<--- * ON * --->>>>>>>>>>>
+//<<<<<<<=================== * UPLOAD AVATAR  * ===============>>>>>>>//
+</script>
+
+</body>
+</html>

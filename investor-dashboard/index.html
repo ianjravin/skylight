@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+
+<html xmlns:v-on="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="_token" content="W0ggcm3leMeZkpoOzNpbaICgIiRL5qrO6FIPxU2e" />
+    <title>Zaka Admin</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome Icons -->
+    <link href="public/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Ionicons -->
+    <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App css -->
+    <link href="admin/css/app.css" rel="stylesheet" type="text/css" />
+    <!-- IcoMoon CSS -->
+    <link href="css/icomoon.css" rel="stylesheet">
+
+    <!-- Theme style -->
+    <link href="admin/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+          folder instead of downloading all of them to reduce the load. -->
+    <link href="admin/skin-red.min.css" rel="stylesheet" type="text/css" />
+
+    <link rel="shortcut icon" href="#" />
+
+    <link href='//fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+
+    <link href="css/sweetalert.css" rel="stylesheet" type="text/css" />
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+      <link href="plugins/morris.css" rel="stylesheet" type="text/css" />
+      <link href="plugins/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+        }
+              @import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700,800);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+  [v-cloak] {
+      display: none;
+    }
+
+.desc{
+/* width: 250px; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+figure.snip1208 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: left;
+  font-size: 16px;
+}
+figure.snip1208 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+figure.snip1208 img {
+  max-width: 100%;
+  vertical-align: top;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+figure.snip1208 figcaption {
+  padding: 25px;
+  position: relative;
+}
+figure.snip1208 .date,
+figure.snip1208 i {
+  background-color: #1abc9c;
+  top: 25px;
+  color: #fff;
+  left: 25px;
+  min-height: 60px;
+  min-width: 60px;
+  position: absolute;
+  text-align: center;
+}
+figure.snip1208 .date {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+figure.snip1208 .date span {
+  display: block;
+  line-height: 30px;
+}
+figure.snip1208 .date .month {
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+figure.snip1208 i {
+  line-height: 60px;
+  font-size: 30px;
+  -webkit-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.yolo {
+  border: medium none;
+  padding: 10px 20px;
+  background-color: #4B0082;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+figure.snip1208:hover img,
+figure.snip1208.hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.invest-button{
+    color: #fff;
+    font-weight: 800;
+    height: 33.5px;
+    background-color: #885ead;
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+}
+.yolo{
+  background-color: #885ead;
+}
+.postimage{
+    height: 200px;
+    display: block;
+    max-width: 100%;
+}
+.main-sidebar{
+    background-color: #885ead
+}
+.waiter{
+  
+  /* background-color: #d3d3d3; */
+    opacity:10.8;
+    background-color:#4c4c4c;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+  
+}
+.aligner{
+  max-width: 50%;
+}
+
+      </style>
+
+      <script type="text/javascript">
+// URLBASE;
+var URL_BASE = "#";
+</script>
+
+  </head>
+
+  <body class="skin-red sidebar-mini">
+  <div class="wrapper" id="">
+      <div id="app">
+          <div  v-if="waiting" class="waiter">
+              <img src="https://ticketsoko.com/waiting2.gif" alt="loading-gif" class="aligner" >
+             </div>
+      <header class="main-header">
+          <a href="" class="logo">
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><b><i class="ion ion-ios-bolt"></i></b></span>
+              <!-- logo for regular state and mobile devices -->
+              <span class="logo-lg" v-cloak> <i class="fa fa-desktop" v-cloak></i> Welcome, {{name}}</span>
+          </a>
+          <nav class="navbar navbar-static-top" role="navigation">
+              <!-- Sidebar toggle button-->
+              <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                  <span class="sr-only">Toggle navigation</span>
+              </a>
+              <!-- Navbar Right Menu -->
+              <div class="navbar-custom-menu">
+                  <ul class="nav navbar-nav">
+
+                    <li>
+
+                    </li>
+                   
+
+                    <li>
+                        <a href="posts.html" class="navigateto"><i class="fa fa-home"></i><font color="">Lend</font></a>
+                    </li>
+
+
+                      <li>
+
+                      </li>
+
+
+
+                      <li>
+                          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#DonateModal"><font color="">Load Account</font></a>
+                      </li>
+
+                      <li>
+
+                      </li>
+
+                      <!-- User Account Menu -->
+                      <li class="dropdown user user-menu">
+                          <!-- Menu Toggle Button -->
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                              <!-- The user image in the navbar-->
+                              <img :src="investorProfilePicture" class="user-image" alt="User Image" />
+                              <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                              <span class="hidden-xs" id="adminName" v-cloak>{{name}}</span>
+                          </a>
+                          <ul class="dropdown-menu">
+                              <!-- The user image in the menu -->
+                              <li class="user-header">
+                                  <img :src="investorProfilePicture" class="img-circle" alt="User Image"  v-cloak/>
+                                  <p>
+                                      <small v-cloak>{{name}}</small>
+                                  </p>
+                              </li>
+
+                              <!-- Menu Footer-->
+                              <li class="user-footer">
+                                  <div class="pull-left">
+                                      <a v-bind:href="'account.html' + createUrls" class="btn btn-default btn-flat navigateto">Account Settings</a>
+                                  </div>
+                                  <div class="pull-right">
+                                      <a href="/logme.html" class="btn btn-default btn-flat">Log out</a>
+                                  </div>
+                              </li>
+                          </ul>
+                      </li>
+
+                  </ul>
+              </div>
+          </nav>
+      </header>
+      
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+
+            <!-- Sidebar user panel (optional) -->
+            <div class="user-panel">
+                <!-- <div class="pull-left image">
+                    <img :src="investorProfilePicture" class="img-circle" alt="User Image" />
+                </div> -->
+                <!-- <div class="pull-left info">
+                    <p class="text-overflow" id="sidename" v-cloak>{{name}}</p>
+                    <small class="btn-block text-overflow"><a href="javascript:void(0);"><i class="fa fa-circle text-success"></i><font color="yellow"> <strong>Online</strong></font></a></small>
+                </div> -->
+            </div>
+            <ul class="sidebar-menu">
+              <li class="header"><font color="yellow">Main Menu</font></li>
+              <li  class="active" >
+                  <a href="index.html" class="navigateto"><font color="white"><i class="fa fa-dashboard"></i><span>Dashboard</font></span></a>
+              </li>
+
+
+              <li >
+                <a href="offers.html" class="navigateto"><font color="white"><i class="fa fa-spinner"></i> <span>Offers made</font></span></a>
+            </li>
+            <li >
+                  <a href="posts.html" class="navigateto"><font color="white"><i class="fa fa-handshake-o"></i> <span>Opportunities</font></span></a>
+              </li>
+
+              <!-- Links -->
+              <li class="">
+                  <a href="transaction.html" class="navigateto"><font color="white"><i class="	fa fa-file-text-o"></i> <span>Transactions history</font></span></a>
+              </li><!-- ./Links -->
+              <li class="treeview ">
+                <a href="/settings"><font color="white"><i class="fa fa-cogs"></i> <span>General Settings</font></span> <i class="fa fa-angle-left pull-right"></i></a>
+                <ul class="treeview-menu">
+                    <li ><a href="account.html" class="navigateto"><font color="white"><i class="fa fa-circle-o"></i>Profile settings</font></a></li>
+                    <li ><a href="dormancy.html" class="navigateto"><font color="white"><i class="fa fa-circle-o"></i>Account Settings</font></a></li>
+                </ul>
+            </li>
+          </ul>
+        </section>
+    </aside>
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+          <!-- Content Header (Page header) -->
+          <section class="content-header">
+              <h1>
+                  Dashboard
+              </h1>
+              <ol class="breadcrumb">
+                  <li><a class="navigateto" v-bind:href="'index.html' + createUrls"><i class="fa fa-dashboard"></i> Home</a></li>
+                  <li class="active">Dashboard</li>
+              </ol>
+          </section>
+
+          <!-- Main content -->
+          <section class="content">
+
+              <div class="row">
+
+                    <div class="col-lg-4 col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box bg-orange">
+                                <div class="inner">
+                                    <h3 id="acctbalance" v-cloak><sup style="font-size: 20px">KES</sup> {{accountBalance}}</h3>
+                                    <p>Account Balance</p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa fa-balance-scale"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                  <div class="col-lg-4 col-xs-6">
+                      <!-- small box -->
+                      <div class="small-box bg-mine">
+                          <div class="inner">
+                              <h3 id="amouninvested" v-cloak><sup style="font-size: 20px">KES</sup> {{amountInvested}} </h3>
+                              <p>Amount Invested</p>
+                          </div>
+                          <div class="icon">
+                              <i class="fa fa-money"></i>
+                          </div>
+                      </div>
+                  </div><!-- ./col -->
+                  <div class="col-lg-4 col-xs-6">
+                      <!-- small box -->
+                      <div class="small-box bg-orange">
+                          <div class="inner">
+                              <h3 id="amountrepaid" v-cloak><sup style="font-size: 20px">KES</sup>{{amountPaidBack}}</h3>
+                              <p>Amount Repaid</p>
+                          </div>
+                          <div class="icon">
+                              <i class="fa fa-database"></i>
+                          </div>
+                      </div>
+                  </div><!-- ./col -->
+                  <!-- <div class="col-lg-3 col-xs-6"> -->
+                      <!-- small box -->
+                      <!-- <div class="small-box bg-purple">
+                          <div class="inner">
+                              <h3 id="revenue" v-cloak><sup style="font-size: 20px">KES</sup></h3>
+                              <p>Revenue</p>
+                          </div>
+                          <div class="icon">
+                              <i class="fa fa-calculator"></i>
+                          </div>
+                      </div> -->
+                  <!-- </div>./col -->
+
+
+              </div>
+              <div class="row">
+                <section class="col-md-12">
+                 
+                 
+                        <div class="nav-tabs-custom">
+                            <ul class="nav nav-tabs pull-right ui-sortable-handle">
+                                <li class="pull-left header"><i class="fa fa-cash"></i> Investment opportunities</li>
+                            </ul>
+                            <div class="">
+                                <div class="tab-pane active">
+
+              <div class="" v-for="post in selectedPosts" v-cloak>
+                    <figure class="snip1208">
+                            <img :src="'https:/ticketsoko.com/zaka/api/uploads/'+ post.image" class="postimage" alt="sample66"/>
+                            <figcaption>
+                              <h3>{{post.title}}</h3>
+                              <p>Name: {{post.name}}</p>
+                              <p class="">
+                              About: {{post.description}}
+                              </p>
+                              <p>Category: {{post.category}}</p>
+                              <p>Goal: {{post.amount}}</p>
+                              <p>Location: {{post.location}}</p>
+                              <button class="invest-button">Invest Now</button>
+                              <a v-bind:href="'singlepost.html' +  '?postId=' + post.id" class="yolo">Learn More</a>
+                            </figcaption><a href="#"></a>
+                          </figure>
+
+                         
+
+              </div>
+                                    <!-- <div class="chart" id="chart1"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+
+          </div>
+
+              <div class="row">
+
+                  <section class="col-md-12">
+                      <div class="nav-tabs-custom">
+                          <ul class="nav nav-tabs pull-right ui-sortable-handle">
+                              <li class="pull-left header"><i class="fa fa-cash"></i> Investments chart</li>
+                          </ul>
+                          <div class="tab-content">
+                              <div class="tab-pane active">
+                                  <div class="chart" id="chart1"></div>
+                              </div>
+                          </div>
+                      </div>
+                  </section>
+
+              </div><!-- ./row -->
+
+
+          </section>
+      </div>
+     <div>
+
+                     <div>
+<div class="modal fade" id="DonateModal" tabindex="-1" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <div class="">
+                    <div class="form-group">
+                        <label for="text">Amount</label>
+                        <input type="text" class="form-control" id="comment" v-model="cashmoney">
+                      </div>
+                      <div class="form-group">
+                        <label for="number">Phone Number</label>
+                        <input type="number" class="form-control" id="amnt" v-model="phoneno">
+                      </div>
+                      <div class="form-group" v-if="othernumber">
+                        <label for="number">Alternative Number</label>
+                        <input type="number" class="form-control" id="amnt"  v-model="phoneno">
+                      </div>
+                      <div class="form-group">
+                        <!-- <label for="number">Amount</label> -->
+                        <input type="checkbox" id="amnt" v-model="othernumber"> use other number
+                      </div>
+                </div>
+            </div>
+            <div class="modal-footer text-align-center">
+                <p>Registration(one time): {{registration}}</p>
+                 <p>Total: {{ parseInt(cashmoney) + parseInt(registration)}}</p>
+                <button type="button" class="btn btn-primary" @click="payme()"> <span v-if="loading" class="spinner"><i class="fa fa-spinner fa-spin"></i></span>Load Account</button>
+                <div class="spacer-20"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<!-- here -->
+</div>
+            <footer class="main-footer">
+          <!-- Default to the left -->
+          &copy; <strong>Zaka | Investment Platform</strong> - 2018      </footer>
+
+  <div/>
+</div>
+</div>
+<!-- </div> -->
+
+
+  <script src="plugins/jquery/jQuery-2.1.4.min.js" type="text/javascript"></script>
+  <!-- Bootstrap 3.3.2 JS -->
+  <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+  <!-- FastClick -->
+  <script src="plugins/fastclick.min.js" type="text/javascript"></script>
+  <!-- AdminLTE App -->
+  <script src="bootstrap/js/app.min.js" type="text/javascript"></script>
+
+  <script src="plugins/sweetalert/sweetalert.min.js" type="text/javascript"></script>
+
+  <script src="bootstrap/js/functions.js" type="text/javascript"></script>
+
+
+  <!-- Morris -->
+  <script src="js/raphael-min.js" type="text/javascript"></script>
+  <script src="js/morris.min.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+  <script src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/alertify.js"></script>
+
+  <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios@0.12.0/dist/axios.min.js"></script>
+<!-- <script src="https://unpkg.com/lodash@4.13.1/lodash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script> -->
+<!-- <script src="https://unpkg.com/vue-router"></script> -->
+<script>
+var app = new Vue({
+  el: "#app",
+  data: {
+    name: "",
+    account: "",
+    id: "",
+    accountBalance: "",
+    amountInvested: "",
+    amountPaidBack: "",
+    totalRevenue: "",
+    test: "",
+    cashmoney: 0,
+    phoneno: "",
+    randstring: "",
+    loading: false,
+    othernumber: false,
+    investorProfilePicture: "",
+    posts: [],
+    charts: [],
+    data: [],
+    registration: 1000,
+    selectedPosts: [],
+    waiting: true,
+    registrationStatus: ''
+  },
+  methods: {
+    payme: function() {
+      if (this.phoneno == "" || this.cashmoney == "" || this.cashmoney == 0) {
+        $("#DonateModal").modal("hide");
+        alertify.alert("please fill the form before proceeding");
+        this.phoneno = "";
+        this.cashmoney = "";
+        setTimeout(() => {
+          $("#DonateModal").modal("show");
+        }, 2000);
+
+        return;
+      }
+      this.loading = true;
+      this.randstring = (Math.random() + 1)
+        .toString(36)
+        .substring(5)
+        .toUpperCase();
+      console.log(this.phoneno);
+      const url = "https://ticketsoko.com/zaka/api/index.php?function=pay";
+      var formData = new FormData();
+      formData.append("phoneNumber", this.phoneno);
+      formData.append("amount", this.cashmoney);
+      formData.append("transactionCode", this.randstring);
+      console.log(this.randstring);
+      console.log(formData);
+      fetch(url, {
+        method: "POST",
+        body: formData
+      }).then(function(response) {
+        setTimeout(() => {
+          if (response.statusText == "OK") {
+            this.loading = false;
+            $("#DonateModal").modal("hide");
+
+            alertify.alert(
+              "Push Notification sent to your Phone to Load Your wallet"
+            );
+          }
+          console.log(response);
+        }, 3000);
+      });
+    },
+    getInvestorInformation: function() {
+      axios
+        .get(
+          `https://ticketsoko.com/zaka/api/index.php?function=getInvestors&keyword=${
+            this.id
+          }`
+        )
+        .then(response => {
+          response.data.data.forEach(element => {
+            this.investorProfilePicture = element.image;
+            console.log(element.image);
+            this.waiting = false;
+          });
+          console.log("I am here", response);
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    },
+    getInvestorDetail: function() {
+      this.account = Cookies.get('phone');
+      localStorage.setItem("number", this.account);
+      this.name = Cookies.get('name')
+      this.id = Cookies.get('uid')
+      fetch(
+        `https://ticketsoko.com/zaka/api/index.php?function=InvestorsDashboardData&accountNumber=${
+          this.account
+        }`
+      )
+        .then(response => response.json())
+        .then(data => {
+          var formatter = new Intl.NumberFormat();
+          this.accountBalance = formatter.format(data.data.accountBalance);
+          this.amountInvested = formatter.format(data.data.totalAmountInvested);
+          this.amountPaidBack = formatter.format(data.data.totalAmountPaidBack);
+          this.totalRevenue = formatter.format(data.data.totalRevenue);
+          this.waiting = false;
+        })
+        .catch(function(err) {
+          console.log("Fetch Error :-S", err);
+        });
+    },
+
+    populateChart: function() {
+      var clean;
+      console.log("Number" + this.id);
+      axios
+        .post(
+          `https://ticketsoko.com/zaka/api/index.php?function=investorData&keyword=${
+            this.id
+          }`
+        )
+        .then(result => {
+          var data = JSON.stringify(result.data.data);
+          var final = JSON.parse(data);
+          //this.data = final
+          final.forEach(element => {
+            this.data.push(element);
+            this.waiting = false;
+          });
+
+          var IndexToMonth = [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec"
+          ];
+          new Morris.Area({
+            element: "chart1",
+            data: this.data,
+            // data: [
+
+            //     { days: '2017-12-14', value: 0 },
+
+            // ],
+            // The name of the data record attribute that contains x-values.
+            xkey: "days",
+            // A list of names of data record attributes that contain y-values.
+            ykeys: ["value"],
+            // Labels for the ykeys -- will be displayed when you hover over the
+            // chart.
+            labels: ["Investments"],
+            pointFillColors: ["#FF5500"],
+            lineColors: ["#DDD"],
+            hideHover: "auto",
+            gridIntegers: true,
+            resize: true,
+            xLabels: "days",
+            xLabelFormat: function(x) {
+              var month = IndexToMonth[x.getMonth()];
+              var year = x.getFullYear();
+              var day = x.getDate();
+              return day + " " + month;
+              //return  year + ' '+ day +' ' + month;
+            },
+            dateFormat: function(x) {
+              var month = IndexToMonth[new Date(x).getMonth()];
+              var year = new Date(x).getFullYear();
+              var day = new Date(x).getDate();
+              return day + " " + month;
+              //return year + ' '+ day +' ' + month;
+            }
+          });
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    },
+    checkLoggedUser (){
+      if (!Cookies.get('name')) {
+        alertify.alert("You are not logged in").then(()=>{
+          window.location.href = "/logme.html"
+        })
+
+      }else{
+    // alertify.alert("Welcome", Cookies.get('name'))
+      }
+    },
+    getEntrepreneur: function() {
+      axios
+        .post(
+          "https://ticketsoko.com/zaka/api/index.php?function=getEntrepreneur"
+        )
+        .then(response => {
+          console.log(" ENT", response.data.data);
+          response.data.data.forEach(el => {
+            console.log("El", el);
+            //this.entrepreneurs.push(el.Entrepreneur);
+
+            if (el.CampaignPost) {
+              el.CampaignPost.forEach(campaign => {
+                //console.log("campaign", campaign)
+                this.posts.push(campaign.CampaignPost);
+                //this.selectedPosts = this.posts.splice(5)
+                //console.log("SELPOSTS", this.selectedPosts)
+                console.log("SELPOSTS", this.posts.length);
+              });
+              this.selectedPosts = this.posts;
+              console.log("SELPOSTS", this.selectedPosts);
+              console.log("SELPOSTS", this.posts.length);
+            } else {
+              //this.posts.push({});
+            }
+          });
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    }
+  },
+  computed: {
+    createUrls: function() {
+      return `?objects=${this.account}&names=${this.name}&id=${this.id}`;
+    }
+  },
+
+  created: function() {
+    this.getInvestorDetail();
+    this.getInvestorInformation();
+  },
+  mounted: function() {
+    this.createUrls;
+    this.populateChart();
+    this.phoneno = localStorage.getItem("number" || "");
+  },
+  beforeMount: function() {
+    this.getEntrepreneur();
+    this.checkLoggedUser()
+  }
+});
+</script>
+
+
+</html>

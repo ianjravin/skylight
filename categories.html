@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Zaka - Investment opportunities</title>
+<meta name="description" content="This is the helping website to help each other" />
+<meta name="keywords" content="Best helping, Helping concept, MMM" />
+<meta name="author" content="" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<link href="vendor/magnific/magnific-popup.css" rel="stylesheet" type="text/css" />
+<link href="vendor/owl-carousel/css/owl.carousel.css" rel="stylesheet" type="text/css" />
+<link href="vendor/owl-carousel/css/owl.theme.css" rel="stylesheet" type="text/css" />
+<link href="css/custom.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="main.css">
+<link href="colors/color3.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/modernizr.js"></script>
+<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<!-- Bootstrap core CSS -->
+<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.7.0/css/bootstrap.min.css" rel="stylesheet"> -->
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+<script>
+
+</script>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.5.0/alertify.default.min.css'/>
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<!-- Bootstrap tooltips -->
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script> -->
+<!-- Bootstrap core JavaScript -->
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+<!-- MDB core JavaScript -->
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script> -->
+<style>
+       [v-cloak] {
+      display: none;
+    }
+
+ .modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: table;
+  transition: opacity .3s ease;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.modal-container {
+  width: 300px;
+  margin: 0px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+  transition: all .3s ease;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.desc{
+/* width: 250px; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.modal-header h3 {
+  margin-top: 0;
+  color: #42b983;
+}
+
+.modal-body {
+  margin: 20px 0;
+}
+
+.modal-default-button {
+  float: right;
+}
+figure.snip1208 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: left;
+  font-size: 16px;
+}
+figure.snip1208 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+figure.snip1208 img {
+  max-width: 100%;
+  vertical-align: top;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+figure.snip1208 figcaption {
+  padding: 25px;
+  position: relative;
+}
+figure.snip1208 .date,
+figure.snip1208 i {
+  background-color: #1abc9c;
+  top: 25px;
+  color: #fff;
+  left: 25px;
+  min-height: 60px;
+  min-width: 60px;
+  position: absolute;
+  text-align: center;
+}
+figure.snip1208 .date {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+figure.snip1208 .date span {
+  display: block;
+  line-height: 30px;
+}
+figure.snip1208 .date .month {
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+figure.snip1208 i {
+  line-height: 60px;
+  font-size: 30px;
+  -webkit-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.yolo {
+  border: medium none;
+  padding: 10px 20px;
+  background-color: #4B0082;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+figure.snip1208:hover img,
+figure.snip1208.hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.yolo {
+  background-color: #117964;
+}
+
+/*
+ * The following styles are auto-applied to elements with
+ * transition="modal" when their visibility is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+</style>
+</head>
+
+<body>
+    <div class="site-header-wrapper">
+        <header></header>
+        <script type="text/javascript" src="js/modernizr.js"></script>
+        <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+    </div>
+    <div id="app">
+    <div class="body">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              </div>
+              <div class="navbar-collapse collapse">
+                  <div class="nav navbar-nav">
+                      <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                  </div>
+                  <ul class="nav navbar-nav navbar-center">
+                      <li><a v-bind:href="'categories.html' + createUrls">Invest</a></li>
+
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+
+
+                      <li>
+                          <a v-bind:href="'investor-dashboard/index.html' + createUrls" class="navigateto"  role="button" aria-haspopup="true" aria-expanded="false">My Account </a>
+                                            </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+        <div class="body">
+        <!-- Hero Area -->
+        <div class="hero-area">
+            <div class="page-banner parallax" style="background-image:url('images/cont.jpg' );">
+                <div class="container">
+                    <div class="page-banner-text">
+                        <h1 class="block-title">Investment opportunities</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MAIN CONTENT -->
+        <div id="main-container">
+            <div class="content">
+                <div class="container">
+                    <div class="grid-filter">
+                        <ul class="nav nav-pills sort-source" data-sort-id="gallery" data-option-key="filter">
+                            <li data-option-value="*" class="active">
+                                <a href="#">
+                                    <i class="fa fa-th"></i>
+                                    <span>Show All</span>
+                                </a>
+                            </li>
+                            <li data-option-value=".education">
+                                <a href="#">
+                                    <span>Education</span>
+                                </a>
+                            </li>
+                            <li data-option-value=".wild-life">
+                                <a href="#">
+                                    <span>Short Term Loans</span>
+                                </a>
+                            </li>
+                            <li data-option-value=".environment">
+                                <a href="#">
+                                    <span>Health</span>
+                                </a>
+                            </li>
+                            <li data-option-value=".water">
+                                <a href="#">
+                                    <span>Food</span>
+                                </a>
+                            </li>
+                            <li data-option-value=".human-rights">
+                                <a href="#">
+                                    <span>Agriculture</span>
+                                </a>
+                            </li>
+                            <li data-option-value=".small-business">
+                                <a href="#">
+                                    <span>Business</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div>
+                                <div class="col-md-4 col-sm-6"  v-for="post in posts" v-cloak>
+                                                <figure class="snip1208">
+                                                        <img :src="'https:/ticketsoko.com/zaka/api/uploads/'+ post.image" alt="sample66"/>
+                                                        <!-- <div class="date"><span class="day">28</span><span class="month">Oct</span></div><i class="ion-film-marker"></i> -->
+                                                        <figcaption>
+                                                          <h3>{{post.title}}</h3>
+                                                          <p class="desc">
+                                                           {{post.description}}
+                                                          </p>
+                                                          <a v-bind:href=" '/single.html' + createUrls + '&postId=' + post.id" class="yolo">View</a>
+                                                        </figcaption><a href="#"></a>
+                                                      </figure>
+                                                      <!-- <figure class="snip1208 hover">
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample9.jpg" alt="sample9"/>
+                                                        <div class="date"><span class="day">17</span><span class="month">Nov</span></div><i class="ion-headphone"> </i>
+                                                        <figcaption>
+                                                          <h3>An Abstract Post Heading</h3>
+                                                          <p>
+                                                            Sometimes the surest sign that intelligent life exists elsewhere in the universe is that none of it has tried to contact us.
+                                                          </p>
+                                                          <button>Read More</button>
+                                                        </figcaption><a href="#"></a>
+                                                      </figure>
+                                                      <figure class="snip1208">
+                                                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample6.jpg" alt="sample6"/>
+                                                        <div class="date"><span class="day">01</span><span class="month">Dec</span></div><i class="ion-checkmark"> </i>
+                                                        <figcaption>
+                                                          <h3>Down with this sort of thing</h3>
+                                                          <p>
+                                                            I don't need to compromise my principles, because they don't have the slightest bearing on what happens to me anyway.
+                                                          </p>
+                                                          <button>Read More</button>
+                                                        </figcaption><a href="#"></a>
+                                                      </figure> -->
+                                              <!-- <div class="box box-primary">
+                                                  <div class="box-header with-border">
+                                                      <h3 class="box-title">Investments</h3>
+                                                      <div class="box-tools pull-right">
+                                                      </div>
+                                                  </div>
+                        
+                                                  <div class="box-body" >
+                        
+                                                        <ul class="products-list product-list-in-box">
+                          
+                          
+                                                            <li class="item" v-for="post in posts" v-cloak>
+                                                                <div class="product-img">
+                                                                    <img :src="'https:/ticketsoko.com/zaka/api/uploads/'+ post.image" style="height: auto !important;" />
+                                                                </div>
+                                                                <div class="product-info">
+                                                                    <a v-bind:href="'/single.html'+ createUrls + '&postid='+ post.id" target="_blank" class="product-title navigateto"> {{post.title}}
+                                                                       
+                                                                    </a>
+                                                                    <span class="product-description">
+                                                                            {{post.date}}
+                                                                            </span>
+                                                                </div>
+                                                            </li>
+                          
+                                                        </ul>
+                                                    </div>
+                        
+                                                  <div class="box-footer text-center">
+                                                      <a v-bind:href="'/categories.html' + createUrls" class="uppercase navigateto">View all</a>
+                                                  </div>
+                        
+                        
+                                              </div> -->
+                        
+                                        <!-- <div class="card-container">
+                                            <div class="card">
+                                                <div class="front">
+                                                    <div class="cover">
+                                                        <img src="https://ticketsoko.com/logo.png"  />
+                                                    </div>
+                                                    <div class="user">
+                                                        <img class="img-circle" :src="'https:/ticketsoko.com/zaka/api/uploads/'+ post.image" />
+                                                    </div>
+                                                    <div class="content">
+                                                        <div class="main">
+                                                            <h3 class="name">{{post.title}}</h3>
+                                                            <p class="profession">{{post.category}} ({{post.location}})</p>
+                                                            <p class="profession"></p>
+                                                            <p class="text-center">{{post.description}}</p>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="back">
+                                                    <div class="content">
+                                                        <div class="main">
+                                                            <h4 class="text-center"> Description</h4>
+                                                            <p class="text-center">{{post.description}}</p>
+                                                            <div class="stats-container">
+                                                                <div class="stats">
+                                                                    <h4>{{post.amount}}</h4>
+                                                                    <p>KES</p>
+                                                                </div>
+                                                                <div class="stats">
+                
+                                                                </div>
+                                                                <div class="stats pull-right">
+                                                                    <h4>{{post.Duration}} Day(s)</h4>
+                                                                    <p>Duration</p>
+                                                                </div>
+                                                                <div class="footer">
+                                                                        <button class="btn btn-default" type="button" name="button" @click="InvestNow(post)">Invest Now</button>
+                                                                       
+                                
+                                                                    </div> 
+                                                            </div>
+                                                          
+                                                        </div>
+                                    
+                                                    </div>
+                                                    
+                                                </div>
+                                               
+                                            </div>
+                                            
+                                        </div> -->
+                                        <!-- here -->
+                                      
+                                    </div>
+                             
+                                    
+                    <div>
+                           
+                                
+                    </div>
+                               
+                                    </div>
+                                      </div>
+                                        </div>
+                                <!-- Footer -->
+                                
+                                <div class="site-footer parallax parallax3"
+                                style="background-image:url('images/parallax3.jpg')">
+                               <div class="container">
+                                   <div class="row">
+                                       <div class="col-md-4 col-sm-4">
+                                           <div class="widget footer_widget">
+                                               <h4 class="widgettitle">About Zaka</h4>
+                                               <p><img src="images/logo.png" alt="logo"/></p>
+                                               <p>Zaka International is an SME investment company
+                                                   that aims to bridge short-term financing gap
+                                                   of small and medium sized enterprises in Kenya
+                                                   so that they attain scale to large businesses
+                                                   further contributing to wealth generation and
+                                                   employment creation in Kenya and beyond.</p>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-4 col-sm-4">
+                                           <div class="widget footer_widget widget_links">
+                                               <h4 class="widgettitle">Links Might Help You</h4>
+                                               <ul>
+                                                   <li><a href="opp.html">Opportunities </a></li>
+                                                   <li><a href="about.html">Our mission</a></li>
+                                                   <li><a href="faq.html">Have Questions?</a></li>
+                                                   <li><a href="contact.html">Talk to us</a></li>
+                                               </ul>
+                                           </div>
+                                       </div>
+                                       <div class="col-md-4 col-sm-4">
+                                           <div class="widget footer_widget">
+                                               <h4 class="widgettitle">STAY CONNECTED</h4>
+                                               <p>Contact us at : +254-722-940-878
+                                               <h4 class="widgettitle"
+                                                   style="text-transform:lowercase;">
+                                                   info@zaka.co.ke</h4>
+                                               <ul class="social-icons-rounded social-icons-colored">
+                                                   <a href="#" class="fa fa-facebook"></a>
+                                                   <a href="#" class="fa fa-twitter"></a>
+                                                   <a href="#" class="fa fa-linkedin"></a>
+                                                   <a href="#" class="fa fa-google-plus"></a>
+                                               </ul>
+                                               </p>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="site-footer-bottom">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="copyrights-col-left">
+                                                <p>&copy; 2018 <b>Zaka</b>. All Rights Reserved</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6"></div>
+                                        <div class="copyrights-col-right">
+                                            <ul class="footer-menu">
+                                                <li><a href="#">Register with us</a></li>
+                                                <li><a href="#">Login now</a></li>
+                                                <li><a href="terms.html">Terms &amp; conditions</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                            </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+                <div>
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" data-backdrop="static">
+                        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <div class="">
+                                        <div class="form-group">
+                                            <label for="text">Amount</label>
+                                            <input type="number" class="form-control" id="comment" v-model="amount">
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="number">Interest</label>
+                                            <input type="number" class="form-control" id="amnt" v-model="interest">
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="number">Comment</label>
+                                            <input type="text" class="form-control" id="amnt"  v-model="comment">
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer text-align-center">
+                                    <button type="button" class="btn btn-large btn-block btn-default" @click="makeOffer()"> <span v-if="loading" class="spinner"><i class="fa fa-circle-o-notch fa-spin"></i></span>Make Offer</button>
+                                    <div class="spacer-20"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+                <!-- <div v-if="showModal">
+                    <transition name="modal">
+                      <div class="modal-mask">
+                        <div class="modal-wrapper">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" @click="showModal=false">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title">Make Offer</h4>
+                              </div>
+                              <div class="modal-body">
+                                    <div class="row">
+
+
+                                            <div class="col-md-4 col-sm-4 donate-amount-option">
+                                                <h4>Amount</h4>
+                                                <div class="input-group">
+                                                    <input type="number" class="form-control" v-model="amount">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 donate-amount-option">
+                                                <h4>Interest</h4>
+                                                <div class="input-group">
+                      
+                                                    <input type="number" class="form-control" v-model="interest">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 donate-amount-option">
+                                                    <h4>Comment</h4>
+                                                    <div class="input-group">
+                          
+                                                        <input type="text" class="form-control" v-model="comment">
+                                                    </div>
+                                                </div>
+                                        </div>
+                      
+                                <button type="button" @click="makeOffer" class="btn btn-large btn-block btn-default"> <span v-if="loading" class="spinner"><i class="fa fa-circle-o-notch fa-spin"></i></span>Continue....</button>
+                        
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </transition>
+                  </div> -->
+
+            </div>
+<script src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/alertify.js"></script>            
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios@0.12.0/dist/axios.min.js"></script>
+<script src="https://unpkg.com/lodash@4.13.1/lodash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            entrepreneurs: [],
+            posts: [],
+            entrepreneurPosts: [],
+            url:'https://ticketsoko.com/zaka/api/uploads/lenana.JPG',
+            interest : '',
+            amount: '',
+            showModal: false,
+            investorId : '',
+            postId: '',
+            comment: '',
+            id: '',
+            loading: false
+        },
+        methods: {
+            InvestNow: function (post) {
+                $("#myModal").modal('show')
+              //this.showModal = true   
+              let queryString = decodeURIComponent(window.location.search);
+               queryString = queryString.substring(1).split("&");
+               let details = queryString[0].split("=");
+               this.investorId =  decodeURI(details[1]);
+               this.postId = post.id
+               
+               
+
+            },
+            makeOffer: function(){
+                this.loading = true
+                 console.log(this.investorId, this.postId);
+                const formData = new FormData
+                formData.append('investor_id', this.id)
+                formData.append('post_id', this.postId)
+                formData.append('amount', this.amount)
+                formData.append('interest', this.interest)
+                formData.append('comments', this.comment)
+               
+                setTimeout(() => {
+               axios.post('https://ticketsoko.com/zaka/api/index.php?function=createOffer', formData)
+                .then((response) => {
+                    console.log(response)
+                    //alertify.logPosition("top left");
+                    alertify.log(response.data.message);
+                    //alert(response.data.message)
+                    this.loading = false
+                    $("#myModal").modal('hide')
+                    this.amount = '' 
+                    this.comment = ''
+                    this.interest = ''  
+                }).catch((err) => {
+                    alertify.error(err);
+                    //console.log(err);   
+                });
+
+ 
+                }, 3000);
+                
+            },
+            getEntrepreneur: function () {
+                axios.post('https://ticketsoko.com/zaka/api/index.php?function=getEntrepreneur')
+                    .then((response) => {
+                        console.log(response.data.data)
+                        response.data.data.forEach(el => {
+                            this.entrepreneurs.push(el.Entrepreneur);
+
+                            if (el.CampaignPost) {
+                                el.CampaignPost.forEach(campaign => {
+                                    this.posts.push(campaign.CampaignPost)
+                                    console.log(this.posts);
+
+                                });
+
+                            } 
+                            else {
+                                this.posts.push({})
+
+                            }
+
+                        });
+
+                    }).catch((err) => {
+                        console.log(err);
+
+
+                    });
+            },
+            // getEntrepreneurPosts: function (e) {
+
+            //     const entId = e.target.getAttribute('data-ent-id');
+            //     const entPosts = this.posts.filter(post => {
+            //         return post.entrepreneur_id === entId;
+            //     })
+            //     this.entrepreneurPosts = entPosts
+
+            // },
+            getInvestorDetail: function (){
+      let queryString = decodeURIComponent(window.location.search);
+      queryString = queryString.substring(1).split("&");
+      let details = queryString[0].split("=");
+      this.account =  decodeURI(details[1]);
+     details = queryString[1].split("=");
+     this.name =  decodeURI(details[1]);
+     details = queryString[2].split("="); 
+     this.id = decodeURI(details[1]);
+
+      },
+    //  createUrls: function () {
+    //     var links = [...document.getElementsByClassName('navigateto')]
+    //     links.forEach(element => {
+    //         element.href += `?objects=${this.account}&names=${this.name}&id=${this.id}`
+    //         console.log(element.href)            
+    //     });
+    //   },
+     
+        },
+        computed: {
+            createUrls: function () {
+                // var links = [...document.getElementsByClassName('navigateto')]
+                // links.forEach(element => {
+                //     element.href += `?objects=${this.account}&names=${this.name}&id=${this.id}`
+                //     //console.log(element.href)  
+                    return `?objects=${this.account}&names=${this.name}&id=${this.id}`;      
+            }
+      },
+        beforeMount: function (){
+            this.getInvestorDetail()
+           // this.getEntrepreneurPosts()
+        },
+        created: function () {
+            this.getEntrepreneur()
+            //this.submitOffer()
+        },
+        mounted:function() {
+            this.createUrls
+        }
+    })
+</script>

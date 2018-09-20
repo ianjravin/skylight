@@ -1,0 +1,1922 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="_token" content="W0ggcm3leMeZkpoOzNpbaICgIiRL5qrO6FIPxU2e" />
+    <title>Zaka Admin</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome Icons -->
+    <link href="public/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- Ionicons -->
+    <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App css -->
+    <link href="admin/css/app.css" rel="stylesheet" type="text/css" />
+    <!-- IcoMoon CSS -->
+    <link href="css/icomoon.css" rel="stylesheet">
+    <link href="admin/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <link href="admin/skin-red.min.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="#" />
+    <link href='//fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href="css/sweetalert.css" rel="stylesheet" type="text/css" />
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="plugins/morris.css" rel="stylesheet" type="text/css" />
+    <link href="plugins/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="/investor-dashboard/css/font-face.css" rel="stylesheet" media="all"> -->
+    <link href="/investor-dashboard/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="/investor-dashboard/vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="/investor-dashboard/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <link href="/investor-dashboard/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="/investor-dashboard/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="/investor-dashboard/vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="/investor-dashboard/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="/investor-dashboard/vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="/investor-dashboard/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="/investor-dashboard/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+    <link href="/investor-dashboard/css/theme.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+        }
+
+        [v-cloak] {
+            display: none;
+        }
+
+        #DIV_1 {
+            bottom: 0px;
+            box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px 0px;
+            box-sizing: border-box;
+            color: rgb(107, 87, 75);
+            height: 555px;
+            left: 0px;
+            position: relative;
+            right: 0px;
+            text-align: justify;
+            text-decoration: none solid rgb(107, 87, 75);
+            text-size-adjust: 100%;
+            top: 0px;
+            width: 600px;
+            column-rule-color: rgb(107, 87, 75);
+            perspective-origin: 300px 263px;
+            transform-origin: 300px 263px;
+            caret-color: rgb(107, 87, 75);
+            background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box padding-box;
+            border: 2px solid rgb(128, 0, 128) border-radius: 6px 6px 6px 6px font: normal normal 400 normal 14px / 20px Gotham outline: rgb(107, 87, 75) none 0px;
+        }
+
+        /*#DIV_1*/
+
+        #DIV_1:after {
+            box-sizing: border-box;
+            color: rgb(107, 87, 75);
+            text-align: justify;
+            text-decoration: none solid rgb(107, 87, 75);
+            text-size-adjust: 100%;
+            column-rule-color: rgb(107, 87, 75);
+            caret-color: rgb(107, 87, 75);
+            border: 0px none rgb(107, 87, 75);
+            font: normal normal 400 normal 14px / 20px Gotham;
+            outline: rgb(107, 87, 75) none 0px;
+        }
+
+        /*#DIV_1:after*/
+
+        #DIV_1:before {
+            box-sizing: border-box;
+            color: rgb(107, 87, 75);
+            text-align: justify;
+            text-decoration: none solid rgb(107, 87, 75);
+            text-size-adjust: 100%;
+            column-rule-color: rgb(107, 87, 75);
+            caret-color: rgb(107, 87, 75);
+            border: 0px none rgb(107, 87, 75);
+            font: normal normal 400 normal 14px / 20px Gotham;
+            outline: rgb(107, 87, 75) none 0px;
+        }
+
+        /*#DIV_1:before*/
+
+        #DIV_2 {
+            box-sizing: border-box;
+            color: rgb(255, 255, 255);
+            height: 43px;
+            text-align: center;
+            text-decoration: none solid rgb(255, 255, 255);
+            text-size-adjust: 100%;
+            width: 596px;
+            column-rule-color: rgb(255, 255, 255);
+            perspective-origin: 298px 21.5px;
+            transform-origin: 298px 21.5px;
+            caret-color: rgb(255, 255, 255);
+            background: rgb(128, 0, 128) none repeat scroll 0% 0% / auto padding-box border-box;
+            border: 0px none rgb(255, 255, 255);
+            border-radius: 4px 4px 0 0;
+            font: normal normal 400 normal 14px / 20px Gotham;
+            outline: rgb(255, 255, 255) none 0px;
+            padding: 9px 6px;
+        }
+
+        /*#DIV_2*/
+
+        #DIV_2:after {
+            box-sizing: border-box;
+            clear: both;
+            color: rgb(255, 255, 255);
+
+            display: table;
+            height: 0px;
+            text-align: center;
+            text-decoration: none solid rgb(255, 255, 255);
+            text-size-adjust: 100%;
+            width: 0px;
+            column-rule-color: rgb(255, 255, 255);
+            perspective-origin: 0px 0px;
+            transform-origin: 0px 0px;
+            caret-color: rgb(255, 255, 255);
+            border: 0px none rgb(255, 255, 255);
+            font: normal normal 400 normal 14px / 20px Gotham;
+            outline: rgb(255, 255, 255) none 0px;
+        }
+
+        /*#DIV_2:after*/
+
+        #DIV_2:before {
+            box-sizing: border-box;
+            color: rgb(255, 255, 255);
+
+            display: table;
+            height: 0px;
+            text-align: center;
+            text-decoration: none solid rgb(255, 255, 255);
+            text-size-adjust: 100%;
+            width: 0px;
+            column-rule-color: rgb(255, 255, 255);
+            perspective-origin: 0px 0px;
+            transform-origin: 0px 0px;
+            caret-color: rgb(255, 255, 255);
+            border: 0px none rgb(255, 255, 255);
+            font: normal normal 400 normal 14px / 20px Gotham;
+            outline: rgb(255, 255, 255) none 0px;
+        }
+
+        /*#DIV_2:before*/
+
+        #BUTTON_3 {
+            background-position: 0px 0px;
+            color: rgb(97, 97, 97);
+            cursor: pointer;
+            display: block;
+            float: right;
+            height: 24px;
+            opacity: 0.9;
+            text-decoration: none solid rgb(97, 97, 97);
+            text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+            text-size-adjust: 100%;
+            text-transform: uppercase;
+            width: 24px;
+            column-rule-color: rgb(97, 97, 97);
+            perspective-origin: 12px 12px;
+            transform-origin: 12px 12px;
+            caret-color: rgb(97, 97, 97);
+            background: rgb(255, 255, 255) none repeat scroll 0px 0px / auto padding-box border-box;
+            border: 0px none rgb(97, 97, 97);
+            border-radius: 12px 12px 12px 12px;
+            font: normal normal 700 normal 21px / 21px Gotham;
+            margin: -14px -14px 0px 0px;
+            outline: rgb(97, 97, 97) none 0px;
+            padding: 2px;
+        }
+
+        /*#BUTTON_3*/
+
+        #BUTTON_3:after {
+            box-sizing: border-box;
+            color: rgb(97, 97, 97);
+            cursor: pointer;
+            text-decoration: none solid rgb(97, 97, 97);
+            text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+            text-size-adjust: 100%;
+            text-transform: uppercase;
+            column-rule-color: rgb(97, 97, 97);
+            caret-color: rgb(97, 97, 97);
+            border: 0px none rgb(97, 97, 97);
+            font: normal normal 700 normal 21px / 21px Gotham;
+            outline: rgb(97, 97, 97) none 0px;
+        }
+
+        /*#BUTTON_3:after*/
+
+        #BUTTON_3:before {
+            box-sizing: border-box;
+            color: rgb(97, 97, 97);
+            cursor: pointer;
+            text-decoration: none solid rgb(97, 97, 97);
+            text-shadow: rgb(255, 255, 255) 0px 1px 0px;
+            text-size-adjust: 100%;
+            text-transform: uppercase;
+            column-rule-color: rgb(97, 97, 97);
+            caret-color: rgb(97, 97, 97);
+            border: 0px none rgb(97, 97, 97);
+            font: normal normal 700 normal 21px / 21px Gotham;
+            outline: rgb(97, 97, 97) none 0px;
+        }
+
+        /*#BUTTON_3:before*/
+
+        #H4_4 {
+            box-sizing: border-box;
+            color: rgb(255, 255, 255);
+            height: 25px;
+            text-align: center;
+            text-decoration: none solid rgb(255, 255, 255);
+            text-size-adjust: 100%;
+            width: 584px;
+            column-rule-color: rgb(255, 255, 255);
+            perspective-origin: 292px 12.5px;
+            transform-origin: 292px 12.5px;
+            caret-color: rgb(255, 255, 255);
+            border: 0px none rgb(255, 255, 255);
+            font: normal normal 500 normal 18px / 25.7143px Gotham;
+            margin: 0px;
+            outline: rgb(255, 255, 255) none 0px;
+        }
+
+        /*#H4_4*/
+
+        #H4_4:after {
+            box-sizing: border-box;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            text-decoration: none solid rgb(255, 255, 255);
+            text-size-adjust: 100%;
+            column-rule-color: rgb(255, 255, 255);
+            caret-color: rgb(255, 255, 255);
+            border: 0px none rgb(255, 255, 255);
+            font: normal normal 500 normal 18px / 25.7143px Gotham;
+            outline: rgb(255, 255, 255) none 0px;
+        }
+
+        /*#H4_4:after*/
+
+        #H4_4:before {
+            box-sizing: border-box;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            text-decoration: none solid rgb(255, 255, 255);
+            text-size-adjust: 100%;
+            column-rule-color: rgb(255, 255, 255);
+            caret-color: rgb(255, 255, 255);
+            border: 0px none rgb(255, 255, 255);
+            font: normal normal 500 normal 18px / 25.7143px Gotham;
+            outline: rgb(255, 255, 255) none 0px;
+        }
+
+        /*#H4_4:before*/
+
+        #DIV_5 {
+            bottom: 0px;
+            box-sizing: border-box;
+            color: rgb(107, 87, 75);
+            height: 404px;
+            left: 0px;
+            position: relative;
+            right: 0px;
+            text-align: justify;
+            text-decoration: none solid rgb(107, 87, 75);
+            text-size-adjust: 100%;
+            top: 0px;
+            width: 596px;
+            column-rule-color: rgb(107, 87, 75);
+            perspective-origin: 298px 202px;
+            transform-origin: 298px 202px;
+            caret-color: rgb(107, 87, 75);
+            border: 0px none rgb(107, 87, 75);
+            font: normal normal 400 normal 14px / 20px Gotham;
+            outline: rgb(107, 87, 75) none 0px;
+            padding: 15px;
+        }
+
+        /*#DIV_5*/
+
+        #DIV_5:after {
+            box-sizing: border-box;
+            clear: both;
+            color: rgb(107, 87, 75);
+
+            display: table;
+            height: 0px;
+            text-align: justify;
+            text-decoration: none solid rgb(107, 87, 75);
+            text-size-adjust: 100%;
+            width: 0px;
+            column-rule-color: rgb(107, 87, 75);
+            perspective-origin: 0px 0px;
+            transform-origin: 0px 0px;
+            caret-color: rgb(107, 87, 75);
+            border: 0px none rgb(107, 87, 75);
+            font: normal normal 400 normal 14px / 20px Gotham;
+            outline: rgb(107, 87, 75) none 0px;
+        }
+
+        /*#DIV_5:after*/
+
+        #DIV_5:before {
+            box-sizing: border-box;
+            color: rgb(107, 87, 75);
+
+            display: table;
+            height: 0px;
+            text-align: justify;
+            text-decoration: none solid rgb(107, 87, 75);
+            text-size-adjust: 100%;
+            width: 0px;
+            column-rule-color: rgb(107, 87, 75);
+            perspective-origin: 0px 0px;
+            transform-origin: 0px 0px;
+            caret-color: rgb(107, 87, 75);
+            border: 0px none rgb(107, 87, 75);
+            font: normal normal 400 normal 14px / 20px Gotham;
+            outline: rgb(107, 87, 75) none 0px;
+        }
+
+        /*#DIV_5:before*/
+
+        #UL_6 {
+            box-sizing: border-box;
+            color: rgb(107, 87, 75);
+            height: 343px;
+            text-align: justify;
+            text-decoration: none solid rgb(107, 87, 75);
+            text-size-adjust: 100%;
+            width: 566px;
+            column-rule-color: rgb(107, 87, 75);
+            perspective-origin: 283px 171.5px;
+            transform-origin: 283px 171.5px;
+            caret-color: rgb(107, 87, 75);
+            border: 0px none rgb(107, 87, 75);
+            font: normal normal 400 normal 14px / 20px Gotham;
+            list-style: none outside none;
+            margin: 0px;
+            outline: rgb(107, 87, 75) none 0px;
+            padding: 10px;
+        }
+
+        /*#UL_6*/
+
+        #UL_6:after {
+            box-sizing: border-box;
+            color: rgb(107, 87, 75);
+            text-align: justify;
+            text-decoration: none solid rgb(107, 87, 75);
+            text-size-adjust: 100%;
+            column-rule-color: rgb(107, 87, 75);
+            caret-color: rgb(107, 87, 75);
+            border: 0px none rgb(107, 87, 75);
+            font: normal normal 400 normal 14px / 20px Gotham;
+            list-style: none outside none;
+            outline: rgb(107, 87, 75) none 0px;
+        }
+
+        /*#UL_6:after*/
+
+        #UL_6:before {
+            box-sizing: border-box;
+            color: rgb(107, 87, 75);
+            text-align: justify;
+            text-decoration: none solid rgb(107, 87, 75);
+            text-size-adjust: 100%;
+            column-rule-color: rgb(107, 87, 75);
+            caret-color: rgb(107, 87, 75);
+            border: 0px none rgb(107, 87, 75);
+            font: normal normal 400 normal 14px / 20px Gotham;
+            list-style: none outside none;
+            outline: rgb(107, 87, 75) none 0px;
+        }
+
+        /*#UL_6:before*/
+
+        #LI_7,
+        #LI_10,
+        #LI_16,
+        #LI_19,
+        #LI_22,
+        #LI_25 {
+            box-sizing: border-box;
+            color: rgb(107, 87, 75);
+            height: 41px;
+            text-align: justify;
+            text-decoration: none solid rgb(107, 87, 75);
+            text-size-adjust: 100%;
+            width: 546px;
+            column-rule-color: rgb(107, 87, 75);
+            perspective-origin: 273px 20.5px;
+            transform-origin: 273px 20.5px;
+            caret-color: rgb(107, 87, 75);
+            border: 0px none rgb(107, 87, 75);
+            font: normal normal 400 normal 14px / 20px Gotham;
+            list-style: none outside none;
+            outline: rgb(107, 87, 75) none 0px;
+        }
+
+        /*#LI_7, #LI_10, #LI_16, #LI_19, #LI_22, #LI_25*/
+
+        #LI_7:after,
+        #LI_10:after,
+        #LI_16:after,
+        #LI_19:after,
+        #LI_22:after,
+        #LI_25:after {
+            box-sizing: border-box;
+            clear: both;
+            color: rgb(107, 87, 75);
+
+            display: table;
+            height: 0px;
+            text-align: justify;
+            text-decoration: none solid rgb(107, 87, 75);
+            text-size-adjust: 100%;
+            width: 0px;
+            column-rule-color: rgb(107, 87, 75);
+            perspective-origin: 0px 0px;
+            transform-origin: 0px 0px;
+            caret-color: rgb(107, 87, 75);
+            border: 0px none rgb(107, 87, 75);
+            font: normal normal 400 normal 14px / 20px Gotham;
+            list-style: none outside none;
+            outline: rgb(107, 87, 75) none 0px;
+        }
+
+        /*#LI_7:after, #LI_10:after, #LI_16:after, #LI_19:after, #LI_22:after, #LI_25:after*/
+
+        #LI_7:before,
+        #LI_10:before,
+        #LI_16:before,
+        #LI_19:before,
+        #LI_22:before,
+        #LI_25:before {
+            box-sizing: border-box;
+            color: rgb(107, 87, 75);
+
+            display: table;
+            height: 0px;
+            text-align: justify;
+            text-decoration: none solid rgb(107, 87, 75);
+            text-size-adjust: 100%;
+            width: 0px;
+            column-rule-color: rgb(107, 87, 75);
+            perspective-origin: 0px 0px;
+            transform-origin: 0px 0px;
+            caret-color: rgb(107, 87, 75);
+            border: 0px none rgb(107, 87, 75);
+            font: normal normal 400 normal 14px / 20px Gotham;
+            list-style: none outside none;
+            outline: rgb(107, 87, 75) none 0px;
+        }
+
+        /*#LI_7:before, #LI_10:before, #LI_16:before, #LI_19:before, #LI_22:before, #LI_25:before*/
+
+        #LABEL_8,
+        #LABEL_11,
+        #LABEL_14,
+        #LABEL_17,
+        #LABEL_20,
+        #LABEL_23,
+        #LABEL_26,
+        #LABEL_29 {
+            bottom: 0px;
+            box-sizing: border-box;
+            color: rgb(128, 0, 128);
+            display: block;
+            float: left;
+            height: 36px;
+            left: 0px;
+            max-width: 100%;
+            min-height: 1px;
+            position: relative;
+            right: 0px;
+            text-align: left;
+            text-decoration: none solid rgb(128, 0, 128);
+            text-size-adjust: 100%;
+            top: 0px;
+            width: 273px;
+            column-rule-color: rgb(128, 0, 128);
+            perspective-origin: 136.5px 18px;
+            transform-origin: 136.5px 18px;
+            caret-color: rgb(128, 0, 128);
+            border: 0px none rgb(128, 0, 128);
+            font: normal normal 700 normal 19.2px / 36px GothamBook;
+            list-style: none outside none;
+            margin: 0px 0px 5px;
+            outline: rgb(128, 0, 128) none 0px;
+            padding: 0px 15px 0px 0px;
+        }
+
+        /*#LABEL_8, #LABEL_11, #LABEL_14, #LABEL_17, #LABEL_20, #LABEL_23, #LABEL_26, #LABEL_29*/
+
+        #LABEL_8:after,
+        #LABEL_11:after,
+        #LABEL_14:after,
+        #LABEL_17:after,
+        #LABEL_20:after,
+        #LABEL_23:after,
+        #LABEL_26:after,
+        #LABEL_29:after {
+            box-sizing: border-box;
+            color: rgb(128, 0, 128);
+            text-align: left;
+            text-decoration: none solid rgb(128, 0, 128);
+            text-size-adjust: 100%;
+            column-rule-color: rgb(128, 0, 128);
+            caret-color: rgb(128, 0, 128);
+            border: 0px none rgb(128, 0, 128);
+            font: normal normal 700 normal 19.2px / 36px GothamBook;
+            list-style: none outside none;
+            outline: rgb(128, 0, 128) none 0px;
+        }
+
+        /*#LABEL_8:after, #LABEL_11:after, #LABEL_14:after, #LABEL_17:after, #LABEL_20:after, #LABEL_23:after, #LABEL_26:after, #LABEL_29:after*/
+
+        #LABEL_8:before,
+        #LABEL_11:before,
+        #LABEL_14:before,
+        #LABEL_17:before,
+        #LABEL_20:before,
+        #LABEL_23:before,
+        #LABEL_26:before,
+        #LABEL_29:before {
+            box-sizing: border-box;
+            color: rgb(128, 0, 128);
+            text-align: left;
+            text-decoration: none solid rgb(128, 0, 128);
+            text-size-adjust: 100%;
+            column-rule-color: rgb(128, 0, 128);
+            caret-color: rgb(128, 0, 128);
+            border: 0px none rgb(128, 0, 128);
+            font: normal normal 700 normal 19.2px / 36px GothamBook;
+            list-style: none outside none;
+            outline: rgb(128, 0, 128) none 0px;
+        }
+
+        /*#LABEL_8:before, #LABEL_11:before, #LABEL_14:before, #LABEL_17:before, #LABEL_20:before, #LABEL_23:before, #LABEL_26:before, #LABEL_29:before*/
+
+        #LABEL_9,
+        #LABEL_12,
+        #LABEL_18,
+        #LABEL_24,
+        #LABEL_30 {
+            bottom: 0px;
+            box-sizing: border-box;
+            color: rgb(86, 74, 65);
+            display: block;
+            float: left;
+            height: 36px;
+            left: 0px;
+            max-width: 100%;
+            min-height: 1px;
+            position: relative;
+            right: 0px;
+            text-align: left;
+            text-decoration: none solid rgb(86, 74, 65);
+            text-size-adjust: 100%;
+            top: 0px;
+            width: 100%;
+            column-rule-color: rgb(86, 74, 65);
+            perspective-origin: 136.5px 18px;
+            transform-origin: 136.5px 18px;
+            caret-color: rgb(86, 74, 65);
+            border: 0px none rgb(86, 74, 65);
+            font: normal normal 700 normal 19.2px / 36px GothamBook;
+            list-style: none outside none;
+            margin: 0px 0px 5px;
+            outline: rgb(86, 74, 65) none 0px;
+            padding: 0px 15px 0px 0px;
+        }
+
+        /*#LABEL_9, #LABEL_12, #LABEL_18, #LABEL_24, #LABEL_30*/
+
+        #LABEL_9:after,
+        #LABEL_12:after,
+        #LABEL_18:after,
+        #LABEL_24:after,
+        #LABEL_30:after {
+            box-sizing: border-box;
+            color: rgb(86, 74, 65);
+            text-align: left;
+            text-decoration: none solid rgb(86, 74, 65);
+            text-size-adjust: 100%;
+            column-rule-color: rgb(86, 74, 65);
+            caret-color: rgb(86, 74, 65);
+            border: 0px none rgb(86, 74, 65);
+            font: normal normal 700 normal 19.2px / 36px GothamBook;
+            list-style: none outside none;
+            outline: rgb(86, 74, 65) none 0px;
+        }
+
+        /*#LABEL_9:after, #LABEL_12:after, #LABEL_18:after, #LABEL_24:after, #LABEL_30:after*/
+
+        #LABEL_9:before,
+        #LABEL_12:before,
+        #LABEL_18:before,
+        #LABEL_24:before,
+        #LABEL_30:before {
+            box-sizing: border-box;
+            color: rgb(86, 74, 65);
+            text-align: left;
+            text-decoration: none solid rgb(86, 74, 65);
+            text-size-adjust: 100%;
+            column-rule-color: rgb(86, 74, 65);
+            caret-color: rgb(86, 74, 65);
+            border: 0px none rgb(86, 74, 65);
+            font: normal normal 700 normal 19.2px / 36px GothamBook;
+            list-style: none outside none;
+            outline: rgb(86, 74, 65) none 0px;
+        }
+
+        /*#LABEL_9:before, #LABEL_12:before, #LABEL_18:before, #LABEL_24:before, #LABEL_30:before*/
+
+        #LI_13 {
+            box-sizing: border-box;
+            color: rgb(107, 87, 75);
+            height: 77px;
+            text-align: justify;
+            text-decoration: none solid rgb(107, 87, 75);
+            text-size-adjust: 100%;
+            width: 546px;
+            column-rule-color: rgb(107, 87, 75);
+            perspective-origin: 273px 38.5px;
+            transform-origin: 273px 38.5px;
+            caret-color: rgb(107, 87, 75);
+            border: 0px none rgb(107, 87, 75);
+            font: normal normal 400 normal 14px / 20px Gotham;
+            list-style: none outside none;
+            outline: rgb(107, 87, 75) none 0px;
+        }
+
+        /*#LI_13*/
+
+        #LI_13:after {
+            box-sizing: border-box;
+            clear: both;
+            color: rgb(107, 87, 75);
+
+            display: table;
+            height: 0px;
+            text-align: justify;
+            text-decoration: none solid rgb(107, 87, 75);
+            text-size-adjust: 100%;
+            width: 0px;
+            column-rule-color: rgb(107, 87, 75);
+            perspective-origin: 0px 0px;
+            transform-origin: 0px 0px;
+            caret-color: rgb(107, 87, 75);
+            border: 0px none rgb(107, 87, 75);
+            font: normal normal 400 normal 14px / 20px Gotham;
+            list-style: none outside none;
+            outline: rgb(107, 87, 75) none 0px;
+        }
+
+        /*#LI_13:after*/
+
+        #LI_13:before {
+            box-sizing: border-box;
+            color: rgb(107, 87, 75);
+
+            display: table;
+            height: 0px;
+            text-align: justify;
+            text-decoration: none solid rgb(107, 87, 75);
+            text-size-adjust: 100%;
+            width: 0px;
+            column-rule-color: rgb(107, 87, 75);
+            perspective-origin: 0px 0px;
+            transform-origin: 0px 0px;
+            caret-color: rgb(107, 87, 75);
+            border: 0px none rgb(107, 87, 75);
+            font: normal normal 400 normal 14px / 20px Gotham;
+            list-style: none outside none;
+            outline: rgb(107, 87, 75) none 0px;
+        }
+
+        /*#LI_13:before*/
+
+        #LABEL_15 {
+            bottom: 0px;
+            box-sizing: border-box;
+            color: rgb(86, 74, 65);
+            display: block;
+            float: left;
+            height: 72px;
+            left: 0px;
+            max-width: 100%;
+            min-height: 1px;
+            position: relative;
+            right: 0px;
+            text-align: left;
+            text-decoration: none solid rgb(86, 74, 65);
+            text-size-adjust: 100%;
+            top: 0px;
+            width: 273px;
+            column-rule-color: rgb(86, 74, 65);
+            perspective-origin: 136.5px 36px;
+            transform-origin: 136.5px 36px;
+            caret-color: rgb(86, 74, 65);
+            border: 0px none rgb(86, 74, 65);
+            font: normal normal 700 normal 19.2px / 36px GothamBook;
+            list-style: none outside none;
+            margin: 0px 0px 5px;
+            outline: rgb(86, 74, 65) none 0px;
+            padding: 0px 15px 0px 0px;
+        }
+
+        /*#LABEL_15*/
+
+        #LABEL_15:after {
+            box-sizing: border-box;
+            color: rgb(86, 74, 65);
+            text-align: left;
+            text-decoration: none solid rgb(86, 74, 65);
+            text-size-adjust: 100%;
+            column-rule-color: rgb(86, 74, 65);
+            caret-color: rgb(86, 74, 65);
+            border: 0px none rgb(86, 74, 65);
+            font: normal normal 700 normal 19.2px / 36px GothamBook;
+            list-style: none outside none;
+            outline: rgb(86, 74, 65) none 0px;
+        }
+
+        /*#LABEL_15:after*/
+
+        #LABEL_15:before {
+            box-sizing: border-box;
+            color: rgb(86, 74, 65);
+            text-align: left;
+            text-decoration: none solid rgb(86, 74, 65);
+            text-size-adjust: 100%;
+            column-rule-color: rgb(86, 74, 65);
+            caret-color: rgb(86, 74, 65);
+            border: 0px none rgb(86, 74, 65);
+            font: normal normal 700 normal 19.2px / 36px GothamBook;
+            list-style: none outside none;
+            outline: rgb(86, 74, 65) none 0px;
+        }
+
+        /*#LABEL_15:before*/
+
+        #LABEL_21,
+        #LABEL_27 {
+            bottom: 0px;
+            box-sizing: border-box;
+            color: rgb(86, 74, 65);
+            display: block;
+            float: left;
+            height: 36px;
+            left: 0px;
+            max-width: 100%;
+            min-height: 1px;
+            position: relative;
+            right: 0px;
+            text-align: left;
+            text-decoration: none solid rgb(86, 74, 65);
+            text-size-adjust: 100%;
+            top: 0px;
+            width: 273px;
+            column-rule-color: rgb(86, 74, 65);
+            perspective-origin: 136.5px 18px;
+            transform-origin: 136.5px 18px;
+            caret-color: rgb(86, 74, 65);
+            border: 0px none rgb(86, 74, 65);
+            font: normal normal 700 normal 19.2px / 36px GothamBook;
+            list-style: none outside none;
+            margin: 0px 0px 5px;
+            outline: rgb(86, 74, 65) none 0px;
+            padding: 0px 15px 0px 0px;
+        }
+
+        /*#LABEL_21, #LABEL_27*/
+
+        #LABEL_21:after,
+        #LABEL_27:after {
+            box-sizing: border-box;
+            color: rgb(86, 74, 65);
+            text-align: left;
+            text-decoration: none solid rgb(86, 74, 65);
+            text-size-adjust: 100%;
+            column-rule-color: rgb(86, 74, 65);
+            caret-color: rgb(86, 74, 65);
+            border: 0px none rgb(86, 74, 65);
+            font: normal normal 700 normal 19.2px / 36px GothamBook;
+            list-style: none outside none;
+            outline: rgb(86, 74, 65) none 0px;
+        }
+
+        /*#LABEL_21:after, #LABEL_27:after*/
+
+        #LABEL_21:before,
+        #LABEL_27:before {
+            box-sizing: border-box;
+            color: rgb(86, 74, 65);
+            text-align: left;
+            text-decoration: none solid rgb(86, 74, 65);
+            text-size-adjust: 100%;
+            column-rule-color: rgb(86, 74, 65);
+            caret-color: rgb(86, 74, 65);
+            border: 0px none rgb(86, 74, 65);
+            font: normal normal 700 normal 19.2px / 36px GothamBook;
+            list-style: none outside none;
+            outline: rgb(86, 74, 65) none 0px;
+        }
+
+        /*#LABEL_21:before, #LABEL_27:before*/
+
+        #LI_28 {
+            box-sizing: border-box;
+            color: rgb(107, 87, 75);
+            height: 0px;
+            text-align: justify;
+            text-decoration: none solid rgb(107, 87, 75);
+            text-size-adjust: 100%;
+            width: 546px;
+            column-rule-color: rgb(107, 87, 75);
+            perspective-origin: 273px 0px;
+            transform-origin: 273px 0px;
+            caret-color: rgb(107, 87, 75);
+            border: 0px none rgb(107, 87, 75);
+            font: normal normal 400 normal 14px / 20px Gotham;
+            list-style: none outside none;
+            outline: rgb(107, 87, 75) none 0px;
+        }
+
+        /*#LI_28*/
+
+        #LI_28:after {
+            box-sizing: border-box;
+            color: rgb(107, 87, 75);
+            text-align: justify;
+            text-decoration: none solid rgb(107, 87, 75);
+            text-size-adjust: 100%;
+            column-rule-color: rgb(107, 87, 75);
+            caret-color: rgb(107, 87, 75);
+            border: 0px none rgb(107, 87, 75);
+            font: normal normal 400 normal 14px / 20px Gotham;
+            list-style: none outside none;
+            outline: rgb(107, 87, 75) none 0px;
+        }
+
+        /*#LI_28:after*/
+
+        #LI_28:before {
+            box-sizing: border-box;
+            color: rgb(107, 87, 75);
+            text-align: justify;
+            text-decoration: none solid rgb(107, 87, 75);
+            text-size-adjust: 100%;
+            column-rule-color: rgb(107, 87, 75);
+            caret-color: rgb(107, 87, 75);
+            border: 0px none rgb(107, 87, 75);
+            font: normal normal 400 normal 14px / 20px Gotham;
+            list-style: none outside none;
+            outline: rgb(107, 87, 75) none 0px;
+        }
+
+        /*#LI_28:before*/
+
+        #DIV_31 {
+            box-sizing: border-box;
+            color: rgb(107, 87, 75);
+            height: 75px;
+            text-align: center;
+            text-decoration: none solid rgb(107, 87, 75);
+            text-size-adjust: 100%;
+            width: 596px;
+            column-rule-color: rgb(107, 87, 75);
+            perspective-origin: 298px 37.5px;
+            transform-origin: 298px 37.5px;
+            caret-color: rgb(107, 87, 75);
+            border: 0px none rgb(107, 87, 75);
+            font: normal normal 400 normal 14px / 20px Gotham;
+            outline: rgb(107, 87, 75) none 0px;
+            padding: 15px;
+        }
+
+        /*#DIV_31*/
+
+        #DIV_31:after {
+            box-sizing: border-box;
+            clear: both;
+            color: rgb(107, 87, 75);
+
+            display: table;
+            height: 0px;
+            text-align: center;
+            text-decoration: none solid rgb(107, 87, 75);
+            text-size-adjust: 100%;
+            width: 0px;
+            column-rule-color: rgb(107, 87, 75);
+            perspective-origin: 0px 0px;
+            transform-origin: 0px 0px;
+            caret-color: rgb(107, 87, 75);
+            border: 0px none rgb(107, 87, 75);
+            font: normal normal 400 normal 14px / 20px Gotham;
+            outline: rgb(107, 87, 75) none 0px;
+        }
+
+        /*#DIV_31:after*/
+
+        #DIV_31:before {
+            box-sizing: border-box;
+            color: rgb(107, 87, 75);
+
+            display: table;
+            height: 0px;
+            text-align: center;
+            text-decoration: none solid rgb(107, 87, 75);
+            text-size-adjust: 100%;
+            width: 0px;
+            column-rule-color: rgb(107, 87, 75);
+            perspective-origin: 0px 0px;
+            transform-origin: 0px 0px;
+            caret-color: rgb(107, 87, 75);
+            border: 0px none rgb(107, 87, 75);
+            font: normal normal 400 normal 14px / 20px Gotham;
+            outline: rgb(107, 87, 75) none 0px;
+        }
+
+        /*#DIV_31:before*/
+
+        #BUTTON_32 {
+            color: rgb(86, 74, 65);
+            cursor: pointer;
+            height: 30px;
+            max-width: 180px;
+            min-width: 100px;
+            text-decoration: none solid rgb(86, 74, 65);
+            text-size-adjust: 100%;
+            text-transform: uppercase;
+            width: 180px;
+            column-rule-color: rgb(86, 74, 65);
+            perspective-origin: 90px 15px;
+            transform-origin: 90px 15px;
+            caret-color: rgb(86, 74, 65);
+            border: 0px none rgb(86, 74, 65);
+            border-radius: 20px 20px 20px 20px;
+            font: normal normal 400 normal 12px / 17.1429px Gotham;
+            margin: 5px 0px;
+            outline: rgb(86, 74, 65) none 0px;
+            padding: 0px 15px;
+            background: #28a745 none repeat scroll 0% 0% / auto padding-box border-box;
+        }
+
+        /*#BUTTON_32*/
+
+        #BUTTON_32:after {
+            box-sizing: border-box;
+            color: rgb(86, 74, 65);
+            cursor: pointer;
+            text-decoration: none solid rgb(86, 74, 65);
+            text-size-adjust: 100%;
+            text-transform: uppercase;
+            column-rule-color: rgb(86, 74, 65);
+            caret-color: rgb(86, 74, 65);
+            border: 0px none rgb(86, 74, 65);
+            font: normal normal 400 normal 12px / 17.1429px Gotham;
+            outline: rgb(86, 74, 65) none 0px;
+        }
+
+        /*#BUTTON_32:after*/
+
+        #BUTTON_32:before {
+            box-sizing: border-box;
+            color: rgb(86, 74, 65);
+            cursor: pointer;
+            text-decoration: none solid rgb(86, 74, 65);
+            text-size-adjust: 100%;
+            text-transform: uppercase;
+            column-rule-color: rgb(86, 74, 65);
+            caret-color: rgb(86, 74, 65);
+            border: 0px none rgb(86, 74, 65);
+            font: normal normal 400 normal 12px / 17.1429px Gotham;
+            outline: rgb(86, 74, 65) none 0px;
+        }
+
+        /*#BUTTON_32:before*/
+
+        #BUTTON_33 {
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            height: 30px;
+            max-width: 180px;
+            min-width: 100px;
+            text-decoration: none solid rgb(255, 255, 255);
+            text-size-adjust: 100%;
+            text-transform: uppercase;
+            width: 180px;
+            column-rule-color: rgb(255, 255, 255);
+            perspective-origin: 90px 15px;
+            transform-origin: 90px 15px;
+            caret-color: rgb(255, 255, 255);
+            background: #dc3545 none repeat scroll 0% 0% / auto padding-box border-box;
+            /* background: #ffc107 none repeat scroll 0% 0% / auto padding-box border-box; */
+            border: 0px none rgb(255, 255, 255);
+            border-radius: 20px 20px 20px 20px;
+            font: normal normal 400 normal 12px / 17.1429px Gotham;
+            margin: 5px 0px 10px;
+            outline: rgb(255, 255, 255) none 0px;
+            padding: 0px 15px;
+        }
+
+        /*#BUTTON_33*/
+
+        #BUTTON_33:after {
+            box-sizing: border-box;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            text-decoration: none solid rgb(255, 255, 255);
+            text-size-adjust: 100%;
+            text-transform: uppercase;
+            column-rule-color: rgb(255, 255, 255);
+            caret-color: rgb(255, 255, 255);
+            border: 0px none rgb(255, 255, 255);
+            font: normal normal 400 normal 12px / 17.1429px Gotham;
+            outline: rgb(255, 255, 255) none 0px;
+        }
+
+        /*#BUTTON_33:after*/
+
+        #BUTTON_33:before {
+            box-sizing: border-box;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            text-decoration: none solid rgb(255, 255, 255);
+            text-size-adjust: 100%;
+            text-transform: uppercase;
+            column-rule-color: rgb(255, 255, 255);
+            caret-color: rgb(255, 255, 255);
+            border: 0px none rgb(255, 255, 255);
+            font: normal normal 400 normal 12px / 17.1429px Gotham;
+            outline: rgb(255, 255, 255) none 0px;
+        }
+
+        /*#BUTTON_33:before*/
+
+        #BUTTON_34 {
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            height: 30px;
+            max-width: 180px;
+            min-width: 100px;
+            text-decoration: none solid rgb(255, 255, 255);
+            text-size-adjust: 100%;
+            text-transform: uppercase;
+            width: 180px;
+            column-rule-color: rgb(255, 255, 255);
+            perspective-origin: 90px 15px;
+            transform-origin: 90px 15px;
+            caret-color: rgb(255, 255, 255);
+            background: #dc3545 none repeat scroll 0% 0% / auto padding-box border-box;
+            border: 0px none rgb(255, 255, 255);
+            border-radius: 20px 20px 20px 20px;
+            font: normal normal 400 normal 12px / 17.1429px Gotham;
+            margin: 5px 0px 10px;
+            outline: rgb(255, 255, 255) none 0px;
+            padding: 0px 15px;
+        }
+
+        #INPUT_1 {
+            bottom: 0px;
+            color: rgb(86, 74, 65);
+            display: block;
+            float: left;
+            height: 32px;
+            left: 0px;
+            min-height: 1px;
+            min-width: 40%;
+            position: relative;
+            right: 0px;
+            text-decoration: none solid rgb(86, 74, 65);
+            text-size-adjust: 100%;
+            top: 0px;
+            width: 500px;
+            column-rule-color: rgb(86, 74, 65);
+            perspective-origin: 368.328px 16px;
+            transform-origin: 368.328px 16px;
+            caret-color: rgb(86, 74, 65);
+            border-top: 0px none rgb(86, 74, 65);
+            border-right: 0px none rgb(86, 74, 65);
+            border-bottom: 2px solid rgb(35, 162, 156);
+            border-left: 0px none rgb(86, 74, 65);
+            font: normal normal 400 normal 15.96px / 22.8px Gotham;
+            list-style: none outside none;
+            margin: 0px 0px 6px;
+            outline: rgb(86, 74, 65) none 0px;
+            padding: 4px 15px;
+        }
+
+        /*#INPUT_1*/
+
+        #INPUT_1:after {
+            box-sizing: border-box;
+            color: rgb(86, 74, 65);
+            text-decoration: none solid rgb(86, 74, 65);
+            text-size-adjust: 100%;
+            column-rule-color: rgb(86, 74, 65);
+            caret-color: rgb(86, 74, 65);
+            border: 0px none rgb(86, 74, 65);
+            font: normal normal 400 normal 15.96px / 22.8px Gotham;
+            list-style: none outside none;
+            outline: rgb(86, 74, 65) none 0px;
+        }
+
+        /*#INPUT_1:after*/
+
+        #INPUT_1:before {
+            box-sizing: border-box;
+            color: rgb(86, 74, 65);
+            text-decoration: none solid rgb(86, 74, 65);
+            text-size-adjust: 100%;
+            column-rule-color: rgb(86, 74, 65);
+            caret-color: rgb(86, 74, 65);
+            border: 0px none rgb(86, 74, 65);
+            font: normal normal 400 normal 15.96px / 22.8px Gotham;
+            list-style: none outside none;
+            outline: rgb(86, 74, 65) none 0px;
+        }
+        
+        /*#INPUT_1:before*/
+    </style>
+    <script type="text/javascript">
+        // URL BASE
+        var URL_BASE = "https://ianjravin.github.io/zaka-dashboard/login.html";
+    </script>
+</head>
+
+<body class="skin-red sidebar-mini">
+    <div id="app">
+        <div>
+            <div class="wrapper">
+
+                <!-- Main Header -->
+                <header class="main-header">
+
+                    <!-- Logo -->
+                    <a href="https://ianjravin.github.io/zaka-dashboard/login.html" class="logo">
+                        <!-- mini logo for sidebar mini 50x50 pixels -->
+                        <span class="logo-mini">
+                            <b>
+                                <i class="fa fa-desktop"></i>
+                            </b>
+                        </span>
+                        <!-- logo for regular state and mobile devices -->
+                        <span class="logo-lg">
+                            <b>
+                                <i class="fa fa-dashboard"></i> Welcome, {{account}}</b>
+                        </span>
+                    </a>
+
+                    <!-- Header Navbar -->
+                    <nav class="navbar navbar-static-top" role="navigation">
+                        <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle navigation</span>
+                        </a>
+                        <!-- Navbar Right Menu -->
+                        <div class="navbar-custom-menu">
+                            <ul class="nav navbar-nav">
+
+                                <li>
+                                    <a href="/index.html">
+                                        <i class="fa fa-home myicon-right"></i> View site</a>
+                                </li>
+                                <li>
+                                    <a href="account.html " class="navigateto">
+                                        <i class="fa fa-cog"></i> Settings</a>
+                                </li>
+                                <!-- User Account Menu -->
+                                <li class="dropdown user user-menu">
+                                    <!-- Menu Toggle Button -->
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <!-- The user image in the navbar-->
+                                        <img :src="entImage" class="user-image" alt="User Image" />
+                                        <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                                        <span class="hidden-xs" id="entrepreneur" v-cloak>{{account}}</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <!-- The user image in the menu -->
+                                        <li class="user-header">
+                                            <img :src="entImage" class="img-circle" alt="User Image" />
+                                            <p>
+                                                <small v-cloak>{{account}}</small>
+                                            </p>
+                                        </li>
+
+                                        <!-- Menu Footer-->
+                                        <li class="user-footer">
+                                            <div class="pull-left">
+                                                <a href="account.html" class="btn btn-default btn-flat navigateto">Account Settings</a>
+                                            </div>
+                                            <div class="pull-right">
+                                                <a href="/login.html" class="btn btn-default btn-flat">Log out</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+                <!-- Left side column. contains the logo and sidebar -->
+                <aside class="main-sidebar">
+
+                    <!-- sidebar: style can be found in sidebar.less -->
+                    <section class="sidebar">
+                        <!-- Sidebar user panel (optional) -->
+                        <!-- <div class="user-panel">
+                      <div class="pull-left image">
+                          <img :src="entImage" class="img-circle" alt="User Image" />
+                      </div>
+                      <div class="pull-left info">
+                          <p class="text-overflow" id="sidename" v-cloak>{{account}}</p>
+                          <small class="btn-block text-overflow"><a href="javascript:void(0);"><i class="fa fa-circle text-success"></i> Online</a></small>
+                      </div>
+                  </div> -->
+
+
+                        <!-- Sidebar Menu -->
+                        <ul class="sidebar-menu">
+
+                            <li class="header">Main Menu</li>
+
+                            <!-- Links -->
+                            <li class="active">
+                                <a href="index.html" class="navigateto">
+                                    <i class="fa fa-dashboard"></i>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <!-- ./Links -->
+
+
+                            <!-- <li >
+                          <a href="pay.html" class="navigateto"><i class="fa fa-credit-card"></i> <span>Repayment Settings</span></a>
+                        </li> -->
+
+                            <!-- <li >
+                          <a href="account.html"><i class="fa fa-cog"></i> <span>Loan Status</span></a>
+                      </li> -->
+
+                            <!-- <li >
+                          <a href="messages.html" class="navigateto"><i class="fa fa-envelope"></i> <span>Messages</span></a>
+                      </li>
+
+                      <li >
+                          <a href="offers.html" class="navigateto"><i class="fa fa-bell"></i> <span>Offers</span></a>
+                      </li> -->
+
+
+
+
+
+                            <!-- Links -->
+                            <li>
+                                <a href="down.html" class="navigateto">
+                                    <i class="fa fa-credit-card"></i>
+                                    <span>Transaction History</span>
+                                </a>
+                            </li>
+                            <!-- ./Links -->
+
+
+
+
+                            <li>
+                                <a href="account.html" class="navigateto">
+                                    <i class="fa fa-cogs"></i>
+                                    <span>Settings</span>
+                                </a>
+                            </li>
+
+
+                            <!-- <li class="">
+                          <a href="request.html" class="navigateto"><i class="fa fa-play"></i> <span>Request funds</span></a>
+                      </li> -->
+                            <!-- ./Links -->
+
+                            <!-- <li >
+                          <a href="invite.html" class="navigateto"><i class="fa fa-user"></i> <span>Invite friends</span></a>
+                      </li> -->
+
+                        </ul>
+                        <!-- /.sidebar-menu -->
+                    </section>
+                    <!-- /.sidebar -->
+                </aside>
+                <div>
+                    <!-- Content Wrapper. Contains page content -->
+                    <div class="content-wrapper">
+                        <!-- Content Header (Page header) -->
+                        <section class="content-header">
+                            <h1>
+                                Dashboard
+                            </h1>
+                            <ol class="breadcrumb">
+                                <li>
+                                    <a href="#" class="navigateto">
+                                        <i class="fa fa-dashboard"></i> Home</a>
+                                </li>
+                                <li class="active">Dashboard</li>
+                            </ol>
+                        </section>
+
+                        <!-- Main content -->
+                        <section class="content">
+
+                            <div class="row">
+
+                                <div class="col-lg-3 col-xs-6">
+                                    <!-- small box -->
+                                    <div class="small-box bg-green">
+                                        <div class="inner">
+                                            <h3 v-cloak>{{investors}}</h3>
+                                            <p>Investors</p>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="ion ion-cash"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ./col -->
+
+                                <div class="col-lg-3 col-xs-6">
+                                    <!-- small box -->
+                                    <div class="small-box bg-red">
+                                        <div class="inner">
+                                            <h3 v-cloak>
+                                                <sup style="font-size: 20px">KES</sup>{{amountRaised}}</h3>
+                                            <p>Amount Raised</p>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="ion ion-social-usd"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ./col -->
+
+                                <div class="col-lg-3 col-xs-6">
+                                    <!-- small box -->
+                                    <div class="small-box bg-green">
+                                        <div class="inner">
+                                            <h3 v-cloak>
+                                                <sup style="font-size: 20px">KES</sup>{{amountRemaining}}</h3>
+                                            <p>Amount Remaining</p>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="ion ion-social-usd"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ./col -->
+                                <div class="col-lg-3 col-xs-6">
+                                    <!-- small box -->
+                                    <div class="small-box bg-red">
+                                        <div class="inner">
+                                            <h3 v-cloak>{{daysRemaining}}</h3>
+                                            <p>Days Remaining</p>
+                                        </div>
+                                        <div class="icon">
+                                            <i class="ion ion-speakerphone"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <!--main content start-->
+                                <section id="">
+                                    <section class="">
+                                        <div class="">
+                                            <div class="row">
+                                            </div>
+                                            <div class="main-content">
+                                                <div class="section__content section__content--p30">
+                                                    <div class="container-fluid">
+
+
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <h3 class="title-5 m-b-35">Offers</h3>
+                                                                <div class="table-responsive table-responsive-data2">
+                                                                    <table class="table table-data2" v-cloak>
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>
+                                                                                    <label class="au-checkbox">
+                                                                                        <input type="checkbox">
+                                                                                        <span class="au-checkmark"></span>
+                                                                                    </label>
+                                                                                </th>
+                                                                                <th>Investor name</th>
+                                                                                <th>Date</th>
+                                                                                <th>Amount</th>
+                                                                                <th>Percentage</th>
+                                                                                <th>status</th>
+                                                                                <th></th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="tr-shadow" v-for="offer in offers" v-cloak>
+                                                                                <td>
+                                                                                    <label class="au-checkbox">
+                                                                                        <input type="checkbox">
+                                                                                        <span class="au-checkmark"></span>
+                                                                                    </label>
+                                                                                </td>
+                                                                                <td>{{offer.investorname}}</td>
+                                                                                <td>{{offer.Date}}</td>
+                                                                                <td>KES {{ parseInt(offer.Amount)}}</td>
+                                                                                <td>{{offer.intrestrate}}%</td>
+                                                                                <td>
+                                                                                    <span class="status--process">{{offer.status}}</span>
+                                                                                </td>
+
+                                                                                <td>
+                                                                                    <div class="table-data-feature">
+                                                                                        <button class="item" data-toggle="tooltip" data-placement="top" @click="openCounterModal(offer)" title="View Offer">
+                                                                                            <i class="zmdi zmdi-eye"></i>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+                                    </section>
+                                </section>
+                            </div>
+                        </section>
+
+
+
+                    </div>
+
+                </div>
+                <div>
+                    <section class="col-md-12">
+                    </section>
+                </div>
+            </div>
+            <footer class="main-footer">
+                <!-- Default to the left -->
+                &copy;
+                <strong>Zaka | Investment Platform</strong> - 2018 </footer>
+
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" data-backdrop="static">
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                <div id="DIV_1">
+                    <div id="DIV_2">
+                        <button type="button" id="BUTTON_3" @click="removeModal">
+                            ×
+                        </button>
+                        <h4 id="H4_4">
+                            Review Offer Details
+                        </h4>
+                    </div>
+                    <div id="DIV_5">
+                        <ul id="UL_6">
+
+                            <li id="LI_7">
+                                <label id="LABEL_8">
+                                    Amount
+                                </label>
+                                <label id="LABEL_9">
+                                    KES {{offerAmount}}
+                                </label>
+                            </li>
+
+                            <li id="LI_10">
+                                <label id="LABEL_11">
+                                    Comment
+                                </label>
+                                <label id="LABEL_12">
+                                    {{offerComments}}
+                                </label>
+                            </li>
+                            <li id="LI_16">
+                                <label id="LABEL_17">
+                                    Interest Rate
+                                </label>
+                                <label id="LABEL_18">
+                                    {{offerRate}} %
+                                </label>
+                            </li>
+
+                            <li id="LI_16">
+                                <label id="LABEL_17">
+                                    Date
+                                </label>
+                                <label id="LABEL_18">
+                                    {{offerDate}}
+                                </label>
+                            </li>
+
+                            <li id="LI_22">
+                                <label id="LABEL_23">
+                                    Status
+                                </label>
+                                <label id="LABEL_24">
+                                    {{offerStatus}}
+                                </label>
+                            </li>
+
+
+                        </ul>
+                        <input id="INPUT_1" name="purpose" type="text" placeholder="Write a counter offer here" v-if="counter" v-model="comment"
+                        />
+                    </div>
+                    <div id="DIV_31">
+                        <button type="button" id="BUTTON_32" v-if="!counter && offerStatus=='Pending'" @click="acceptOffer">
+                            <i v-if="loading" class="fa fa-spinner fa-spin"></i> Accept
+                        </button>
+                        <button type="button" id="BUTTON_34" v-if="!counter && offerStatus=='Pending'" @click="declineOffer">
+                            <i v-if="loading" class="fa fa-spinner fa-spin"></i> Reject
+                        </button>
+                        <button type="button" id="BUTTON_33" v-if="!counter && offerStatus=='Pending'" @click="negotiateOffer">
+                             Counter
+                        </button>
+                        <button type="button" id="BUTTON_33" v-if="counter" @click="sendCounterOffer">
+                                <i v-if="loading" class="fa fa-spinner fa-spin"></i>
+                            
+                            Send
+                        </button>
+                        <button type="button" id="BUTTON_32" v-if="counter" @click="cancelCounter">
+                            cancel
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="">
+                            <div class="form-group">
+                                <label for="text">Comment</label>
+                                <input type="text" class="form-control" id="comment" v-model="comment">
+                              </div>
+                             
+                        </div>
+                    </div>
+                    <div class="modal-footer text-align-center">
+                        <button type="button" class="btn btn-primary" @click="negotiateOffer">Send</button>
+                        <div class="spacer-20"></div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <script type="text/javascript" src="js/loader.js"></script>
+    <script src="plugins/jquery/jQuery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="plugins/fastclick.min.js" type="text/javascript"></script>
+    <script src="bootstrap/js/app.min.js" type="text/javascript"></script>
+    <script src="plugins/sweetalert/sweetalert.min.js" type="text/javascript"></script>
+    <script src="bootstrap/js/functions.js" type="text/javascript"></script>
+    <script src="js/raphael-min.js" type="text/javascript"></script>
+    <script src="js/morris.min.js" type="text/javascript"></script>
+    <script src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/alertify.js"></script>
+</body>
+
+</html>
+<script src="https://unpkg.com/vue@2.0.3/dist/vue.js"></script>
+<script src="https://unpkg.com/axios@0.12.0/dist/axios.min.js"></script>
+<script src="https://unpkg.com/lodash@4.13.1/lodash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            comment: '',
+            investors: '',
+            amountRaised: '',
+            daysRemaining: '',
+            entName: '',
+            entId: '',
+            name: '',
+            account: '',
+            id: '',
+            offers: [],
+            offerId: '',
+            comment: '',
+            investors: '',
+            amountRaised: '',
+            amountRemaining: '',
+            daysRemaining: '',
+            postId: '',
+            entImage: '',
+            loading: false,
+            offerDate: '',
+            offerComments: '',
+            offerRate: '',
+            offerAmount: '',
+            offerStatus: '',
+            counter: false
+
+
+        },
+        methods: {
+            getEntrepreneurDetails: function () {
+                let queryString = decodeURIComponent(window.location.search);
+                queryString = queryString.substring(1).split("&");
+                let details = queryString[0].split("=");
+                this.account = decodeURI(details[1]);
+                details = queryString[1].split("=");
+                this.name = decodeURI(details[1]);
+                details = queryString[2].split("=");
+                this.id = decodeURI(details[1]);
+                console.log("ID:", this.id)
+                console.log("Account", this.account);
+                console.log("name", this.name);
+                fetch(
+                        `https://ticketsoko.com/zaka/api/index.php?function=getEntrepreneur&keyword=${this.name}`
+                    )
+                    .then(response => response.json())
+                    .then(data => {
+                        data.data.forEach(element => {
+                            this.entImage = element.Entrepreneur.image
+
+                        });
+                    })
+                    .catch(function (err) {
+                        console.log('Fetch Error :-S', err);
+                    });
+
+
+            },
+            removeModal: function () {
+                $("#myModal").modal('hide')
+
+            },
+            cancelCounter: function () {
+                this.counter = false
+                this.loading = false
+            },
+            getInvestorOffers: function () {
+                let queryString = decodeURIComponent(window.location.search);
+                queryString = queryString.substring(1).split("&");
+                let details = queryString[2].split("=");
+                const entid = decodeURI(details[1]);
+                console.log(entid, "EENT");
+                axios.post(`https://ticketsoko.com/zaka/api/index.php?function=getEntOffer&keyword=${entid}`)
+                    .then((result) => {
+                        console.log("Offers!!",result);
+                        result.data.data.forEach(element => {
+                            if (!element) {
+                                this.offers.push({})
+
+                            } else {
+                                this.offers.push(element)
+                            }
+                            console.log("element", element)
+                            this.postId = element.post_id
+                            console.log("POSTID", this.postId)
+
+                            console.log("I am offers", this.offers);
+
+                        });
+                        console.log("I am here", result.data);
+
+                    }).catch((err) => {
+                        console.log(err);
+
+                    });
+
+            },
+            getEntData: function () {
+                console.log("Here", this.postId)
+                console.log(this.id)
+                axios.post(
+                        `https://ticketsoko.com/zaka/api/index.php?function=entDashboard&keyword=${this.id}`
+                    )
+                    .then((response) => {
+                        console.log("Investors", this.investors)
+                        response.data.data.forEach(element => {
+                            var formatter = new Intl.NumberFormat()
+                            this.daysRemaining = element.daysRemaining
+                            this.amountRemaining = formatter.format(element.amountRemaining)
+                            this.amountRaised = formatter.format(element.amountRaised)
+                            this.investors = formatter.format(element.investors)
+
+                        });
+
+                    }).catch((err) => {
+                        console.log(err);
+                    });
+            },
+            openCounterModal: function (offer) {
+                var formatter = new Intl.NumberFormat()
+                this.offerComments = offer.comment
+                this.offerAmount = formatter.format(offer.Amount)
+                this.offerRate = offer.intrestrate
+                this.offerId = offer.offerid
+                this.offerDate = offer.Date
+                this.offerStatus = offer.status
+                //this.offerId = offer.id
+                console.log("OFER!F", this.offerId)
+                $("#myModal").modal('show')
+            },
+
+            acceptOffer: function (offer) {
+                $("#myModal").modal('hide')
+                //this.offerId = offer.id
+                alertify
+              .okBtn("Confirm")
+              .cancelBtn("Cancel")
+               .confirm("Are you sure you want to accept the offer?", (ev) => {
+                console.log("Offer", this.offerId);
+                
+                var formData = new FormData()
+                formData.append('function', 'offerRespond')
+                formData.append('status', 'Accepted')
+                formData.append('offer_id', this.offerId)
+                formData.append('user', 'ENTREPRENEUR')
+                formData.append('comments', 'I have accepted the offer')
+                axios.post('https://zaka.ticketsoko.com/api/index.php', formData)
+                    .then((response) => {
+                        console.log(response);
+                        if (response.data.message == "Posted") {
+                            setTimeout(() => {
+                            location.reload(true)
+                        }, 1000);
+                            
+                        }
+                       
+                    }).catch((err) => {
+                        console.log(err);
+                    });
+                ev.preventDefault();
+
+             }, (ev) => {
+                this.counter = false
+                this.loading = false
+                $("#myModal").modal('show')
+                ev.preventDefault();
+
+            });
+            },
+            declineOffer: function (offer) {
+                $("#myModal").modal('hide')
+                this.loading = true
+              alertify
+              .okBtn("Confirm")
+              .cancelBtn("Cancel")
+               .confirm("Are you sure you want to reject the offer?", (ev) => {
+                var formData = new FormData()
+                formData.append('function', 'offerRespond')
+                formData.append('status', 'Rejected')
+                formData.append('offer_id', this.offerId)
+                formData.append('user', 'ENTREPRENEUR')
+                formData.append('comments', 'I have Declined the offer')
+                axios.post('https://zaka.ticketsoko.com/api/index.php', formData)
+                    .then((response) => {
+                        if (response.data.message == 'Posted') {
+                            //alertify.alert(response.data.message)
+                        setTimeout(() => {
+                            location.reload(true)   
+                        }, 1000);
+                            
+                        } else{
+                            alertify.alert("Failed to send offer")
+                        }
+                        //alert(response.data.message)
+                        console.log(response);
+                       
+                    }).catch((err) => {
+                        console.log(err);
+                    });
+
+    
+                ev.preventDefault();
+              
+
+             }, (ev) => {
+                this.counter = false
+                this.loading = false
+                $("#myModal").modal('show')
+                ev.preventDefault();
+            });
+               
+            },
+            sendCounterOffer: function (offer) {
+                console.log("OFFER", this.offerId)
+                this.loading = true
+                $("#myModal").modal('hide')
+
+                alertify.okBtn("Confirm")
+                    .cancelBtn("Cancel")
+                    .confirm("Are you sure you want to counter the offer ", (ev) => {
+                        // $("#myModal").modal('show')
+                        //console.log("I am working")
+                        var formData = new FormData()
+                        formData.append('function', 'offerRespond')
+                        formData.append('status', 'Negotiate')
+                        formData.append('offer_id', this.offerId)
+                        formData.append('user', 'ENTREPRENEUR')
+                        formData.append('comments', this.comment)
+                        axios.post('https://zaka.ticketsoko.com/api/index.php', formData)
+                            .then((response) => {
+                                //alert(response.data.message)
+                                alertify.alert(response.data.message)
+                                $("#myModal").modal('hide')
+                                setTimeout(() => {
+                                    location.reload(true)
+                                }, 500);
+
+                                console.log(response);
+                            }).catch((err) => {
+                                alertify.alert("Post was not uploaded")
+                                console.log(err);
+                            });
+
+                        ev.preventDefault();
+                        //alertify.success("You've clicked OK");
+
+                    }, (ev) => {
+                        this.counter = false
+                        this.loading = false
+
+
+                        ev.preventDefault();
+
+                        //alertify.error("You've clicked Cancel");
+
+                    });
+
+
+
+            },
+            negotiateOffer: function (offer) {
+
+                this.counter = true
+
+            },
+            createUrls: function () {
+                var links = [...document.getElementsByClassName('navigateto')]
+                links.forEach(element => {
+                    element.href += `?objects=${this.account}&phone=${this.name}&id=${this.id}`         
+                });
+            },
+
+        },
+        mounted: function () {
+            this.getInvestorOffers()
+            this.createUrls()
+            this.getEntData()
+
+        },
+        created: function () {
+
+
+
+
+        },
+        beforeMount: function () {
+            this.getEntrepreneurDetails()
+        }
+
+    })
+</script>

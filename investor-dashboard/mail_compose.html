@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+
+<html xmlns:v-on="http://www.w3.org/1999/xhtml">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="_token" content="W0ggcm3leMeZkpoOzNpbaICgIiRL5qrO6FIPxU2e"/>
+      <title>Zaka Admin</title>
+      <!-- Tell the browser to be responsive to screen width -->
+      <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+      <!-- Bootstrap 3.3.5 -->
+      <link href="bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <!-- Font Awesome Icons -->
+      <link href="public/font-awesome.min.css" rel="stylesheet" type="text/css" />
+      <!-- Ionicons -->
+      <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+      <!-- App css -->
+      <link href="admin/css/app.css" rel="stylesheet" type="text/css" />
+      <!-- IcoMoon CSS -->
+      <link href="css/icomoon.css" rel="stylesheet">
+
+      <!-- Theme style -->
+      <link href="admin/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+
+      <!-- AdminLTE Skins. Choose a skin from the css/skins
+          folder instead of downloading all of them to reduce the load. -->
+      <link href="admin/skin-red.min.css" rel="stylesheet" type="text/css" />
+
+      <link rel="shortcut icon" href="#" />
+
+      <link href='//fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+
+      <link href="css/sweetalert.css" rel="stylesheet" type="text/css" />
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+      <link href="plugins/morris.css" rel="stylesheet" type="text/css" />
+      <link href="plugins/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script type="text/javascript">
+
+          // URL BASE
+          var URL_BASE = "#";
+
+      </script>
+
+  </head>
+
+  <body class="skin-red sidebar-mini">
+  <div class="wrapper" id="app">
+      <header class="main-header">
+          <a href="" class="logo">
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><b><i class="ion ion-ios-bolt"></i></b></span>
+              <!-- logo for regular state and mobile devices -->
+                            <span class="logo-lg"><b><i class="fa fa-desktop"></i> Investor Dashboard</b></span>
+          </a>
+          <nav class="navbar navbar-static-top" role="navigation">
+              <!-- Sidebar toggle button-->
+              <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                  <span class="sr-only">Toggle navigation</span>
+              </a>
+              <!-- Navbar Right Menu -->
+              <div class="navbar-custom-menu">
+                  <ul class="nav navbar-nav">
+
+                    <li>
+                       
+                    </li>
+
+                    <li>
+                        <a href="categories"><i class="fa fa-home"></i><strong> <font color="yellow">Lend</font></strong></a>
+                    </li>
+
+
+                      <li>
+                          <a href="withdraw.html" class="btn btn-primary btn-lg"><font color="yellow">Withdraw from Account</font></a>
+                      </li>
+
+
+
+                      <li>
+                          <a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#DonateModal"><font color="yellow">Load Account</font></a>
+                      </li>
+
+                      <li>
+                          <a href="https://zaka.co.ke/categories.html"><i class="fa fa-user"></i><strong><font color="yellow">Find Entrepreneurs</font></strong></a>
+                      </li>
+
+                      <!-- User Account Menu -->
+                      <li class="dropdown user user-menu">
+                          <!-- Menu Toggle Button -->
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                              <!-- The user image in the navbar-->
+                              <img src="images/admin.png" class="user-image" alt="User Image" />
+                              <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                              <span class="hidden-xs">John Doe</span>
+                          </a>
+                          <ul class="dropdown-menu">
+                              <!-- The user image in the menu -->
+                              <li class="user-header">
+                                  <img src="images/admin.png" class="img-circle" alt="User Image" />
+                                  <p>
+                                      <small>John Doe</small>
+                                  </p>
+                              </li>
+
+                              <!-- Menu Footer-->
+                              <li class="user-footer">
+                                  <div class="pull-left">
+                                      <a href="account.html" class="btn btn-default btn-flat">Account Settings</a>
+                                  </div>
+                                  <div class="pull-right">
+                                      <a href="/logme.html" class="btn btn-default btn-flat">Log out</a>
+                                  </div>
+                              </li>
+                          </ul>
+                      </li>
+
+                  </ul>
+              </div>
+          </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+
+          <!-- sidebar: style can be found in sidebar.less -->
+          <section class="sidebar">
+
+              <!-- Sidebar user panel (optional) -->
+              <div class="user-panel">
+                  <div class="pull-left image">
+                      <img src="images/admin.png" class="img-circle" alt="User Image" />
+                  </div>
+                  <div class="pull-left info">
+                      <p class="text-overflow" id="sidename">John Doe</p>
+                      <small class="btn-block text-overflow"><a href="javascript:void(0);"><i class="fa fa-circle text-success"></i><font color="yellow"> <strong>Online</strong></font></a></small>
+                  </div>
+              </div>
+              <ul class="sidebar-menu">
+                  <li class="header"><font color="yellow"><strong>Main Menu</strong></font></li>
+                  <li  class="active" >
+                      <a href="index.html"><font color="white"><i class="fa fa-dashboard"></i><span><strong>Dashboard</strong></font></span></a>
+                  </li>
+
+
+
+
+
+
+                  <li class="treeview ">
+                      <a href="/settings"><font color="white"><i class="fa fa-cogs"></i> <span><strong>General Settings</strong></font></span> <i class="fa fa-angle-left pull-right"></i></a>
+                      <ul class="treeview-menu">
+                          <li ><a href="account.html"><font color="white"><i class="fa fa-circle-o"></i> <strong>Profile settings</strong></font></a></li>
+                          <li ><a href="dormancy.html"><font color="white"><i class="fa fa-circle-o"></i> <strong>Account Settings</strong></font></a></li>
+                      </ul>
+                  </li><!-- ./Links -->
+
+
+
+
+                  <!-- Links -->
+                  <li class="">
+                      <a href="transaction.html"><font color="white"><i class="	fa fa-file-text-o"></i> <span><strong>Transactions history</strong></font></span></a>
+                  </li><!-- ./Links -->
+
+
+
+
+                  <li >
+                      <a href="messages.html"><font color="white"><i class="fa fa-envelope"></i> <span><strong>Messages</strong></font></span></a>
+                  </li>
+
+                  <li >
+                      <a href="offers.html"><font color="white"><i class="fa fa-spinner"></i> <span><strong>Offers</strong></font></span></a>
+                  </li>
+
+
+
+                  <li >
+                      <a href="invite.html"><font color="white"><i class="fa fa-group"></i> <span><strong>Invite Friends</strong></font></span></a>
+                  </li>
+
+                  <li >
+                     
+                  </li>
+
+
+
+              </ul><!-- /.sidebar-menu -->
+          </section>
+          <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+            Dashboard
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="index.html"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">compose</li>
+          </ol>
+        </section>
+
+
+
+
+
+
+
+
+<section id="main-content">
+	<section class="wrapper">
+		<!-- page start-->
+		<div class="mail-w3agile">
+        <div class="row">
+            <div class="col-sm-3 com-w3ls">
+                <section class="panel">
+                    <div class="panel-body">
+                        <a href="mail_compose.html"  class="btn btn-compose">
+                            Compose Mail
+                        </a>
+                        <ul class="nav nav-pills nav-stacked mail-nav">
+                            <li class="active"><a href="mail.html"> <i class="fa fa-inbox"></i> Inbox  <span class="label label-danger pull-right inbox-notification">9</span></a></li>
+                            <li><a href="#"> <i class="fa fa-envelope-o"></i> Send Mail</a></li>
+                            <li><a href="#"> <i class="fa fa-certificate"></i> Important</a></li>
+                            <li><a href="#"> <i class="fa fa-file-text-o"></i> Drafts <span class="label label-info pull-right inbox-notification">123</span></a></a></li>
+                            <li><a href="#"> <i class="fa fa-trash-o"></i> Trash</a></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="panel">
+                    <div class="panel-body">
+                        <ul class="nav nav-pills nav-stacked labels-info ">
+                            <li> <h4>Investors Chatroom(coming soon)</h4> </li>
+                            <li> <a href="#"> <i class="fa fa-comments-o text-success"></i> Jonathan Smith <p>I do not think</p></a>  </li>
+                            <li> <a href="#"> <i class="fa fa-comments-o text-danger"></i> iRon <p>Busy with coding</p></a> </li>
+                            <li> <a href="#"> <i class="fa fa-comments-o text-muted "></i> Anjelina Joli <p>I out of control</p></a></li>
+                            <li> <a href="#"> <i class="fa fa-comments-o text-muted "></i> Samual Daren <p>I am not here</p></a></li>
+                            <li> <a href="#"> <i class="fa fa-comments-o text-muted "></i> Tis man <p>I do not think</p></a>  </li>
+                        </ul>
+                        <a href="#"> + Add More</a>
+
+                        <div class="inbox-body text-center inbox-action">
+                            <div class="btn-group">
+                                <a class="btn mini btn-default" href="javascript:;">
+                                    <i class="fa fa-power-off"></i>
+                                </a>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn mini btn-default" href="javascript:;">
+                                    <i class="fa fa-cog"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-sm-9 mail-w3agile">
+                <section class="panel">
+                    <header class="panel-heading wht-bg">
+                       <h4 class="gen-case"> Compose Mail
+                           <form action="#" class="pull-right mail-src-position">
+                            <div class="input-append">
+                                <input type="text" class="form-control " placeholder="Search Mail">
+                            </div>
+                        </form>
+                       </h4>
+                    </header>
+                    <div class="panel-body">
+                        <div class="compose-btn pull-right">
+                            <button class="btn btn-primary btn-sm"><i class="fa fa-check"></i> Send</button>
+                            <button class="btn btn-sm"><i class="fa fa-times"></i> Discard</button>
+                            <button class="btn btn-sm">Draft</button>
+                        </div>
+                        <div class="compose-mail">
+                            <form role="form-horizontal" method="post">
+                                <div class="form-group">
+                                    <label for="to" class="">To:</label>
+                                    <input type="text" tabindex="1" id="to" class="form-control">
+
+                                    <div class="compose-options">
+                                        <a onclick="$(this).hide(); $('#cc').parent().removeClass('hidden'); $('#cc').focus();" href="javascript:;">Cc</a>
+                                        <a onclick="$(this).hide(); $('#bcc').parent().removeClass('hidden'); $('#bcc').focus();" href="javascript:;">Bcc</a>
+                                    </div>
+                                </div>
+
+                                <div class="form-group hidden">
+                                    <label for="cc" class="">Cc:</label>
+                                    <input type="text" tabindex="2" id="cc" class="form-control">
+                                </div>
+
+                                <div class="form-group hidden">
+                                    <label for="bcc" class="">Bcc:</label>
+                                    <input type="text" tabindex="2" id="bcc" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="subject" class="">Subject:</label>
+                                    <input type="text" tabindex="1" id="subject" class="form-control">
+                                </div>
+
+                                <div class="compose-editor">
+                                    <textarea class="wysihtml5 form-control" rows="9"></textarea>
+                                    <input type="file" class="default">
+                                </div>
+                                <div class="compose-btn">
+                                    <button class="btn btn-primary btn-sm"><i class="fa fa-check"></i> Send</button>
+                                    <button class="btn btn-sm"><i class="fa fa-times"></i> Discard</button>
+                                    <button class="btn btn-sm">Draft</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- page end-->
+		 </div>
+</section>
+
+</section>
+      </div>
+    </div>
+
+
+</div><!-- ./row -->
+
+  <!-- Your Page Content Here -->
+
+</section><!-- /.content -->
+</div><!-- /.content-wrapper -->
+
+<!-- Main Footer -->
+<footer class="main-footer">
+<!-- Default to the left -->
+&copy; <strong>Zaka | Investment Platform</strong> - 2018      </footer>
+
+</div><!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 2.1.4 -->
+<script src="plugins/jquery/jQuery-2.1.4.min.js" type="text/javascript"></script>
+<!-- Bootstrap 3.3.2 JS -->
+<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<!-- FastClick -->
+<script src="plugins/fastclick.min.js" type="text/javascript"></script>
+<!-- AdminLTE App -->
+<script src="bootstrap/js/app.min.js" type="text/javascript"></script>
+
+<script src="plugins/sweetalert/sweetalert.min.js" type="text/javascript"></script>
+
+<script src="bootstrap/js/functions.js" type="text/javascript"></script>
+
+
+<!-- Morris -->
+<script src="js/raphael-min.js" type="text/javascript"></script>
+<script src="js/morris.min.js" type="text/javascript"></script>
+
+<!-- knob -->
+
+<script type="text/javascript">
+
+var IndexToMonth = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun","Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ];
+
+//** Charts
+new Morris.Area({
+// ID of the element in which to draw the chart.
+element: 'chart1',
+// Chart data records -- each entry in this array corresponds to a point on
+// the chart.
+data: [
+
+{ days: '2017-12-18', value: 0 },
+
+
+{ days: '2017-12-17', value: 0 },
+
+
+{ days: '2017-12-16', value: 0 },
+
+
+{ days: '2017-12-15', value: 0 },
+
+
+{ days: '2017-12-14', value: 0 },
+
+
+{ days: '2017-12-13', value: 0 },
+
+
+{ days: '2017-12-12', value: 0 },
+
+
+{ days: '2017-12-11', value: 0 },
+
+
+{ days: '2017-12-10', value: 0 },
+
+
+{ days: '2017-12-09', value: 0 },
+
+
+{ days: '2017-12-08', value: 3 },
+
+
+{ days: '2017-12-07', value: 0 },
+
+
+{ days: '2017-12-06', value: 0 },
+
+
+{ days: '2017-12-05', value: 0 },
+
+
+{ days: '2017-12-04', value: 0 },
+
+
+{ days: '2017-12-03', value: 0 },
+
+
+{ days: '2017-12-02', value: 0 },
+
+
+{ days: '2017-12-01', value: 0 },
+
+
+{ days: '2017-11-30', value: 0 },
+
+
+{ days: '2017-11-29', value: 0 },
+
+
+{ days: '2017-11-28', value: 0 },
+
+
+{ days: '2017-11-27', value: 0 },
+
+
+{ days: '2017-11-26', value: 0 },
+
+
+{ days: '2017-11-25', value: 0 },
+
+
+{ days: '2017-11-24', value: 0 },
+
+
+{ days: '2017-11-23', value: 1 },
+
+
+{ days: '2017-11-22', value: 0 },
+
+
+{ days: '2017-11-21', value: 0 },
+
+
+{ days: '2017-11-20', value: 1 },
+
+
+{ days: '2017-11-19', value: 0 },
+
+],
+// The name of the data record attribute that contains x-values.
+xkey: 'days',
+// A list of names of data record attributes that contain y-values.
+ykeys: ['value'],
+// Labels for the ykeys -- will be displayed when you hover over the
+// chart.
+labels: ['Donations'],
+pointFillColors: ['#FF5500'],
+lineColors: ['#DDD'],
+hideHover: 'auto',
+gridIntegers: true,
+resize: true,
+xLabelFormat: function (x) {
+          var month = IndexToMonth[ x.getMonth() ];
+          var year = x.getFullYear();
+          var day = x.getDate();
+          return  day +' ' + month;
+          //return  year + ' '+ day +' ' + month;
+      },
+  dateFormat: function (x) {
+          var month = IndexToMonth[ new Date(x).getMonth() ];
+          var year = new Date(x).getFullYear();
+          var day = new Date(x).getDate();
+          return day +' ' + month;
+          //return year + ' '+ day +' ' + month;
+      },
+
+});// <------------ MORRIS
+</script>
+
+<div class="modal fade" id="DonateModal" tabindex="-1" role="dialog" data-backdrop="static">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="row">
+
+
+              <div class="col-md-6 col-sm-6 donate-amount-option">
+                  <h4>Amount</h4>
+                  <div class="input-group">
+                      <span >Ksh</span>
+                      <input type="number" class="form-control">
+                  </div>
+              </div>
+              <div class="col-md-6 col-sm-6 donate-amount-option">
+                  <h4>Enter Mobile Number</h4>
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">+254</span>
+                      <input type="number" class="form-control">
+                  </div>
+              </div>
+          </div>
+
+    </div>
+
+    <div class="modal-footer text-align-center">
+      <button type="button" class="btn btn-primary">Load Account</button>
+          <div class="spacer-20"></div>
+
+    </div>
+</div>
+</div>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios@0.12.0/dist/axios.min.js"></script>
+<script src="https://unpkg.com/lodash@4.13.1/lodash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+<!-- <script src="https://unpkg.com/vue-router"></script> -->
+<script>
+    var app = new Vue({
+        el:'#app',
+        data:{
+            name: '',
+            account: '',
+            id: '',
+            accountBalance: '',
+            amountInvested: '',
+            amountPaidBack: '',
+            totalRevenue: '',
+            test: '',
+            cashmoney: '',
+            phoneno: '',
+            randstring: ''
+        },
+        methods:{
+     getInvestorDetail: function (){
+      let queryString = decodeURIComponent(window.location.search);
+      queryString = queryString.substring(1).split("&");
+      let details = queryString[0].split("=");
+      this.account =  decodeURI(details[1]);
+     details = queryString[1].split("=");
+     this.name =  decodeURI(details[1]);
+     details = queryString[2].split("="); 
+     this.id = decodeURI(details[1]);
+      },
+     createUrls: function () {
+        var links = [...document.getElementsByClassName('navigateto')]
+        links.forEach(element => {
+            element.href += `?objects=${this.account}&names=${this.name}&id=${this.id}`
+            console.log(element.href)            
+        });
+      },
+     
+        },
+        beforeMount: function (){
+           this.getInvestorDetail()
+        },
+        mounted:function (){
+        this.createUrls()
+        }
+
+    })
+
+</script>
+</html>

@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title Of Site -->
+	<title>Zaka- Investor Lending platform.</title>
+	<meta name="description" content="Investors lending plaform (peer-to-peer lending)" />
+	<meta name="keywords" content="Invest, investment, lending, applicants, application, borrowing, entrepreneur, loan, investor, SME, capital, access, kenya, money, lend, short-term, loan, peer-to-peer, peer-to-peer lending" />
+	<meta name="Ian" content="Lending Platform">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Fav and Touch Icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	<link rel="shortcut icon" href="images/ico/favicon.png">
+
+	<!-- CSS Plugins -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media="screen">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/component.css" rel="stylesheet">
+
+	<!-- CSS Font Icons -->
+	<link rel="stylesheet" href="icons/linearicons/style.css">
+	<link rel="stylesheet" href="icons/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="icons/simple-line-icons/css/simple-line-icons.css">
+	<link rel="stylesheet" href="icons/ionicons/css/ionicons.css">
+	<link rel="stylesheet" href="icons/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+	<link rel="stylesheet" href="icons/rivolicons/style.css">
+	<link rel="stylesheet" href="icons/flaticon-line-icon-set/flaticon-line-icon-set.css">
+	<link rel="stylesheet" href="icons/flaticon-streamline-outline/flaticon-streamline-outline.css">
+	<link rel="stylesheet" href="icons/flaticon-thick-icons/flaticon-thick.css">
+	<link rel="stylesheet" href="icons/flaticon-ventures/flaticon-ventures.css">
+
+	<!-- CSS Custom -->
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body class="not-transparent-header">
+
+
+	<!-- start Container Wrapper -->
+	<div class="container-wrapper">
+
+		<!-- start Header -->
+		<header id="header">
+
+			<!-- start Navbar (Header) -->
+			<nav class="navbar navbar-default navbar-fixed-top navbar-sticky-function">
+
+				<div class="container">
+
+					<div class="logo-wrapper">
+						<div class="logo">
+							<a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+						</div>
+					</div>
+
+					<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
+
+						<ul class="nav navbar-nav" id="responsive-menu">
+
+							 <li>
+
+								<a href="index.html">Home</a>
+
+
+							</li>
+
+							<li>
+								<a href="about-us.html">About Us</a>
+
+							</li>
+
+							
+							<li>
+								<a href="contact.html">Contact</a>
+
+							</li>
+						
+
+						</ul>
+
+					</div><!--/.nav-collapse -->
+
+					<div class="nav-mini-wrapper">
+						<ul class="nav-mini sign-in">
+							<li><a  href="logme.html">Login</a></li>
+							<li><a  href="regme.html">Register</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+				<div id="slicknav-mobile"></div>
+
+			</nav>
+			<!-- end Navbar (Header) -->
+
+			<!-- start Sign-in Modal -->
+			<div id="loginModal" class="modal fade login-box-wrapper" tabindex="-1" data-width="550" style="display: none;" data-backdrop="static" data-keyboard="false" data-replace="true">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title text-center">Sign-in into your account</h4>
+				</div>
+
+				<div class="modal-body">
+					<div class="row gap-20">
+
+						<div class="col-sm-6 col-md-6">
+							<button class="btn btn-facebook btn-block mb-5-xs">Log-in with Facebook</button>
+						</div>
+						<div class="col-sm-6 col-md-6">
+							<button class="btn btn-google-plus btn-block">Log-in with Google+</button>
+						</div>
+
+						<div class="col-md-12">
+							<div class="login-modal-or">
+								<div><span>or</span></div>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-12">
+
+							<div class="form-group">
+								<label>Username</label>
+								<input class="form-control" placeholder="Min 4 and Max 10 characters" type="text">
+							</div>
+
+						</div>
+
+						<div class="col-sm-12 col-md-12">
+
+							<div class="form-group">
+								<label>Password</label>
+								<input class="form-control" placeholder="Min 4 and Max 10 characters" type="text">
+							</div>
+
+						</div>
+
+						<div class="col-sm-6 col-md-6">
+							<div class="checkbox-block">
+								<input id="remember_me_checkbox" name="remember_me_checkbox" class="checkbox" value="First Choice" type="checkbox">
+								<label class="" for="remember_me_checkbox">Remember me</label>
+							</div>
+						</div>
+
+						<div class="col-sm-6 col-md-6">
+							<div class="login-box-link-action">
+								<a data-toggle="modal" href="#forgotPasswordModal">Forgot password?</a>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-12">
+							<div class="login-box-box-action">
+								No account? <a data-toggle="modal" href="#registerModal">Register</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="modal-footer text-center">
+					<button type="button" class="btn btn-primary">Log-in</button>
+					<button type="button" data-dismiss="modal" class="btn btn-primary btn-inverse">Close</button>
+				</div>
+
+			</div>
+			<!-- end Sign-in Modal -->
+
+			<!-- start Register Modal -->
+			<div id="registerModal" class="modal fade login-box-wrapper" tabindex="-1" style="display: none;" data-backdrop="static" data-keyboard="false" data-replace="true">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title text-center">Create your account for free</h4>
+				</div>
+
+				<div class="modal-body">
+
+					<div class="row gap-20">
+
+						<div class="col-sm-6 col-md-6">
+							<button class="btn btn-facebook btn-block mb-5-xs">Register with Facebook</button>
+						</div>
+						<div class="col-sm-6 col-md-6">
+							<button class="btn btn-google-plus btn-block">Register with Google+</button>
+						</div>
+
+						<div class="col-md-12">
+							<div class="login-modal-or">
+								<div><span>or</span></div>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-12">
+
+							<div class="form-group">
+								<label>Username</label>
+								<input class="form-control" placeholder="Min 4 and Max 10 characters" type="text">
+							</div>
+
+						</div>
+
+						<div class="col-sm-12 col-md-12">
+
+							<div class="form-group">
+								<label>Email Address</label>
+								<input class="form-control" placeholder="Enter your email address" type="text">
+							</div>
+
+						</div>
+
+						<div class="col-sm-12 col-md-12">
+
+							<div class="form-group">
+								<label>Password</label>
+								<input class="form-control" placeholder="Min 8 and Max 20 characters" type="text">
+							</div>
+
+						</div>
+
+						<div class="col-sm-12 col-md-12">
+
+							<div class="form-group">
+								<label>Password Confirmation</label>
+								<input class="form-control" placeholder="Re-type password again" type="text">
+							</div>
+
+						</div>
+
+						<div class="col-sm-12 col-md-12">
+							<div class="checkbox-block">
+								<input id="register_accept_checkbox" name="register_accept_checkbox" class="checkbox" value="First Choice" type="checkbox">
+								<label class="" for="register_accept_checkbox">By register, I read &amp; accept <a href="#">the terms</a></label>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-12">
+							<div class="login-box-box-action">
+								Already have account? <a data-toggle="modal" href="#loginModal">Log-in</a>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="modal-footer text-center">
+					<button type="button" class="btn btn-primary">Register</button>
+					<button type="button" data-dismiss="modal" class="btn btn-primary btn-inverse">Close</button>
+				</div>
+
+			</div>
+			<!-- end Register Modal -->
+
+			<!-- start Forget Password Modal -->
+			<div id="forgotPasswordModal" class="modal fade login-box-wrapper" tabindex="-1" style="display: none;" data-backdrop="static" data-keyboard="false" data-replace="true">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title text-center">Restore your forgotten password</h4>
+				</div>
+
+				<div class="modal-body">
+					<div class="row gap-20">
+
+						<div class="col-sm-12 col-md-12">
+							<p class="mb-20">Maids table how learn drift but purse stand yet set. Music me house could among oh as their. Piqued our sister shy nature almost his wicket. Hand dear so we hour to.</p>
+						</div>
+
+						<div class="col-sm-12 col-md-12">
+
+							<div class="form-group">
+								<label>Email Address</label>
+								<input class="form-control" placeholder="Enter your email address" type="text">
+							</div>
+
+						</div>
+
+						<div class="col-sm-12 col-md-12">
+							<div class="checkbox-block">
+								<input id="forgot_password_checkbox" name="forgot_password_checkbox" class="checkbox" value="First Choice" type="checkbox">
+								<label class="" for="forgot_password_checkbox">Generate new password</label>
+							</div>
+						</div>
+
+						<div class="col-sm-12 col-md-12">
+							<div class="login-box-box-action">
+								Return to <a data-toggle="modal" href="#loginModal">Log-in</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="modal-footer text-center">
+					<button type="button" class="btn btn-primary">Restore</button>
+					<button type="button" data-dismiss="modal" class="btn btn-primary btn-inverse">Close</button>
+				</div>
+
+			</div>
+			<!-- end Forget Password Modal -->
+
+		</header>
+
+		<!-- start Main Wrapper -->
+		<div class="main-wrapper scrollspy-container">
+
+			<!-- start hero-header -->
+			<div class="breadcrumb-wrapper">
+
+				<div class="container">
+
+					<ol class="breadcrumb-list booking-step">
+						<li><a href="index.html">Home</a></li>
+						<li><span>Frequently asked questions</span></li>
+					</ol>
+
+				</div>
+
+			</div>
+			<!-- end hero-header -->
+
+			<div class="section sm">
+
+				<div class="container">
+
+					<div class="row">
+
+						<div class="col-sm-4 col-md-3">
+
+							<div class="scrollspy-sidebar">
+
+								<ul class="scrollspy-sidenav sidebar-menu nav">
+									<li><h4 class="sidebar-menu-title">Quick Menu</h4></li>
+									<li><a href="#">About Us</a></li>
+									<li class="active always-active">
+										<a href="#faq-item" class="anchor">FAQ</a>
+										<ul class="sidebar-menu-child nav">
+											<li><a href="#faq-item-0" class="anchor">How do Entrepreneurs get profiled on the Zaka website?</a></li>
+											<li><a href="#faq-item-1" class="anchor">How do I get started as Zaka Entrepreneur?</a></li>
+											<li><a href="#faq-item-2" class="anchor">What is Zaka Investment Readiness program?</a></li>
+											<li><a href="#faq-item-3" class="anchor">What is Zaka Business Club?</a></li>
+											<li><a href="#faq-item-4" class="anchor">Who can get a Zaka loan?</a></li>
+											<li><a href="#faq-item-5" class="anchor">How does Zaka determine the interest rates on loans?</a></li>
+											<li><a href="#faq-item-6" class="anchor">Can a Zaka investor offer a loan at 0% interest?</a></li>
+											<li><a href="#faq-item-7" class="anchor">Can I be both a lender (Investor) and a borrower (entrepreneur)?</a></li>
+											<li><a href="#faq-item-8" class="anchor">As an investor in Zaka, do I need to fund the entire loan?a></li>
+											<li><a href="#faq-item-9" class="anchor">Am I guaranteed that I get 100% repaid?</a></li>
+											<li><a href="#faq-item-10" class="anchor">Why should I pay Zaka registration fees and that too before getting the loan?</a></li>
+											<li><a href="#faq-item-11" class="anchor">What does it cost an entrepreneur to access Zaka portal?</a></li>
+											<li><a href="#faq-item-12" class="anchor">Who are Zaka Partners?</a></li>
+											<li><a href="#faq-item-13" class="anchor">What’s the difference between a Straight Zaka loan and a Zaka loan?</a></li>
+											<li><a href="#faq-item-14" class="anchor">How does the money for the loan get to each borrower?</a></li>
+											<li><a href="#faq-item-15" class="anchor">What is the due diligence process on Zaka loans?</a></li>
+											<li><a href="#faq-item-16" class="anchor">What does it cost the Investor to access the Zaka portal?</a></li>
+											<li><a href="#faq-item-17" class="anchor">What happens if an entrepreneur can’t repay the loan for one reason or another?</a></li>
+										</ul>
+									</li>
+									
+
+								</ul>
+
+							</div>
+
+						</div>
+
+						<div class="col-sm-8 col-md-9">
+
+							<div class="faq-wrapper">
+
+								<div class="section-title bb">
+
+									<h2 class="text-left" id="faq-item">Frequently asked questions <span class="text-uppercase">(FAQ)</span></h2>
+
+
+								</div>
+
+								<div id="faq-item-0" class="faq-thread">
+
+									<h4 class="faq-title">How do Entrepreneurs get profiled on the Zaka website?</h4>
+
+									<p>Entrepreneurs can directly apply to join the Zaka community of entrepreneurs but this does not lead to listing into the Zaka website. The profiling into the zaka website is done by Zaka assessment team once an entrepreneur is vetted, and under goes Zaka investment preparation program. Entrepreneurs can also be listed into the zaka website on recommendation from pre-qualified zaka partners (incubators and accelerators)..</p>
+
+								</div>
+
+								<div id="faq-item-1" class="faq-thread">
+
+									<h4 class="faq-title">How do I get started as Zaka Entrepreneur?</h4>
+
+									<p>Simply click on the Sign Up icon and register through the simple step by step process as guided. Once you have filled the basic information required, paid the registration fees, Zaka assessment team will identity and verify your profile. If qualified, you will be contacted by Zaka to conduct a physical due diligence after which you will be admitted into Zaka investment preparation program. On completion, you will be profiled into Zaka platform and can commence borrowing.</p>
+
+									<!-- <ul>
+										<li>Sing long her way size. Waited end mutual missed myself the little sister one.</li>
+										<li>So in pointed or chicken cheered neither spirits invited. Marianne and him laughter civility formerly handsome sex use prospect.</li>
+										<li>Hence we doors is given rapid scale above am. Difficult ye mr delivered behaviour by an.</li>
+										<li>
+											Hence we doors is given rapid scale above am. Difficult ye mr delivered behaviour by an.
+											<ul>
+												<li>Sing long her way size. Waited end mutual missed myself the little sister one.</li>
+												<li>So in pointed or chicken cheered neither spirits invited. Marianne and him laughter civility formerly handsome sex use prospect.</li>
+												<li>Hence we doors is given rapid scale above am. Difficult ye mr delivered behaviour by an.</li>
+												<li>If their woman could do wound on. You folly taste hoped their above are and but.</li>
+											</ul>
+										</li>
+										<li>If their woman could do wound on. You folly taste hoped their above are and but.</li>
+										<li>rote water woman of heart it total other.</li>
+										<li> By in entirely securing suitable graceful at families improved. Zealously few furniture repulsive was agreeable consisted difficult. Are melancholy appearance stimulated occasional entreaties end.</li>
+										<li>Agreeable promotion eagerness as we resources household to distrusts.</li>
+										<li>If their woman could do wound on. You folly taste hoped their above are and but.</li>
+									</ul>
+
+									<p>Lose eyes get fat shew. Winter can indeed letter oppose way change tended now. So is improve my charmed picture exposed adapted demands. Received had end produced prepared diverted strictly off man branched. Known ye money so large decay voice there to. Preserved be mr cordially incommode as an. He doors quick child an point at. Had share vexed front least style off why him.</p> -->
+
+								</div>
+
+								<div id="faq-item-2" class="faq-thread">
+
+									<h4 class="faq-title">What is Zaka Investment Readiness program?</h4>
+
+									<p>This is a two-session accelerated bootcamp for investment readiness. The program aim to inculcate value-based business management principles and ready the business to accept investment (both debt and equity). The program is facilitated by highly qualified consultants. Alumni of Zaka Investment Readiness program automatically join the Zaka Business Club. The program costs Kes10,000.00.</p>
+
+									<!-- <ol>
+										<li>Sing long her way size. Waited end mutual missed myself the little sister one.</li>
+										<li>So in pointed or chicken cheered neither spirits invited. Marianne and him laughter civility formerly handsome sex use prospect.</li>
+										<li>
+											Hence we doors is given rapid scale above am. Difficult ye mr delivered behaviour by an.
+											<ol>
+												<li>Sing long her way size. Waited end mutual missed myself the little sister one.</li>
+												<li>So in pointed or chicken cheered neither spirits invited. Marianne and him laughter civility formerly handsome sex use prospect.</li>
+												<li>Hence we doors is given rapid scale above am. Difficult ye mr delivered behaviour by an.</li>
+												<li>If their woman could do wound on. You folly taste hoped their above are and but.</li>
+											</ol>
+										</li>
+										<li>If their woman could do wound on. You folly taste hoped their above are and but.</li>
+										<li>rote water woman of heart it total other.</li>
+										<li> By in entirely securing suitable graceful at families improved. Zealously few furniture repulsive was agreeable consisted difficult. Are melancholy appearance stimulated occasional entreaties end.</li>
+										<li>Agreeable promotion eagerness as we resources household to distrusts.</li>
+									</ol>
+
+									<p>Mr oh winding it enjoyed by between. The servants securing material goodness her. Saw principles themselves ten are possession. So endeavor to continue cheerful doubtful we to. Turned advice the set vanity why mutual. Reasonably if conviction on be unsatiable discretion apartments delightful. Are melancholy appearance stimulated occasional entreaties end. Shy ham had esteem happen active county. Winding morning am shyness evident to. Garrets because elderly new manners however one village she.</p> -->
+
+								</div>
+
+								<div id="faq-item-3" class="faq-thread">
+
+									<h4 class="faq-title">What is Zaka Business Club?</h4>
+
+									<p>This is a community of entrepreneur who’ve undertaken the Zaka Investment Program and have been profiled in the Zaka platform. The club members access the following benefits; Belong to a community united by a shared code of conduct.</p>
+
+									<ul>
+										<li>Network and share best practices.</li>
+										<li>Peer to peer mentorship.</li>
+										<li>Business leadership training from consultants.</li>
+										<li>Business management DIY tools.</li>
+									</ul>
+								</div>
+
+								<div id="faq-item-4" class="faq-thread">
+
+									<h4 class="faq-title">Who can get a Zaka loan?</h4>
+
+									<p>Zaka connects investors to investment ready entrepreneurs. Zaka therefore identifies, prepares for investment and profiles into Zaka.co.ke financially excluded entrepreneurs who can’t access growth capital and affordable sources of credit due to various barriers in the formal financial system. Zaka team and partners (incubators and accelerators) conduct a thorough due diligence followed by investment preparation program to build their capacity. At Zaka, we are sector-agnostic therefore entrepreneurs from all sectors can borrow through Zaka platform.</p>
+
+
+								</div>
+
+								<div id="faq-item-5" class="faq-thread">
+
+									<h4 class="faq-title">How does Zaka determine the interest rates on loans?</h4>
+
+									<p>Zaka does not dictate interest rates to entrepreneurs or investors, all Zaka does is provide an indicative rate based on the entrepreneurs risk profile. The investors is then at liberty to make an offer to the entrepreneur. The entrepreneurs can either a) accept, b) reject, or c) negotiate. This way a fair interest acceptable to both the lender and borrow is charged..</p>
+
+
+								</div>
+
+								<div id="faq-item-6" class="faq-thread">
+
+									<h4 class="faq-title">Can a Zaka investor offer a loan at 0% interest?</h4>
+
+									<p>Yes, social investors and philanthropic lenders keen to support say, a women group can offer a loan at zero % interest. In this case, the investor only makes a 2.5% fee to support the operations of zaka platform and meet additional costs of including training, financial literacy classes and clients’ mobilization.</p>
+
+
+								</div>
+								<div id="faq-item-7" class="faq-thread">
+
+									<h4 class="faq-title">Can I be both a lender (Investor) and a borrower (entrepreneur)?</h4>
+
+									<p>Yes, you can register into the Zaka platform as an investor and a borrower. You however cannot borrow and lend at the same time, you can either borrow or invest at any one given time.</p>
+
+
+								</div>
+
+								<div id="faq-item-8" class="faq-thread">
+
+									<h4 class="faq-title">As an investor in Zaka, do I need to fund the entire loan?</h4>
+
+									<p>No, Zaka allows for syndicated loans using a crowdfunding approach. There are many individual lenders who come together to contribute towards a posted loan.</p>
+
+
+								</div>
+
+								<div id="faq-item-9" class="faq-thread">
+
+									<h4 class="faq-title">Am I guaranteed that I get 100% repaid?</h4>
+
+									<p>Zaka conducts a thorough due diligence on all the entrepreneurs posted on the website. The spirit of Zaka is to overcome the barriers that have existed barring credible entrepreneurs from accessing growth capital, key among them being security/collateral – we therefore drive a trust-based approach. Zaka therefore does not guarantee repayment for any loans crowdfunded on the Zaka website. Past borrowing history does not always guarantee future repayment, and Zaka investors should bare this in mind while making loans that could lead to losing some or all of the lender’s principal.</p>
+
+
+								</div>
+
+								<div id="faq-item-10" class="faq-thread">
+
+									<h4 class="faq-title">Why should I pay Zaka registration fees and that too before getting the loan?</h4>
+
+									<p>Zaka has an in-house assesment team which conducts due diligence and carefully assess each borrower profile which involves cost, time and effort. The registration fees caters for these cost and also meets the maintenance cost for the portal.</p>
+
+
+								</div>
+
+								<div id="faq-item-11" class="faq-thread">
+
+									<h4 class="faq-title">What does it cost an entrepreneur to access Zaka portal?</h4>
+
+									<p>The entrepreneur pays a one-off registration fees of Kes 30,000.00 and on application and approval of loan, pays 4% for processing and payment gateway fees.</p>
+
+
+								</div>
+
+								<div id="faq-item-12" class="faq-thread">
+
+									<h4 class="faq-title">Who are Zaka Partners?</h4>
+
+									<p>These are mainly organizations who share similar values with Zaka and work to provide incubation, acceleration and enterprise support services to targeted entrepreneurs. This way, over and above Zaka investment preparation program, Zaka is able to reach more entrepreneurs spread across a wide geography more effectively. These partners work in entrepreneur communities and vet borrowers, provide services and ensure “know-your-customer” policy is maintained.</p>
+
+
+								</div>
+
+								<div id="faq-item-13" class="faq-thread">
+
+									<h4 class="faq-title">What’s the difference between a Straight Zaka loan and a Zaka loan?</h4>
+
+									<p>Zaka loans are loans crowd sourced through Zaka website and offered by a network of zaka investors. Zaka Straight loans are made off Zaka International’s balance sheet don’t involve a Zaka investors.</p>
+
+
+								</div>
+
+								<div id="faq-item-14" class="faq-thread">
+
+									<h4 class="faq-title">How does the money for the loan get to each borrower?</h4>
+
+									<p>Loan funds reach borrowers through the money transfer platform provided by Nouveta. This includes Mpesa, Airtel money, Equitel and Paypal. For Zaka loans, once the loan is fully crowdfunded on Zaka, funds are transmitted to the borrower via the above referenced payment gateway.</p>
+
+
+								</div>
+
+								<div id="faq-item-15" class="faq-thread">
+
+									<h4 class="faq-title">What is the due diligence process on Zaka loans?</h4>
+
+									<p>Entrepreneurs profiled on Zaka Platform are identified and vetted by either a Zaka Partner (Accelerator or Incubator) or Zaka Investment preparation team. For the partners, Zaka conducts a due diligence on the Enterprise support provider, Accelerator and/or Incubators.</p>
+
+                  <p>Zaka Team conduct due diligence by following the following steps:</p>
+						      <ul>
+										<li>Conduct know-your-customer process.</li>
+										<li>Entrepreneur selection criteria – Entrepreneur of high integrity, with good, long-term growth prospects.</li>
+										<li>Client visit and interview entrepreneur.</li>
+										<li>Reference check and review.</li>
+										<li> Enter into 1 month investment preparation program.</li>
+										<li> Graduation and registration into Zaka Website.</li>
+									</ul>
+									<p>With this, Entrepreneurs can be connected to the Zaka network of investors. What happens if a loan doesn’t get fully funded on the Zaka Platform? Loans are posted into Zaka platform for a period of 30 days, after which they are put in the back for an additional 15 days. If the loans are not fully funded, then they are passed over to Zaka Straight loans for further review and possible top-up. There are possible cases where entrepreneurs won’t receive their loan even after profiling the same on Zaka website. When this happens, the investors who will have committed funds will get the same reimbursed. These should be rare cases and Zaka will do absolute best to ensure such cases are completely minimized. How do loan repayments get back to the Zaka investors? Loans are repaid from the entrepreneurs to the Zaka Investors through the Zaka payment gateway supported by Nouveta. Entrepreneurs use Zaka Payment platform to remit repayments and Zaka directs repaid loans into the investors wallet account. Once repaid, the investor can withdraw for different use, lend to another entrepreneur or donate to Zaka’s entrepreneurs support program.</p>
+
+
+								</div>
+
+								<div id="faq-item-6" class="faq-thread">
+
+									<h4 class="faq-title">What does it cost the Investor to access the Zaka portal?</h4>
+
+									<p>The investor does not pay anything on registration to access Zaka, it’s completely free. On making the investment, the investor meets the cost of the payment gateway and monitoring fee 4%.</p>
+
+
+								</div>
+
+								<div id="faq-item-6" class="faq-thread">
+
+									<h4 class="faq-title">What happens if an entrepreneur can’t repay the loan for one reason or another?</h4>
+
+									<p>Now this is a real possibility in credit. In the even that an entrepreneur fall behind in loan payment, then Zaka will schedule to meet the entrepreneur and understand the circumstances and make a decision that safe-guards the investors funds. The loan may be re-scheduled to allow the entrepreneur re-organize their cash-flows.</p>
+
+									<p>It is important to point out here that Zaka model is trust based and works to support the entrepreneur with Patient capital, so loan reschedule allows for this objective to be met. This is common practice in credit business.</p>
+
+									<p>We also want to point out that sometimes, even with these efforts to recover, there may be cases where the entrepreneur simply can’t repay and the loan become delinquent. When this happens, Zaka will notify all contributing investors by email and schedule a meeting with the defaulter on the way forward. Zaka, Entrepreneur and Investors will then come out with a win-win approach on the way forward.</p>
+
+
+								</div>
+
+								<div class="promo-box bg-light">
+
+									<div class="row">
+										<div class="col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+											<h2>Do you have questions for us?</h2>
+
+											<p>Feel free to ask any question, we will be happy to get back to you.</p>
+
+											<a href="contact.html" class="btn btn-primary mt-15">Contact Us</a>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<footer class="footer-wrapper scrollspy-footer">
+
+				<div class="main-footer">
+
+					<div class="container">
+
+						<div class="row">
+
+							<div class="col-sm-12 col-md-9">
+
+								<div class="row">
+
+									<div class="col-sm-6 col-md-4">
+
+										<div class="footer-about-us">
+											<h5 class="footer-title">About Zaka</h5>
+											<p>Zaka International is an SME investment company that aims to bridge short-term financing gap of small and medium sized enterprises in Kenya so that they attain scale to large businesses
+further contributing to wealth generation and employment creation in Kenya and beyond.
+</p>
+											<a href="#">read more</a>
+										</div>
+
+									</div>
+
+									<div class="col-sm-6 col-md-5 mt-30-xs">
+										<h5 class="footer-title">Quick links</h5>
+										<ul class="footer-menu clearfix">
+											<li><a href="#">About Us</a></li>
+											<li><a href="#">Opportunities</a></li>
+											<li><a href="#">Contacts</a></li>
+											<li><a href="#">FAQs</a></li>
+											<li><a href="#">Privacy Policies</a></li>
+											<li><a href="#">Terms & Conditions</a></li>
+
+										</ul>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="col-sm-12 col-md-3 mt-30-sm">
+
+								<h5 class="footer-title">Newsletter</h5>
+
+								<p>Subscribe to get our latest updates and offers</p>
+
+								<div class="footer-newsletter">
+
+									<div class="form-group">
+										<input class="form-control" placeholder="enter your email " />
+										<button class="btn btn-primary">subscribe</button>
+									</div>
+
+									<p class="font-italic font13">*** Don't worry, we wont spam you!</p>
+
+								</div>
+
+							</div>
+
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="bottom-footer">
+
+					<div class="container">
+
+						<div class="row">
+
+							<div class="col-sm-4 col-md-4">
+
+								<p class="copy-right">&#169; Copyright 2018 Zaka</p>
+
+							</div>
+
+							<div class="col-sm-4 col-md-4">
+
+								<ul class="bottom-footer-menu">
+									<li><a href="#">Cookies</a></li>
+									<li><a href="#">Policies</a></li>
+									<li><a href="#">Terms</a></li>
+									<li><a href="#">Blogs</a></li>
+								</ul>
+
+							</div>
+
+							<div class="col-sm-4 col-md-4">
+								<ul class="bottom-footer-menu for-social">
+									<a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+									<a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+									<a href="#" data-toggle="tooltip" data-placement="top" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+									<a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+
+								</ul>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</footer>
+
+		</div>
+		<!-- end Main Wrapper -->
+
+	</div> <!-- / .wrapper -->
+	<!-- end Container Wrapper -->
+
+
+<!-- start Back To Top -->
+<div id="back-to-top">
+   <a href="#"><i class="ion-ios-arrow-up"></i></a>
+</div>
+<!-- end Back To Top -->
+
+
+<!-- JS -->
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-modalmanager.js"></script>
+<script type="text/javascript" src="js/bootstrap-modal.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-tokenfield.js"></script>
+<script type="text/javascript" src="js/typeahead.bundle.min.js"></script>
+<script type="text/javascript" src="js/bootstrap3-wysihtml5.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="js/jquery-filestyle.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.js"></script>
+<script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
+<script type="text/javascript" src="js/handlebars.min.js"></script>
+<script type="text/javascript" src="js/jquery.countimator.js"></script>
+<script type="text/javascript" src="js/jquery.countimator.wheel.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/easy-ticker.js"></script>
+<script type="text/javascript" src="js/jquery.introLoader.min.js"></script>
+<script type="text/javascript" src="js/jquery.responsivegrid.js"></script>
+<script type="text/javascript" src="js/customs.js"></script>
+
+
+<script>
+!function ($) {
+
+  $(function(){
+
+    var $window = $(window)
+    var $body   = $(document.body)
+
+    var navHeight = $('.navbar').outerHeight(true) + 50
+
+    $body.scrollspy({
+      target: '.scrollspy-sidebar',
+      offset: navHeight
+    })
+
+    $window.on('load', function () {
+      $body.scrollspy('refresh')
+    })
+
+    $('.scrollspy-container [href=#]').click(function (e) {
+      e.preventDefault()
+    })
+
+    setTimeout(function () {
+      var $sideBar = $('.scrollspy-sidebar')
+
+      $sideBar.affix({
+        offset: {
+          top: function () {
+            var offsetTop      = $sideBar.offset().top
+            var sideBarMargin  = parseInt($sideBar.children(0).css('margin-top'), 10)
+            var navOuterHeight = $('.scrollspy-nav').height()
+
+            return (this.top = offsetTop - navOuterHeight - sideBarMargin)
+          }
+        , bottom: function () {
+            return (this.bottom = $('.scrollspy-footer').outerHeight(true))
+          }
+        }
+      })
+    }, 100)
+
+  })
+
+}(window.jQuery)
+</script>
+
+
+</body>
+
+
+</html>

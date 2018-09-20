@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>
+		Zaka - Login to account
+	</title>
+	<meta name="description" content="This is the helping website to help each other" />
+	<meta name="keywords" content="Best helping, Helping concept, MMM" />
+	<meta name="author" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<link href="vendor/magnific/magnific-popup.css" rel="stylesheet" type="text/css" />
+	<link href="vendor/owl-carousel/css/owl.carousel.css" rel="stylesheet" type="text/css" />
+	<link href="vendor/owl-carousel/css/owl.theme.css" rel="stylesheet" type="text/css" />
+	<link href="css/custom.css" rel="stylesheet" type="text/css" />
+	<link href="colors/color3.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		 * {
+            font-family: 'Montserrat', sans-serif;
+        }
+		.inp {
+			border-radius: 15px;
+		}
+		</style>
+	
+</head>
+
+
+<body>
+	<div class="body">
+		<div id="app">
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+					<div class="container">
+							<div class="navbar-header">
+									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							</div>
+							<div class="navbar-collapse collapse">
+									<div class="nav navbar-nav">
+											<a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt=""></a>
+									</div>
+									
+									<ul class="nav navbar-nav navbar-right">
+											<li class="dropdown">
+													<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+													<ul class="dropdown-menu">
+															<li><a href="about.html">about us</a></li>
+															<li><a href="opp.html">opportunities</a></li>
+															<li><a href="faq.html">faqs</a></li>
+															<li><a href="contact.html">contacts</a></li>
+													</ul>
+											</li>
+																			</ul>
+							</div>
+					</div>
+			</nav>
+			<div class="hero-area">
+				<div class="page-banner parallax" style="background-image:url('images/cont.jpg' );">
+					<div class="container">
+						<div class="page-banner-text">
+							<h1 class="block-title">Login to start investing today</h1></div>
+					</div>
+				</div>
+			</div>
+			<div id="main-container">
+				<div class="content">
+					<div class="container">
+
+								
+								<form id="form1">
+									<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+
+									<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAavVXD1oYELeveMr0vHCmYPRTkmt3VnZQJwEX8eJsvNdQ9PSmWJ/Dfq4IC1PCatUxSlYi8iZJYQC8KFtG27vcpYoRCr7j10BNyMBx5ZdwO4h6KeKEbp39eHc9mbdvkCgxCab82BZYpNtwCyebRBR5+mrN5OjA==" />
+									<div class="row">
+										<div class="col-md-2 col-sm-2"></div>
+										<div class="col-md-3 col-sm-3" style="padding-top:10px;"> username <span style="color:red">*</span> </div>
+										<div class="col-md-4 col-sm-4"><input v-model="userName" name="txtuser" type="text" maxlength="30" id="txtuser" class="form-control inp" placeholder="Username" /></div>
+									</div>
+									<div class="row">
+										<div class="col-md-2 col-sm-2"></div>
+										<div class="col-md-3 col-sm-3" style="padding-top:10px;">password <span style="color:red">*</span></div>
+										<div class="col-md-4 col-sm-4"><input v-model="pass" name="txtpass" type="password" maxlength="30" id="txtpass" class="form-control inp" placeholder="Password"/></div>
+									</div>
+
+									<div class="row">
+										<div class="col-md-2 col-sm-2"></div>
+										<div class="col-md-3 col-sm-3">
+												<!-- <input type="checkbox" class="conditions" required><span>I have read and understood the terms and conditons</span> -->
+											<!-- <input id="CheckBox1" type="checkbox" name="CheckBox1" /> I have read and understood the terms and conditons -->
+										</div>
+										<div class="col-md-4 col-sm-4">
+											<!-- <a href="forgot.html" class="">Forgot password</a> -->
+
+										</div>
+									</div>
+									<hr />
+									<div class="row">
+										<div class="col-md-2 col-sm-2"></div>
+										<button @click="register1" type="button" name="btnLogin" id="btnLogin" class="btn btn-primary inp">
+											<i v-if="loading" class="fa fa-spinner fa-spin"></i> Login
+									  </button>
+										<div class="col-md-3 col-sm-3">
+										</div>
+										</div><!-- <div class="col-md-12 col-sm-12"><a href="regme.html">Not yet registered? Register now</a></div> -->
+								</form>
+							</div>
+							<div class="col-md-4 sidebar-block">
+								<!-- <div class="widget sidebar-widget widget_categories"><img src="images/mobile.png" alt="" /></div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				<!-- <div class="parallax parallax5 parallax-light text-align-center padding-tb100" style="background-image:url( 'images/parallax6.jpg' )">
+					<h2>Making someone smile is the most<br>beautiful thing in this world</h2><a href="#"></a></div>
+				<div class="accent-bg padding-tb20 cta-fw">
+					<div class="container"><a href="#" class="btn btn-default btn-ghost btn-light btn-rounded pull-right">Become a Member</a>
+						<h4>Let's start doing your best for the world. Join us as a Investor</h4></div>
+				</div> -->
+			</div>
+			<div class="site-footer parallax parallax3" style="background-image:url('images/parallax3.jpg')">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-4">
+							<div class="widget footer_widget">
+								<h4 class="widgettitle">About Zaka</h4>
+								<p><img src="images/logo.png" alt="logo" /></p>
+								<p>Zaka International is an SME investment company that aims to bridge short-term financing gap of small and medium sized enterprises in Kenya so that they attain scale to large businesses further contributing to wealth generation and employment creation in Kenya and beyond.</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="widget footer_widget widget_links">
+								<h4 class="widgettitle">Links Might Help You</h4>
+								<ul>
+									<li><a href="opp.html">Opportunities </a></li>
+									<li><a href="about.html">Our mission</a></li>
+									<li><a href="faq.html">Have Questions?</a></li>
+									<li><a href="contact.html">Talk to us</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="widget footer_widget">
+								<h4 class="widgettitle">STAY CONNECTED</h4>
+								<p>Contact us at :
+								<h4 class="widgettitle" style="text-transform:lowercase;">info@zaka.co.ke</h4>
+								<ul class="social-icons-rounded social-icons-colored">
+									<a href="#" class="fa fa-facebook"></a>
+									<a href="#" class="fa fa-twitter"></a>
+									<a href="#" class="fa fa-linkedin"></a>
+									<a href="#" class="fa fa-google-plus"></a>
+								</ul>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="site-footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-sm-6">
+							<div class="copyrights-col-left">
+								<p>&copy; 2018 <b>Zaka</b>. All Rights Reserved</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6"></div>
+						<div class="copyrights-col-right">
+							<ul class="footer-menu">
+								<li><a href="#">Register with us</a></li>
+								<li><a href="#">Login now</a></li>
+								<li><a href="terms.html">Terms &amp; conditions</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div><a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+		</div>
+
+	</div>
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<!-- Jquery Library Call -->
+	<script src="vendor/magnific/jquery.magnific-popup.min.js"></script>
+	<!-- PrettyPhoto Plugin -->
+	<script src="js/ui-plugins.js"></script>
+	<!-- UI Plugins -->
+	<script src="js/helper-plugins.js"></script>
+	<!-- Helper Plugins -->
+	<script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/bootstrap.js"></script>
+	<!-- UI -->
+	<script src="js/init.js"></script>
+	<!-- All Scripts -->
+	<script src="vendor/flexslider/js/jquery.flexslider.js"></script>
+	<!-- FlexSlider -->
+	<!--<script src="js/circle-progress.js"></script>-->
+	<!-- Circle Progress Bars -->
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a0ab968a715c6db"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+	<script src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/alertify.js"></script>     
+	<!--<script type="text/javascript">
+		var Tawk_API = Tawk_API || {},
+			Tawk_LoadStart = new Date();
+		(function() {
+			var s1 = document.createElement("script"),
+				s0 = document.getElementsByTagName("script")[0];
+			s1.async = true;
+			s1.src = 'https://embed.tawk.to/5a0abc2ebb0c3f433d4c9127/default';
+			s1.charset = 'UTF-8';
+			s1.setAttribute('crossorigin', '*');
+			s0.parentNode.insertBefore(s1, s0);
+		})();
+	</script>-->
+</body>
+<script src="https://unpkg.com/vue@2.0.3/dist/vue.js"></script>
+<script src="https://unpkg.com/axios@0.12.0/dist/axios.min.js"></script>
+<script src="https://unpkg.com/lodash@4.13.1/lodash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+<script src="https://unpkg.com/vue-router"></script>
+<script>
+
+    var router = new VueRouter({
+        mode: 'history',
+        routes: []
+    });
+    var app = new Vue({
+        el:'#app',
+        data:{
+            userName:'',
+            pass:'',
+			ref:'',
+			loading : false
+
+        },
+        methods:{
+            register1:function(){
+				this.loading = true
+				if(this.userName == '' || this.pass == ''){
+					alertify.error("All fields are required")
+					this.loading = false
+					return;
+				}
+                var formData = new FormData
+                formData.append('function','loginInvestors')
+                formData.append('userName',this.userName)
+                formData.append('password',this.pass)
+
+                axios.post('https://ticketsoko.com/zaka/api/index.php',formData)
+                    .then((response) => {
+						console.log(response)
+                        if (response.data.success===true){
+							console.log(response.data.data);
+							// var unumber = response.data.data.phoneNumber;
+							// var uname = response.data.data.name;
+							// var uid = response.data.data.id;
+							alertify.success("Login Successful")
+						  Cookies.set('name', response.data.data.name);
+                          Cookies.set('phone', response.data.data.phoneNumber)
+                          Cookies.set('uid', response.data.data.id)
+							setTimeout(() => {
+								window.location.href = 'investor-dashboard/index.html'
+								// window.location.replace("investor-dashboard/index.html");
+							// window.location.replace("investor-dashboard/index.html?objects="+unumber+"&names="+uname+"&id="+uid);	
+							}, 3000);
+                          
+							//
+
+						}
+						else {
+							
+							//console.log(response.data.data)
+							
+                            alertify.error("Wrong username or password")
+							this.loading = false
+							this.userName = ''
+							this.pass = ''
+							return;
+						}
+                    })
+
+                    .catch((error) => {
+						console.log(error);
+                    })
+            }
+        }
+
+    })
+
+</script>
+
+</html>

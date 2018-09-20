@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>
+		Zaka - Forgot password
+	</title>
+	<meta name="description" content="This is the helping website to help each other" />
+	<meta name="keywords" content="Best helping, Helping concept, MMM" />
+	<meta name="author" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="vendor/magnific/magnific-popup.css" rel="stylesheet" type="text/css" />
+	<link href="vendor/owl-carousel/css/owl.carousel.css" rel="stylesheet" type="text/css" />
+	<link href="vendor/owl-carousel/css/owl.theme.css" rel="stylesheet" type="text/css" />
+	<link href="css/custom.css" rel="stylesheet" type="text/css" />
+	<link href="colors/color3.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="body">
+		<div class="site-header-wrapper">
+      <header class="site-header">
+				<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+						<div class="container">
+								<div class="navbar-header">
+										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								</div>
+								<div class="navbar-collapse collapse">
+										<div class="nav navbar-nav">
+												<a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt=""></a>
+										</div>
+										<!-- <ul class="nav navbar-nav navbar-center">
+												<li><a href="regme.html">Lend</a></li>
+												<li><a>|</a></li>
+												<li><a href="borrow.html">Borrow</a></li>
+										</ul> -->
+										<ul class="nav navbar-nav navbar-right">
+												<li class="dropdown">
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+														<ul class="dropdown-menu">
+																<li><a href="about.html">about us</a></li>
+																<li><a href="opp.html">opportunities</a></li>
+																<li><a href="faq.html">faqs</a></li>
+																<li><a href="contact.html">contacts</a></li>
+														</ul>
+												</li>
+												<li class="dropdown">
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
+														<ul class="dropdown-menu">
+																<li><a href="login.html">Entrepreneur Login</a></li>
+																<li><a href="logme.html">Investor Login</a></li>
+														</ul>
+												</li>
+										</ul>
+								</div>
+						</div>
+				</nav>
+      </header>
+    </div>
+		<div class="hero-area">
+			<div class="page-banner parallax" style="background-image:url('images/cont.jpg' );">
+				<div class="container">
+					<div class="page-banner-text">
+						<h1 class="block-title">Forgot password</h1></div>
+				</div>
+			</div>
+		</div>
+		<div id="main-container">
+			<div class="content">
+				<div class="container">
+					<div class="row">
+						<h1>Forgot password</h1>
+						<div class="col-md-8 content-block">
+							<div class="col-md-1 col-sm-1"></div>
+							<div class="col-md-6 col-sm-6"><span class="event-date"><span id="sday" class="date"></span><span id="sMon" class="month"></span><span id="sYr" class="year"></span></span>Enter your username and we will send your password on your registered number<br /> <span id="result" class="meta-data-thick"
+								  style="color:red"></span>
+								<script type="text/javascript">
+									window.onload = function() {
+										var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];;
+										var date = new Date();
+										document.getElementById('sday').innerHTML = [date.getDate()];
+										document.getElementById('sMon').innerHTML = months[date.getMonth()];
+										document.getElementById('sYr').innerHTML = date.getFullYear();
+									};
+								</script>
+							</div>
+							<h3>Recover password</h3>
+							<hr />
+							<form method="post" action="./forgot.html" id="form1">
+								<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+
+								<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAOvVXD1oYELeveMr0vHCmYPRTkmt3VnZQJwEX8eJsvNdRLw/rbrKOaIkbmofCWVtP6gHpS6/+P2V9CWinbOhhpPXn23yw==" />
+								<div class="row">
+									<div class="col-md-2 col-sm-2"></div>
+									<div class="col-md-3 col-sm-3" style="padding-top:10px;">Enter user name <span style="color:red">*</span> </div>
+									<div class="col-md-4 col-sm-4"><input name="txtuser" type="text" maxlength="30" id="txtuser" class="form-control" placeholder="Username" required="" /></div>
+								</div>
+								<hr />
+								<div class="row">
+									<div class="col-md-2 col-sm-2"></div>
+									<div class="col-md-3 col-sm-3"><input type="submit" name="btnforgot" value="Send password" id="btnforgot" class="btn btn-primary" /></div>
+									<div class="col-md-4 col-sm-4"><a href="#">Not yet registered? Register now</a></div>
+								</div>
+							</form>
+						</div>
+						<div class="col-md-4 sidebar-block">
+							<!-- <div class="widget sidebar-widget widget_categories"><img src="images/mobile.png" alt="" /></div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="parallax parallax5 parallax-light text-align-center padding-tb100" style="background-image:url( 'images/parallax6.jpg' )">
+				<h2>Making someone smile is the most<br>beautiful thing in this world</h2><a href="#"></a></div>
+			<div class="accent-bg padding-tb20 cta-fw">
+				<div class="container"><a href="#" class="btn btn-default btn-ghost btn-light btn-rounded pull-right">Become a Member</a>
+					<h4>Let's start doing your best for the world. Join us as a investor</h4></div>
+			</div>
+		</div>
+		<div class="site-footer parallax parallax3" style="background-image:url('images/parallax3.jpg')">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<div class="widget footer_widget">
+							<h4 class="widgettitle">About Zaka</h4>
+							<p><img src="images/logo.png" alt="logo" /></p>
+							<p>Zaka International is an SME investment company that aims to bridge short-term financing gap of small and medium sized enterprises in Kenya so that they attain scale to large businesses further contributing to wealth generation and employment creation in Kenya and beyond.</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="widget footer_widget widget_links">
+							<h4 class="widgettitle">Links Might Help You</h4>
+							<ul>
+								<li><a href="opp.html">Opportunities </a></li>
+								<li><a href="about.html">Our mission</a></li>
+								<li><a href="faq.html">Have Questions?</a></li>
+								<li><a href="contact.html">Talk to us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="widget footer_widget">
+							<h4 class="widgettitle">STAY CONNECTED</h4>
+							<p>Contact us at : +254-722-940-878
+								<h4 class="widgettitle" style="text-transform:lowercase;">info@zaka.co.ke</h4>
+								<ul class="social-icons-rounded social-icons-colored">
+									<a href="#" class="fa fa-facebook"></a>
+									<a href="#" class="fa fa-twitter"></a>
+									<a href="#" class="fa fa-linkedin"></a>
+									 <a href="#" class="fa fa-google-plus"></a>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="site-footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<div class="copyrights-col-left">
+							<p>&copy; 2018 <b>Zaka</b>. All Rights Reserved</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6"></div>
+					<div class="copyrights-col-right">
+						<ul class="footer-menu">
+							<li><a href="#">Register with us</a></li>
+							<li><a href="#">Login now</a></li>
+							<li><a href="terms.html">Terms &amp; conditions</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div><a id="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+	</div>
+
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<!-- Jquery Library Call -->
+	<script src="vendor/magnific/jquery.magnific-popup.min.js"></script>
+	<!-- PrettyPhoto Plugin -->
+	<script src="js/ui-plugins.js"></script>
+	<!-- UI Plugins -->
+	<script src="js/helper-plugins.js"></script>
+	<!-- Helper Plugins -->
+	<script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/bootstrap.js"></script>
+	<!-- UI -->
+	<script src="js/init.js"></script>
+	<!-- All Scripts -->
+	<script src="vendor/flexslider/js/jquery.flexslider.js"></script>
+	<!-- FlexSlider -->
+	<!--<script src="js/circle-progress.js"></script>-->
+	<!-- Circle Progress Bars -->
+
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a0ab968a715c6db"></script>
+	<script type="text/javascript">
+		var Tawk_API = Tawk_API || {},
+			Tawk_LoadStart = new Date();
+		(function() {
+			var s1 = document.createElement("script"),
+				s0 = document.getElementsByTagName("script")[0];
+			s1.async = true;
+			s1.src = 'https://embed.tawk.to/5a0abc2ebb0c3f433d4c9127/default';
+			s1.charset = 'UTF-8';
+			s1.setAttribute('crossorigin', '*');
+			s0.parentNode.insertBefore(s1, s0);
+		})();
+	</script>
+</body>
+
+</html>

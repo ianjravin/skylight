@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="_token" content="W0ggcm3leMeZkpoOzNpbaICgIiRL5qrO6FIPxU2e"/>
+    <title>Zaka Admin</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<link href="bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<!-- Font Awesome Icons -->
+<link href="public/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<!-- Ionicons -->
+<link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+<!-- App css -->
+<link href="admin/css/app.css" rel="stylesheet" type="text/css" />
+<!-- IcoMoon CSS -->
+<link href="css/icomoon.css" rel="stylesheet">
+
+ <!-- Theme style -->
+<link href="admin/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+
+<!-- AdminLTE Skins. Choose a skin from the css/skins
+    folder instead of downloading all of them to reduce the load. -->
+<link href="admin/skin-red.min.css" rel="stylesheet" type="text/css" />
+
+<link rel="shortcut icon" href="#" />
+
+<link href='//fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+
+<link href="css/sweetalert.css" rel="stylesheet" type="text/css" />
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="plugins/morris.css" rel="stylesheet" type="text/css" />
+<link href="plugins/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+<style>
+    * {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+    }
+  [v-cloak]{
+    display: none
+  }
+</style>
+<script type="text/javascript">
+  
+
+// URL BASE
+var URL_BASE = "https://ianjravin.github.io/zaka-dashboard/login.html";
+
+</script>
+
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="skin-red sidebar-mini">
+<div class="wrapper" id="app">
+
+  <!-- Main Header -->
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="index.html" class="logo navigateto">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <!-- <span class="logo-mini"><b><i class="fa fa-dashboard"></i></b></span> -->
+      <!-- logo for regular state and mobile devices -->
+       <span class="logo-lg"><b><i class="fa fa-dashboard"></i> Zaka Entrepreneur</b></span>
+    </a>
+
+        <!-- Header Navbar -->
+        <nav class="navbar navbar-static-top" role="navigation">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+          <!-- Navbar Right Menu -->
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+
+            	<li>
+            		<a href="/index.html"><i class="fa fa-home"></i> View site</a>
+            	</li>
+
+              <!-- User Account Menu -->
+              <li class="dropdown user user-menu">
+                <!-- Menu Toggle Button -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <!-- The user image in the navbar-->
+                  <img :src="entImage" class="user-image" alt="User Image" />
+                  <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                  <span class="hidden-xs" v-cloak>{{account}}</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- The user image in the menu -->
+                  <li class="user-header">
+                    <img :src="entImage" class="img-circle" alt="User Image" />
+                    <p>
+                      <small v-cloak>{{account}}</small>
+                    </p>
+                  </li>
+
+                  <!-- Menu Footer-->
+                  <li class="user-footer">
+                    <div class="pull-left">
+                      <a href="#" class="btn btn-default btn-flat">Account Settings</a>
+                    </div>
+                    <div class="pull-right">
+                      <a href="/login.html" class="btn btn-default btn-flat">Log out</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+
+          <!-- sidebar: style can be found in sidebar.less -->
+          <section class="sidebar">
+
+              <!-- Sidebar user panel (optional) -->
+              <!-- <div class="user-panel">
+                  <div class="pull-left image">
+                      <img :src="entImage" class="img-circle" alt="User Image" />
+                  </div>
+                  <div class="pull-left info">
+                      <p class="text-overflow" id="sidename" v-cloak>{{account}}</p>
+                      <small class="btn-block text-overflow"><a href="javascript:void(0);"><i class="fa fa-circle text-success"></i> Online</a></small>
+                  </div>
+              </div> -->
+
+
+              <!-- Sidebar Menu -->
+              <ul class="sidebar-menu">
+
+                  <li class="header">Main Menu</li>
+
+                  <!-- Links -->
+                  <li  class="active" >
+                      <a href="index.html" class="navigateto"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
+                  </li><!-- ./Links -->
+
+
+                    <!-- <li >
+                      <a href="pay.html" class="navigateto"><i class="fa fa-credit-card"></i> <span>Repayment Settings</span></a>
+                    </li> -->
+
+                  <!-- <li >
+                      <a href="account.html"><i class="fa fa-cog"></i> <span>Loan Status</span></a>
+                  </li> -->
+
+                  <!-- <li >
+                      <a href="messages.html" class="navigateto"><i class="fa fa-envelope"></i> <span>Messages</span></a>
+                  </li>
+
+                  <li >
+                      <a href="offers.html" class="navigateto"><i class="fa fa-bell"></i> <span>Offers</span></a>
+                  </li> -->
+
+
+
+
+
+                  <!-- Links -->
+                  <li >
+                      <a href="down.html" class="navigateto"><i class="fa fa-credit-card"></i> <span>Transaction History</span></a>
+                  </li><!-- ./Links -->
+
+
+
+
+                  <li >
+                      <a href="account.html" class="navigateto"><i class="fa fa-cogs"></i> <span>Settings</span></a>
+                  </li>
+
+
+                  <!-- <li class="">
+                      <a href="request.html" class="navigateto"><i class="fa fa-play"></i> <span>Request funds</span></a>
+                  </li> -->
+                  <!-- ./Links -->
+
+                  <!-- <li >
+                      <a href="invite.html" class="navigateto"><i class="fa fa-user"></i> <span>Invite friends</span></a>
+                  </li> -->
+
+              </ul><!-- /.sidebar-menu -->
+          </section>
+          <!-- /.sidebar -->
+      </aside>
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h4>
+           Zaka Entrepreneur <i class="fa fa-angle-right margin-separator"></i>
+          </h4>
+
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+
+        	<div class="row">
+            <div class="col-xs-12">
+              <div class="box">
+                <div class="box-header">
+                  <h3 class="box-title">
+                  		Investments
+                  	</h3>
+                </div><!-- /.box-header -->
+
+                <div class="box-body table-responsive no-padding">
+                  <table class="table table-hover">
+               <tbody>
+
+               	                   <tr>
+                      <th class="active">ID</th>
+                      <th class="active">Amount</th>
+                      <th class="active">Code</th>
+                      <!-- <th class="active">Email</th> -->
+                      <th class="active">Date</th>
+                      <th class="active">Type</th>
+                      <!-- <th class="active">Actions</th> -->
+                    </tr><!-- /.TR -->
+
+
+
+                    <tr v-for= "transaction in transactions" v-cloak>
+                        <td>{{transaction.id}}</td>
+                        <td>{{transaction.amount}}</td>
+                        <td>{{transaction.transactionCode}}</td>
+                        <td>{{transaction.date}}</td>
+                        <td>{{transaction.TransactionType}}</td>
+                    </tr>
+
+
+
+                  </tbody>
+
+                  </table>
+
+                </div><!-- /.box-body -->
+              </div><!-- /.box -->
+                           <ul class="pagination">
+    <!-- Previous Page Link -->
+            <li class="disabled"><span>&laquo;</span></li>
+
+    <!-- Pagination Elements -->
+            <!-- "Three Dots" Separator -->
+
+        <!-- Array Of Links -->
+                                                        <li class="active"><span>1</span></li>
+                                                                <li><a href="page=2">2</a></li>
+
+    <!-- Next Page Link -->
+            <li><a href="page=2" rel="next">&raquo;</a></li>
+    </ul>
+
+                         </div>
+          </div>
+
+          <!-- Your Page Content Here -->
+
+        </section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+
+      <footer class="main-footer">
+        <!-- Default to the left -->
+       &copy; <strong>Zaka | Investment Platform</strong> - 2018      </footer>
+
+    </div><!-- ./wrapper -->
+    <script src="plugins/jquery/jQuery-2.1.4.min.js" type="text/javascript"></script>
+    <!-- Bootstrap 3.3.2 JS -->
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- FastClick -->
+    <script src="plugins/fastclick.min.js" type="text/javascript"></script>
+    <!-- AdminLTE App -->
+    <script src="bootstrap/js/app.min.js" type="text/javascript"></script>
+
+    <script src="plugins/sweetalert/sweetalert.min.js" type="text/javascript"></script>
+
+    <script src="bootstrap/js/functions.js" type="text/javascript"></script>
+  </body>
+  <script src="https://unpkg.com/vue@2.0.3/dist/vue.js"></script>
+<script src="https://unpkg.com/axios@0.12.0/dist/axios.min.js"></script>
+<script src="https://unpkg.com/lodash@4.13.1/lodash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            name: '',
+            account: '',
+            id: '',
+            transactions: [],
+            entImage: ''
+        },
+        methods: {
+          getEntrepreneurDetails: function () {    
+     let queryString = decodeURIComponent(window.location.search);
+      queryString = queryString.substring(1).split("&");
+      let details = queryString[0].split("=");
+      this.account =  decodeURI(details[1]);
+     details = queryString[1].split("=");
+     this.name =  decodeURI(details[1]);
+     details = queryString[2].split("="); 
+     this.id = decodeURI(details[1]);
+     console.log("ID:",this.id)
+     console.log("Account", this.account);
+     console.log("name", this.name);
+            fetch(`https://ticketsoko.com/zaka/api/index.php?function=getEntrepreneur&keyword=${this.name}`)
+            .then( response => response.json())
+  .then(data => {
+      data.data.forEach(element => {
+		  console.log("ELEMENT", element)
+          this.entImage = element.Entrepreneur.image
+		  this.entEmail = element.Entrepreneur.email 
+		  this.entLocation = element.Entrepreneur.location
+		  this.entName = element.Entrepreneur.name
+		  this.entTitle = element.Entrepreneur.name
+		  this.entPhone = element.Entrepreneur.phoneNumber
+          
+      });
+  })
+  .catch(function(err) {
+    console.log('Fetch Error :-S', err);
+  });
+
+
+            },
+            createUrls: function () {
+        var links = [...document.getElementsByClassName('navigateto')]
+        links.forEach(element => {
+            element.href += `?objects=${this.account}&phone=${this.name}&id=${this.id}`
+            console.log(element.href)            
+        });
+      },
+      getTransactions : function() {
+        let queryString = decodeURIComponent(window.location.search);
+      queryString = queryString.substring(1).split("&");
+      let details = queryString[0].split("=");
+      this.account =  decodeURI(details[1]);
+        axios.get(`https://ticketsoko.com/zaka/api/index.php?function=transactions&keyword=${this.name}`)
+        .then((result) => {
+            this.transactionNumber = result.data.message
+            console.log(this.transactionNumber)
+            result.data.data.forEach(element => {
+                this.transactions.push(element)
+            });
+            
+            console.log("TRANSACTIONS", this.transactions)
+            console.log(result)
+            
+        }).catch((err) => {
+            
+        });
+    }
+        },
+        mounted: function(){
+            this.createUrls()
+            this.getTransactions()
+        },
+        beforeMount: function () {
+            this.getEntrepreneurDetails()
+        }
+
+    })
+</script>
+</html>

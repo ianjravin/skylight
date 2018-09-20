@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>
+		Zaka - New Registration
+	</title>
+	<meta name="description" content="This is the helping website to help each other" />
+	<meta name="keywords" content="Best helping, Helping concept, MMM" />
+	<meta name="author" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<link href="vendor/magnific/magnific-popup.css" rel="stylesheet" type="text/css" />
+	<link href="vendor/owl-carousel/css/owl.carousel.css" rel="stylesheet" type="text/css" />
+	<link href="vendor/owl-carousel/css/owl.theme.css" rel="stylesheet" type="text/css" />
+	<link href="css/custom.css" rel="stylesheet" type="text/css" />
+	<link href="colors/color3.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<style>
+		 body {
+            font-family: 'Montserrat', sans-serif;
+        }
+		.inp {
+			border-radius: 15px;
+		}
+		</style>
+</head>
+
+<body>
+<div>
+<div class="body">
+    <div id="app">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <div class="nav navbar-nav">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <!-- <ul class="nav navbar-nav navbar-center">
+													<li><a href="regme.html">Lend</a></li>
+													<li><a>|</a></li>
+													<li><a href="borrow.html">Borrow</a></li>
+											</ul> -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="about.html">about us</a>
+                                </li>
+                                <li>
+                                    <a href="opp.html">opportunities</a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">faqs</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">contacts</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="login.html">Entrepreneur Login</a>
+                                </li>
+                                <li>
+                                    <a href="logme.html">Investor Login</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-area">
+            <div class="page-banner parallax" style="background-image:url('images/cont.jpg' );">
+                <div class="container">
+                    <div class="page-banner-text">
+                        <h1 class="block-title">Entrepreneur registration</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main-container">
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <!-- <h1>Please fill in this form</h1> -->
+                        <!-- <div class="col-md-8 content-block">
+                                <div class="col-md-1 col-sm-1"></div>
+                                <div class="col-md-6 col-sm-6"><span class="event-date"><span id="sday" class="date"></span><span id="sMon" class="month"></span><span id="sYr" class="year"></span></span><span id="result" class="meta-data-thick" style="color:red"></span>
+
+                                </div> -->
+                        <!-- <h3>Please fill in this form and we will get in contact with you</h3> -->
+                        <div id="errmsg" style="color:red"></div>
+                        <hr />
+                        <form>
+                            <div class="row">
+                                <div class="col-md-1 col-sm-1"></div>
+                                <div class="col-md-3 col-sm-3" style="padding-top:10px;"> Full name
+                                    <span style="color:red">*</span>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <input v-model="firstName" name="txtsp" type="text" maxlength="30" class="form-control inp"
+                                        placeholder="name" />
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <span id="sponsor" class="meta-data-thick"></span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-1 col-sm-1"></div>
+                                <div class="col-md-3 col-sm-3" style="padding-top:10px;">Phone number
+                                    <span style="color:red">*</span>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <input v-model="phone" name="txtcell" type="text" maxlength="10" class="form-control inp"
+                                        placeholder="Contact number" />
+                                </div>
+                                <div class="col-md-4 col-sm-4"></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-1 col-sm-1"></div>
+                                <div class="col-md-3 col-sm-3" style="padding-top:10px;">Enter City/Town
+                                    <span style="color:red">*</span>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <input v-model="locations" name="txtcity" type="text" maxlength="50" class="form-control inp"
+                                        placeholder="City " />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1 col-sm-1"></div>
+                                <div class="col-md-3 col-sm-3" style="padding-top:10px;">Email</div>
+                                <div class="col-md-4 col-sm-4">
+                                    <input v-model="emailAddress" name="txtmail" type="text" maxlength="50" id="txtmail" class="form-control inp"
+                                        placeholder="...@mail.com" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1 col-sm-1"></div>
+                                <div class="col-md-3 col-sm-3" style="padding-top:10px;">Profile Picture
+                                        </div>
+                                <div class="col-md-4 col-sm-4"><input name="txtpass" type="file"
+                                                                      maxlength="30" id="" accept="image/*" @change="onFileChanged"
+                                                                      class="form-control inp upload" placeholder="File"
+                                                                      required=""/></div>
+                                <div class="col-md-4 col-sm-4"><span id="upass" class="meta-data-thick"></span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-1 col-sm-1"></div>
+                                <div class="col-md-3 col-sm-3" style="padding-top:10px;">Amount
+                                    <span style="color:red">*</span>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <input v-model="Amount2" name="txtuser" type="text" maxlength="30" class="form-control inp"
+                                        placeholder="Amount" />
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <span id="uname" class="meta-data-thick"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1 col-sm-1"></div>
+                                <div class="col-md-3 col-sm-3" style="padding-top:10px;">Reason for loan
+                                    <span style="color:red">*</span>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <input v-model="loan" name="txtuser" type="text" maxlength="100" id="txtuser" class="form-control inp"
+                                        placeholder="Reason" />
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <span class="meta-data-thick"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1 col-sm-1"></div>
+                                <div class="col-md-3 col-sm-3" style="padding-top:10px;">Business name
+                                    <span style="color:red">*</span>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <input v-model="businessname" name="txtuser" type="text" maxlength="100" id="txtuser" class="form-control inp"
+                                        placeholder="Business Name" />
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <span class="meta-data-thick"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1 col-sm-1"></div>
+                                <div class="col-md-3 col-sm-3" style="padding-top:10px;">Business Sector
+                                    <span style="color:red">*</span>
+                                </div>
+
+                                <div class="col-md-4 col-sm-4">
+                                    <select v-model="sector" name="sector" class="form-control inp">
+
+                                        <option value="Business">Business</option>
+                                        <option value="Short-term Loans">Short-term Loans</option>
+                                        <option value="Agriculture">Agriculture</option>
+                                        <option value="Education">Eductaion</option>
+                                        <option value="Health">Health</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1 col-sm-1"></div>
+                                <div class="col-md-3 col-sm-3" style="padding-top:10px;">Period in business
+                                    <span style="color:red">*</span>
+                                </div>
+
+                                <div class="col-md-4 col-sm-4">
+                                    <select v-model="experience" name="sector" class="form-control inp">
+
+                                        <option value="1">1 year</option>
+                                        <option value="2">2 years</option>
+                                        <option value="3">More than 3 years</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- ***** Form Group ***** -->
+                            <!-- <div class="row">
+                                        <div class="col-md-1 col-sm-1"></div>
+                                        <div class="col-md-3 col-sm-3" style="padding-top:10px;">Username <span style="color:red">*</span> </div>
+                                        <div class="col-md-4 col-sm-4"><input v-model="user" name="txtpass" type="text" maxlength="30"  class="form-control" placeholder="Username"  /></div>
+                                        <div class="col-md-4 col-sm-4"><span  class="meta-data-thick"></span></div>
+                                    </div> -->
+                            <!-- <div class="row">
+                                        <div class="col-md-1 col-sm-1"></div>
+                                        <div class="col-md-3 col-sm-3" style="padding-top:10px;">Password to login <span style="color:red">*</span> </div>
+                                        <div class="col-md-4 col-sm-4"><input v-model="pass" name="txtpass" type="password" maxlength="30" id="txtpass" class="form-control" placeholder="Password"  /></div>
+                                        <div class="col-md-4 col-sm-4"><span id="upass" class="meta-data-thick"></span></div>
+                                    </div> -->
+
+                            <div class="row">
+                                <div class="col-md-1 col-sm-1"></div>
+                                <div class="col-md-3 col-sm-3" style="padding-top:10px;">Year of birth
+                                    <span style="color:red">*</span>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <input v-model="birthYear" name="txtyear" type="text" maxlength="4" id="txtyear" class="form-control inp"
+                                        placeholder="Birth year (eg. 1987)" />
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <span id="cyear" class="meta-data-thick"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="terms" class="inp" v-model="terms">
+                                <label for="terms">I have read and Understood
+                                    <a href="terms.html">Terms and Conditions</a>
+                                </label>
+                            </div>
+                            <hr />
+
+
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2"></div>
+                                <div class="col-md-3 col-sm-3">
+                                    <button type="button" @click="register1()" class="btn btn-primary inp">
+                                        <i v-if="loading" class="fa fa-spinner fa-spin"></i>Continue...</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4 sidebar-block">
+                        <!-- <div class="widget sidebar-widget widget_categories"><br /><br /><br /><br /><br /><br /><img src="images/mobile.png" alt="" /></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="parallax parallax5 parallax-light text-align-center padding-tb100" style="background-image:url( 'images/parallax6.jpg' )">
+                    <h2>Making someone smile is the most<br>beautiful thing in this world</h2><a href="#"></a></div>
+                <div class="accent-bg padding-tb20 cta-fw">
+                    <div class="container"><a href="#" class="btn btn-default btn-ghost btn-light btn-rounded pull-right">Become a Member</a>
+                        <h4>Let's start doing your best for the world. Join us as a investor</h4></div>
+                </div> -->
+    </div>
+    <div class="site-footer parallax parallax3" style="background-image:url('images/parallax3.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="widget footer_widget">
+                        <h4 class="widgettitle">About Zaka</h4>
+                        <p>
+                            <img src="images/logo.png" alt="logo" />
+                        </p>
+                        <p>Zaka International is an SME investment company that aims to bridge short-term financing gap of small
+                            and medium sized enterprises in Kenya so that they attain scale to large businesses further contributing
+                            to wealth generation and employment creation in Kenya and beyond.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="widget footer_widget widget_links">
+                        <h4 class="widgettitle">Links Might Help You</h4>
+                        <ul>
+                            <li>
+                                <a href="opp.html">Opportunities </a>
+                            </li>
+                            <li>
+                                <a href="about.html">Our mission</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">Have Questions?</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Talk to us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="widget footer_widget">
+                        <h4 class="widgettitle">STAY CONNECTED</h4>
+                        <p>Contact us at :
+                            <h4 class="widgettitle" style="text-transform:lowercase;">info@zaka.co.ke</h4>
+                            <ul class="social-icons-rounded social-icons-colored">
+                                <a href="#" class="fa fa-facebook"></a>
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-linkedin"></a>
+                                <a href="#" class="fa fa-google-plus"></a>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="copyrights-col-left">
+                        <p>&copy; 2018
+                            <b>Zaka</b>. All Rights Reserved</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6"></div>
+                <div class="copyrights-col-right">
+                    <ul class="footer-menu">
+                        <!-- <li><a href="#">Register with us</a></li>
+                                <li><a href="#">Login now</a></li> -->
+                        <li>
+                            <a href="terms.html">Terms &amp; conditions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="back-to-top">
+        <i class="fa fa-angle-double-up"></i>
+    </a>
+</div>
+</div>
+
+
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<!-- Jquery Library Call -->
+	<script src="vendor/magnific/jquery.magnific-popup.min.js"></script>
+	<!-- PrettyPhoto Plugin -->
+	<script src="js/ui-plugins.js"></script>
+	<!-- UI Plugins -->
+	<script src="js/helper-plugins.js"></script>
+	<!-- Helper Plugins -->
+	<script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="js/bootstrap.js"></script>
+	<!-- UI -->
+    <script src="vendor/flexslider/js/jquery.flexslider.js"></script>
+    <script src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/alertify.js"></script>
+</body>
+<script src="https://unpkg.com/vue@2.0.3/dist/vue.js"></script>
+<script src="https://unpkg.com/axios@0.12.0/dist/axios.min.js"></script>
+<script src="https://unpkg.com/lodash@4.13.1/lodash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+<script>
+    var app = new Vue({
+        el:'#app',
+        data:{
+            firstName:'',
+            phone:'',
+            locations:'',
+            emailAddress:'',
+			Amount2:'',
+			loan:'',
+            user:'',
+            pass:'',
+            birthYear:'',
+            sector: '',
+            loading: false,
+            terms: '',
+            experience: '',
+            businessname: '',
+            image: null
+
+        },
+        methods:{
+            onFileChanged: function (e){
+				this.image = event.target.files[0]
+			},
+            register1:function(){
+
+                if (this.experience== '' || this.businessname=='' || this.firstName == '' || this.phone == '' || this.locations=='' || this.emailAddress == '' || this.Amount2 == '' || this.birthYear == '' || this.terms == '') {
+                    //alertify.logPosition("top")
+                    alertify.error("Please fill in all the information and accept the terms and conditions of use")
+                    
+                } else{
+                this.loading = true
+                var formData = new FormData
+                formData.append('function','registerEntrepreneur')
+                formData.append('name',this.firstName)
+                formData.append('phoneNumber',this.phone)
+                formData.append('location',this.locations)
+                formData.append('email',this.emailAddress)
+                formData.append('amount',this.Amount2)
+                formData.append('reason',this.loan)
+                formData.append('sector', this.sector)
+                formData.append('birthYear',this.birthYear)
+                formData.append('businessName', this.businessname)
+                formData.append('yearInBusiness', this.experience)
+                formData.append('fileToUpload', this.image)
+                
+                axios.post('https://ticketsoko.com/zaka/api/index.php',formData)
+                    .then((response) =>{
+                        console.log(response.data)
+                        if (response.data.success == "false") {
+                            //this.loading = false
+                            alertify.error("Registration failed. Kindly check if you are filling the right information")
+                            this.firstName = ''
+                            this.phone = ''
+                            this.emailAddress = ''
+                            this.Amount2 = ''
+                            this.locations = ''
+                            this.phone = ''
+                            this.loan = ''
+                            this.sector = ''
+                            this.birthYear = ''
+                            this.businessname = ''
+                            this.experience = ''
+                            this.loading = false
+                            
+                        }else{
+                            alertify.success("Registration Successful")
+                        setTimeout(() => {
+                          this.loading = false
+                          window.location.replace("entwelcome.html")  
+                        }, 3000);
+                        return;
+                        //alert(response.data.message)
+                        }
+                       
+                    })
+
+                    .catch(function(error){
+                        alertify.error(error)
+                    })
+                   
+            }
+            return;
+            }
+        }
+
+    })
+
+</script>
+
+</html>

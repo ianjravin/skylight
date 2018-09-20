@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+
+<html xmlns:v-on="http://www.w3.org/1999/xhtml">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="_token" content="W0ggcm3leMeZkpoOzNpbaICgIiRL5qrO6FIPxU2e"/>
+      <title>Zaka Admin</title>
+      <!-- Tell the browser to be responsive to screen width -->
+      <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+      <!-- Bootstrap 3.3.5 -->
+      <link href="bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <!-- Font Awesome Icons -->
+      <link href="public/font-awesome.min.css" rel="stylesheet" type="text/css" />
+      <!-- Ionicons -->
+      <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+      <!-- App css -->
+      <link href="admin/css/app.css" rel="stylesheet" type="text/css" />
+      <!-- IcoMoon CSS -->
+      <link href="css/icomoon.css" rel="stylesheet">
+
+      <!-- Theme style -->
+      <link href="admin/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+
+      <!-- AdminLTE Skins. Choose a skin from the css/skins
+          folder instead of downloading all of them to reduce the load. -->
+      <link href="admin/skin-red.min.css" rel="stylesheet" type="text/css" />
+
+      <link rel="shortcut icon" href="#" />
+
+      <link href='//fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+
+      <link href="css/sweetalert.css" rel="stylesheet" type="text/css" />
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+      <link href="plugins/morris.css" rel="stylesheet" type="text/css" />
+      <link href="plugins/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <!-- <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all"> -->
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/theme.css" rel="stylesheet" media="all">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.5.0/alertify.default.min.css'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+
+      <script type="text/javascript">
+
+          // URL BASE
+          var URL_BASE = "#";
+
+      </script>
+ <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+
+ <style>
+     * {
+         font-family: 'Montserrat', sans-serif;
+         font-size: 15px;
+     }
+          .col-md-12 {
+            padding-bottom: 30px;
+          }
+          [v-cloak]{
+              display: none
+          }
+ .waiter{
+  /* background-color: #d3d3d3; */
+    opacity:10.8;
+    background-color:#4c4c4c;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+  
+}
+      
+      </style>
+  </head>
+
+  <body class="skin-red sidebar-mini">
+<div id="app">
+        <div  v-if="waiting" class="waiter">
+                <img src="https://ticketsoko.com/waiting2.gif" alt="loading-gif" class="aligner" >
+               </div>
+  <div class="wrapper">
+      <header class="main-header">
+          <a href="" class="logo">
+              <!-- mini logo for sidebar mini 50x50 pixels -->
+              <span class="logo-mini"><i class="fa fa-desktop"></i></span>
+              <!-- logo for regular state and mobile devices -->
+                            <span class="logo-lg" v-cloak><i class="fa fa-desktop"></i> Investor Dashboard</span>
+          </a>
+          <nav class="navbar navbar-static-top" role="navigation">
+              <!-- Sidebar toggle button-->
+              <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                  <span class="sr-only">Toggle navigation</span>
+              </a>
+              <!-- Navbar Right Menu -->
+              <div class="navbar-custom-menu">
+                  <ul class="nav navbar-nav">
+                    <li>
+                       
+                    </li>
+
+                    <li>
+                        <a href="posts.html" class="navigateto"><i class="fa fa-home"></i> Lend</a>
+                    </li>
+
+
+                     
+                      <!-- User Account Menu -->
+                      <li class="dropdown user user-menu">
+                          <!-- Menu Toggle Button -->
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                              <!-- The user image in the navbar-->
+                              <img :src="investorProfilePicture" class="user-image" alt="User Image" />
+                              <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                              <span class="hidden-xs">{{name}}</span>
+                          </a>
+                          <ul class="dropdown-menu">
+                              <!-- The user image in the menu -->
+                              <li class="user-header">
+                                  <img :src="investorProfilePicture" class="img-circle" alt="User Image" />
+                                  <p>
+                                      <small>{{name}}</small>
+                                  </p>
+                              </li>
+
+                              <!-- Menu Footer-->
+                              <li class="user-footer">
+                                  <div class="pull-left">
+                                      <a href="account.html" class="btn btn-default btn-flat navigateto">Account Settings</a>
+                                  </div>
+                                  <div class="pull-right">
+                                      <a href="/index.html" class="btn btn-default btn-flat">Log out</a>
+                                  </div>
+                              </li>
+                          </ul>
+                      </li>
+
+                  </ul>
+              </div>
+          </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+
+            <!-- Sidebar user panel (optional) -->
+            <div class="user-panel">
+                <!-- <div class="pull-left image">
+                    <img :src="investorProfilePicture" class="img-circle" alt="User Image" />
+                </div> -->
+                <!-- <div class="pull-left info">
+                    <p class="text-overflow" id="sidename" v-cloak>{{name}}</p>
+                    <small class="btn-block text-overflow"><a href="javascript:void(0);"><i class="fa fa-circle text-success"></i><font color="yellow"> <strong>Online</strong></font></a></small>
+                </div> -->
+            </div>
+            <ul class="sidebar-menu">
+                <li class="header"><font color="yellow">Main Menu</font></li>
+                <li  class="active" >
+                    <a href="index.html" class="navigateto"><font color="white"><i class="fa fa-dashboard"></i><span>Dashboard</font></span></a>
+                </li>
+  
+  
+                <li >
+                  <a href="offers.html" class="navigateto"><font color="white"><i class="fa fa-spinner"></i> <span>Offers made</font></span></a>
+              </li>
+              <li >
+                    <a href="posts.html" class="navigateto"><font color="white"><i class="fa fa-handshake-o"></i> <span>Opportunities</font></span></a>
+                </li>
+  
+                <!-- Links -->
+                <li class="">
+                    <a href="transaction.html" class="navigateto"><font color="white"><i class="	fa fa-file-text-o"></i> <span>Transactions history</font></span></a>
+                </li><!-- ./Links -->
+                <li class="treeview ">
+                  <a href="/settings"><font color="white"><i class="fa fa-cogs"></i> <span>General Settings</font></span> <i class="fa fa-angle-left pull-right"></i></a>
+                  <ul class="treeview-menu">
+                      <li ><a href="account.html" class="navigateto"><font color="white"><i class="fa fa-circle-o"></i>Profile settings</font></a></li>
+                      <li ><a href="dormancy.html" class="navigateto"><font color="white"><i class="fa fa-circle-o"></i>Account Settings</font></a></li>
+                  </ul>
+              </li>
+            </ul>
+        </section>
+    </aside>
+    <div class="content-wrapper">
+        <section class="content-header">
+            <!-- <h1>
+                Dashboard
+            </h1> -->
+            <ol class="breadcrumb">
+                <li><a href="https://ianjravin.github.io/zaka-dashboard/login.htmladmin"><i class="fa fa-dashboard"></i>
+                    Home</a></li>
+                            </ol>
+        </section>
+        <section id="">
+            <section class="">
+                <div class="">
+                                           <!-- <div class="section__content section__content--p30"> -->
+                            <div class="container-fluid">
+            
+            
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h3 class="title-5 m-b-35">Offers</h3>
+                                        <div class="table-data__tool">
+                                            <!-- <div class="table-data__tool-left">
+                                                <div class="rs-select2--light rs-select2--md">
+                                                    <select class="js-select2" name="property">
+                                                        <option selected="selected">All</option>
+                                                        <option value="">Accepted</option>
+                                                        <option value="">Rejected</option>
+                                                        <option value="">Countered</option>
+                                                    </select>
+                                                    <div class="dropDownSelect2"></div>
+                                                </div>
+                                                <div class="rs-select2--light rs-select2--sm">
+                                                    <select class="js-select2" name="time">
+                                                        <option selected="selected">Today</option>
+                                                        <option value="">3 Days</option>
+                                                        <option value="">1 Week</option>
+                                                    </select>
+                                                    <div class="dropDownSelect2"></div>
+                                                </div>
+                                                <button class="au-btn-filter">
+                                                    <i class="zmdi zmdi-filter-list"></i>filters</button>
+                                            </div> -->
+            
+                                        </div>
+                                        <div class="table-responsive table-responsive-data2">
+                                            <table class="table table-data2">
+                                                <thead>
+                                                    <tr>
+                                                        
+                                                        <th> Post ID</th>
+                                                        <th>date</th>
+                                                        <th>Amount</th>
+                                                        <th>Percentage</th>
+                                                        <th>status</th>
+                                                        
+                                                    </tr>
+                                                </thead>
+                                                <tbody v-cloak>
+                                                    <tr class="tr-shadow" v-for="(offer, index) in offers" :key="index" v-if="offers.length > 0">
+                                                       
+                                                        <td >{{offer.post_id}}</td>
+                                                        <td >{{offer.date}}</td>
+                                                        <td >KES {{offer.amount}}</td>
+                                                        <td >{{offer.interest_rate}}%</td>
+                                                        <td>
+                                                            <span class="status--process">{{offer.status}}</span>
+                                                        </td>
+            
+                                                        <td>
+                                                            <div class="table-data-feature">
+                                                              <!-- <button class="item" data-toggle="tooltip" data-placement="top" @click="acceptOffer(offer)" title="Accept">
+                                                                  <i class="zmdi zmdi-mail-send"></i>
+                                                              </button>
+                                                              <button class="item" data-toggle="tooltip" data-placement="top" @click="rejectOffer(offer)" title="Reject">
+                                                                <i class="zmdi zmdi-delete"></i>
+                                                            </button> -->
+                                                              <button class="item" data-toggle="tooltip" data-placement="top" @click="openCounterModal(offer)" title="Counter" v-if="offer.status == Negotiate">
+                                                                  <i class="zmdi zmdi-edit"></i>
+                                                              </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="row">
+                                    <div class="col-md-12">
+            
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+
+            
+                </div>
+            </section>
+        </section>
+    </div>
+</div>
+<footer class="main-footer">
+    <!-- Default to the left -->
+    &copy; <strong>Zaka | Investment Platform</strong> - 2018
+</footer>
+<div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <div class="">
+                    <div class="form-group">
+                        <label for="text">Comment</label>
+                        <input type="text" class="form-control" id="comment" v-model="comments">
+                      </div>
+                      <!-- <div class="form-group">
+                        <label for="number">Amount</label>
+                        <input type="number" class="form-control" id="amnt" v-model="amount">
+                      </div> -->
+                </div>
+            </div>
+            <div class="modal-footer text-align-center">
+                <button type="button" class="btn btn-primary" @click="counterOffer()">Send</button>
+                <div class="spacer-20"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<script src="plugins/jquery/jQuery-2.1.4.min.js" type="text/javascript"></script>
+<!-- Bootstrap 3.3.2 JS -->
+<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<!-- FastClick -->
+<script src="plugins/fastclick.min.js" type="text/javascript"></script>
+<!-- AdminLTE App -->
+<script src="bootstrap/js/app.min.js" type="text/javascript"></script>
+<script src="plugins/sweetalert/sweetalert.min.js" type="text/javascript"></script>
+<script src="bootstrap/js/functions.js" type="text/javascript"></script>
+<script src="js/raphael-min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.10/dist/js/alertify.js"></script>  
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios@0.12.0/dist/axios.min.js"></script>
+<script src="https://unpkg.com/lodash@4.13.1/lodash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+<script>
+
+
+    var app = new Vue({
+
+        el: '#app',
+        data: {
+            amount: '',
+            comments: '',
+            name: '',
+            account: '',
+            id: '',
+            offers: [], 
+            offerStatus: '',
+            offerId: '',
+            loading: false,
+            investorProfilePicture: '',
+            waiting: true,
+            //showModal: false
+        },
+        watch:{},
+        methods: {
+            acceptOffer: function (offer) {
+                this.offerId = offer.id
+                var formData = new FormData
+                formData.append('function', 'offerRespond')
+                formData.append('status', 'Accepted')
+                formData.append('offer_id', this.offerId)
+                formData.append('user', 'INVESTOR')
+                formData.append('comments', 'Accepted Offer')
+                //console.log(offer.id)
+
+
+                axios.post('https://zaka.ticketsoko.com/api/index.php', formData)
+                    .then(function (response) {
+                        //this.$forceUpdate()
+                        alertify.alert(response.data.message)
+                    //     setTimeout(() => {
+                    //     location.reload(true)  
+                    // }, 500);
+                    }).then( offer.status = 'Accepted')
+
+                    .catch(function (error) {
+
+                    })
+            },
+        getInvestorInformation: function(){
+        axios.get(`https://ticketsoko.com/zaka/api/index.php?function=getInvestors&keyword=${this.id}`)
+        .then((response) => {
+            response.data.data.forEach(element => {
+                this.investorProfilePicture = element.image
+                this.waiting=false
+                console.log(element.image)
+                
+            });
+            console.log("I am here",response)
+            
+        }).catch((err) => {
+            console.log(err)
+            
+        });
+    },
+            rejectOffer: function (offer) {
+                this.offerId = offer.id
+                var formData = new FormData
+                formData.append('function', 'offerRespond')
+                formData.append('status', 'Rejected')
+                formData.append('offer_id', this.offerId)
+                formData.append('user', 'INVESTOR')
+                formData.append('comments', 'Rejected the offer')
+                console.log(this.offerId)
+
+
+                axios.post('https://zaka.ticketsoko.com/api/index.php', formData)
+                    .then(function (response) {
+                        console.log(response)
+                        alertify.alert(response.data.message)
+                    //     setTimeout(() => {
+                    //     location.reload(true)  
+                    // }, 500);
+                        //alert(response.data.message)
+                    }).then( offer.status = 'Rejected')
+
+                    .catch(function (error) {
+
+                    })
+            },
+            openCounterModal: function(offer){
+               // this.showModal = true
+                this.offerId = offer.id
+                $("#myModal").modal('show')
+            },
+            counterOffer: function (){
+                console.log(this.offerId)
+                
+                var formData = new FormData()
+                formData.append('function', 'offerRespond')
+                formData.append('status', 'Negotiate')
+                formData.append('offer_id', this.offerId)
+                formData.append('user', 'INVESTOR')
+                formData.append('comments', this.comments)
+                axios.post('https://zaka.ticketsoko.com/api/index.php', formData)
+                .then((response) => {
+                    alertify.alert(response.data.message)
+                    $("#myModal").modal('hide')
+                    // setTimeout(() => {
+                    //     location.reload(true)  
+                    // }, 500);
+                   
+
+                   // alert(response.data.message)
+                    console.log(response);    
+                }).then( offer.status = 'Negotiate')
+                .catch((err) => {
+                    console.log(err);
+                });
+
+            },
+
+            accept: function () {
+                alert(this.value);
+
+            },
+ getInvestorOffers: function () {
+     this.id = Cookies.get('uid');
+     axios.post(`https://ticketsoko.com/zaka/api/index.php?function=getInvestorOffers&keyword=${this.id}`)
+     .then((result) => {
+         console.log(result)
+         result.data.data.forEach(element => {
+            this.offers.push(element)
+            this.waiting = false;
+            
+            //  if (this.offers[0].status === 3){
+            //      this.offerStatus = "wants to negotiate"
+            //  }
+           
+             console.log(this.offers)
+             
+         });
+         console.log(result)
+         
+     }).catch((err) => {
+         console.log(err)
+         
+     });
+
+            },
+ getInvestorDetail: function (){
+    this.account = Cookies.get('phone');
+      localStorage.setItem("number", this.account);
+      this.name = Cookies.get('name')
+      this.id = Cookies.get('uid')
+     console.log(this.id);
+      }
+    //  createUrls: function () {
+    //     var links = [...document.getElementsByClassName('navigateto')]
+    //     links.forEach(element => {
+    //         element.href += `?objects=${this.account}&names=${this.name}&id=${this.id}`
+    //         console.log(element.href)            
+    //     });
+    //   },
+     
+        },
+    //     computed: {
+    //         createUrls: function () {
+    //                 return `?objects=${this.account}&names=${this.name}&id=${this.id}`;      
+    //         }
+    //   },
+        beforeMount: function(){
+            this.getInvestorDetail()
+            this.getInvestorOffers()
+            this.getInvestorInformation()
+        },
+        // mounted: function(){
+        //     this.createUrls
+        // }
+    })
+</script>
+
+</html>
