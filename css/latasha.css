@@ -1,0 +1,7 @@
+.carousel-overlay {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  width: 30%;
+  background-color: #ffe6ff;
+}

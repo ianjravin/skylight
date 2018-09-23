@@ -1,7 +1,7 @@
 /*------------------------------------------------------------------
 Project:        HaNgan
 Author:         Crenoveative
-URL:            http://crenoveative.com/ 
+URL:            http://crenoveative.com/
 Version:        1.0.0
 Created:        23/05/2016
 Last change:    23/05/2015
@@ -823,7 +823,7 @@ input[type='checkbox']:checked + label:before {
  *
  * Copyright Jordan Schroter
  * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0   
+ * http://www.apache.org/licenses/LICENSE-2.0
  *
  */
 
@@ -1078,7 +1078,7 @@ input[type='checkbox']:checked + label:before {
  *
  * Copyright Jordan Schroter
  * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0  
+ * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Boostrap 3 patch for for bootstrap-modal. Include BEFORE bootstrap-modal.css!
  */
@@ -1135,7 +1135,7 @@ body.modal-open,
  * Copyright (c) 2013–2015 Brian Reavis & contributors
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
  * file except in compliance with the License. You may obtain a copy of the License at:
- * http://www.apache.org/licenses/LICENSE-2.0  
+ * http://www.apache.org/licenses/LICENSE-2.0
  * Unless required by applicable law or agreed to in writing, software distributed under
  * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
  * ANY KIND, either express or implied. See the License for the specific language
@@ -2976,7 +2976,7 @@ body.modal-open,
 }
 
 
-/* 
+/*
     User Default Style
     Change the following styles to modify the appearance of the menu.
 */
@@ -4467,8 +4467,8 @@ body.modal-open,
 
 /*
  * jquery-filestyle
- * doc: http://markusslima.github.io/jquery-filestyle/ 
- * github: https://github.com/markusslima/jquery-filestyle 
+ * doc: http://markusslima.github.io/jquery-filestyle/
+ * github: https://github.com/markusslima/jquery-filestyle
  * Copyright (c) 2015 Markus Vinicius da Silva Lima
  * Version 1.5.1
  * Licensed under the MIT license.
@@ -4575,7 +4575,7 @@ div.jfilestyle .count-jfilestyle {
 
 
 /**
- * bootstrap3-wysihtml5-bower 
+ * bootstrap3-wysihtml5-bower
  * http://waxolunist.github.io/bootstrap3-wysihtml5-bower/
  */
 
@@ -4729,7 +4729,7 @@ ul.wysihtml5-toolbar div[data-wysihtml5-command-value=orange] {
  * Built for Yii Framework 2.0
  * Author: Kartik Visweswaran
  * Year: 2015
- * For more Yii related demos visit http://demos.krajee.com or http://plugins.krajee.com/file-preview-icons-demo   
+ * For more Yii related demos visit http://demos.krajee.com or http://plugins.krajee.com/file-preview-icons-demo
  */
 
 .file-preview-frame,
@@ -5137,7 +5137,7 @@ ul.wysihtml5-toolbar div[data-wysihtml5-command-value=orange] {
 
 /*!
  * bootstrap-tokenfield
- * https://github.com/sliptree/bootstrap-tokenfield 
+ * https://github.com/sliptree/bootstrap-tokenfield
  * Copyright 2013-2014 Sliptree and other contributors; Licensed MIT
 
 /* General Typeahead styling, from http://jsfiddle.net/ragulka/Dy9au/1  */
@@ -5548,7 +5548,7 @@ ul.wysihtml5-toolbar div[data-wysihtml5-command-value=orange] {
 /**
  * SheepIt! Plugin
  * Dynamic form cloning with Jquery
- * https://github.com/mdelrosso/sheepit   
+ * https://github.com/mdelrosso/sheepit
  */
 
 .dynamic-add-form-item {
